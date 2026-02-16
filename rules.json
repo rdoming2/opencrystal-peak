@@ -1,9 +1,9 @@
 {
   "version": 1,
   "game": {
-    "title": "OpenCrystal Demo",
+    "title": "OpenCrystal - Peak",
     "description": "A mystical journey across the four rune dungeons.",
-    "author": "OpenCrystal Team",
+    "author": "Richard Dominguez",
     "party_size": 4,
     "party_reserve_size": 4,
     "battle_mode": "dynamic_wait",
@@ -18,7 +18,7 @@
       "x": 12,
       "y": 12
     },
-    "currency": {"id": "gil", "name": "G", "symbol": "G"}
+    "currency": {"id": "gold", "name": "G", "symbol": "G"}
   },
   "battle": {
     "global_commands": ["attack", "defend", "row", "items", "run", "cover", "counter"],
