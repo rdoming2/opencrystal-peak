@@ -52,7 +52,8 @@
     {"id": "fish_watching", "trigger": "on_step", "pos": [13,21], "script": "fish_watching"}
   ],
   "npcs": [
-    {"id": "town_historian", "pos": [33, 26]}
+    {"id": "town_historian", "pos": [33, 26]},
+    {"id": "coral_villager", "pos": [24, 10]}
   ],
   "signs": [
     {"id": "sign_inn", "pos": [38, 9], "glyph": "⚑", "palette": "bright_yellow", "text": "Coral Inn"},

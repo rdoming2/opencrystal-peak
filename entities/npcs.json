@@ -7,7 +7,7 @@
       "sprite": "wanderer",
       "palette": "bright_magenta",
       "dialog": "sky_tinker",
-      "behavior": {"type": "roam", "radius": 4, "persist": true}
+      "behavior": {"type": "static"}
     },
     {
       "id": "town_merchant",
@@ -25,6 +25,14 @@
       "palette": "bright_cyan",
       "dialog": "town_historian",
       "behavior": {"type": "static"}
+    },
+    {
+      "id": "coral_villager",
+      "name": "Pippa",
+      "sprite": "farmer",
+      "palette": "bright_green",
+      "dialog": "coral_villager",
+      "behavior": {"type": "roam", "radius": 3, "persist": true}
     },
     {
       "id": "innkeeper",

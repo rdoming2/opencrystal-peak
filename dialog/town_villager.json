@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "id": "coral_villager",
+  "nodes": [
+    {
+      "id": "start",
+      "speaker": "Pippa",
+      "text": "I name the birds. That one is Captain Crumb, and she steals snacks on purpose.",
+      "choices": [
+        {"label": "Adorable", "next": "end"}
+      ]
+    },
+    {"id": "end", "text": "If you see her, tell her I said squawk."}
+  ]
+}

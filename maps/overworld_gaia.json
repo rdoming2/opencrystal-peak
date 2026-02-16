@@ -60,7 +60,7 @@
   "npcs": [
     {
       "id": "wanderer",
-      "pos": [8, 8],
+      "pos": [58, 30],
       "requires_flags": [
         "dungeon.ember_cleared",
         "dungeon.tide_cleared",
@@ -70,7 +70,7 @@
     }
   ],
   "shops": [
-    {"id": "tinker_wares", "pos": [6, 6]}
+    {"id": "tinker_wares", "pos": [58, 30]}
   ],
   "allow_save": true,
   "save_points": [],
