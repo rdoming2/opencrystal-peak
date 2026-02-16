@@ -32,7 +32,7 @@
       "sprite": "farmer",
       "palette": "bright_green",
       "dialog": "coral_villager",
-      "behavior": {"type": "roam", "radius": 3, "persist": true}
+      "behavior": {"type": "roam", "radius": 3, "idle_chance": 0.35, "persist": true}
     },
     {
       "id": "innkeeper",
@@ -122,7 +122,7 @@
       "sprite": "dog",
       "palette": "bright_cyan",
       "dialog": "farm_dog",
-      "behavior": {"type": "roam", "radius": 2, "persist": true}
+      "behavior": {"type": "roam", "radius": 2, "idle_chance": 0.35, "persist": true}
     }
   ]
 }
