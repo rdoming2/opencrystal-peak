@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "id": "town_coral_inn",
+  "name": "Coral Inn",
+  "world": "gaia",
+  "width": 16,
+  "height": 10,
+  "tiles": [
+    "################",
+    "#..bbbb..bbbb..#",
+    "#..bbbb..bbbb..#",
+    "#..............#",
+    "#...t......====#",
+    "#..........=...#",
+    "#...t......=...#",
+    "#..........====#",
+    "#..............#",
+    "########.#######"
+  ],
+  "legend": {
+    "#": {"tile": "wall", "passable": false, "palette": "bright_black"},
+    ".": {"tile": "floor", "passable": true, "palette": "bright_yellow"},
+    "=": {"tile": "counter", "passable": false, "palette": "bright_black"},
+    "b": {"tile": "bed", "passable": false, "palette": "bright_magenta"},
+    "t": {"tile": "table", "passable": false, "palette": "bright_black"}
+  },
+  "encounters": [],
+  "encounter_rate": 0.0,
+  "events": [],
+  "npcs": [
+    {"id": "innkeeper", "pos": [12, 5]}
+  ],
+  "campfires": [
+    {
+      "id": "inn_campfire",
+      "pos": [5, 6],
+      "campfire_id": "inn_kitchen",
+      "glyph": "C",
+      "palette": "bright_red"
+    }
+  ],
+  "shops": [],
+  "allow_save": true,
+  "save_points": [],
+  "transitions": [
+    {
+      "id": "to_town",
+      "pos": [8, 9],
+      "target_map": "town_coral",
+      "target_pos": [35, 9],
+      "return_to_last": false,
+      "glyph": "<",
+      "palette": "bright_cyan"
+    }
+  ]
+}

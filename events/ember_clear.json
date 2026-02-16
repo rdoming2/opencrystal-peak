@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "id": "ember_clear",
+  "steps": [
+    {
+      "type": "start_battle",
+      "formation": [
+        {"enemy": "ember_sentinel", "pos": [4, 2]}
+      ]
+    },
+    {"type": "npc_hide", "npc": "boss_ember"},
+    {"type": "wait", "ms": 120},
+    {"type": "npc_show", "npc": "boss_ember"},
+    {"type": "wait", "ms": 120},
+    {"type": "npc_hide", "npc": "boss_ember"},
+    {"type": "narration", "text": "The Ember rune stone blazes back to life."},
+    {"type": "set_flag", "flag": "dungeon.ember_cleared"},
+    {"type": "stat_add", "stat": "dungeons_cleared", "value": 1},
+    {"type": "set_flag", "flag": "quest.rune_stones.ember"},
+    {"type": "stat_add", "stat": "crystals_collected", "value": 1},
+    {"type": "set_flag", "flag": "job.black_mage_unlocked"},
+    {"type": "stat_add", "stat": "jobs_unlocked", "value": 1},
+    {"type": "narration", "text": "Job unlocked: Black Mage."},
+    {"type": "set_flag", "flag": "system.job_change_unlocked"}
+  ]
+}

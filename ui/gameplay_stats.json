@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "panels": [
+    {
+      "id": "crystal_progress",
+      "title": "Crystals",
+      "items": [
+        {"label": "Rune Stones", "value": "crystals_collected", "max": 4},
+        {"label": "Dungeons", "value": "dungeons_cleared"},
+        {"label": "Jobs", "value": "jobs_unlocked"},
+        {"label": "Enemies", "value": "enemies_defeated"},
+        {"label": "Max Damage", "value": "max_damage"},
+        {"label": "Play Time", "value": "time_played"}
+      ]
+    }
+  ]
+}

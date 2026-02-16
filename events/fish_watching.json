@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "id": "fish_watching",
+  "steps": [
+    {"type": "narration", "text": "You peer into the pond..."},
+    {"type": "narration", "text": "Little fish are looking up with anticipation."}
+  ]
+}

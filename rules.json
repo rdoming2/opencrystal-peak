@@ -1,0 +1,153 @@
+{
+  "version": 1,
+  "game": {
+    "title": "OpenCrystal Demo",
+    "description": "A mystical journey across the four rune dungeons.",
+    "author": "OpenCrystal Team",
+    "party_size": 4,
+    "party_reserve_size": 4,
+    "battle_mode": "dynamic_wait",
+    "readiness_speed": 3.5,
+    "magic_system": "mp",
+    "magic_acquisition": "level",
+    "ability_acquisition": "level",
+    "start_event": "intro_cutscene",
+    "start_location": {
+      "world": "gaia",
+      "map": "town_coral",
+      "x": 12,
+      "y": 12
+    },
+    "currency": {"id": "gil", "name": "G", "symbol": "G"}
+  },
+  "battle": {
+    "global_commands": ["attack", "defend", "row", "items", "run", "cover", "counter"],
+    "commands": [
+      {"id": "attack", "label": "Attack", "kind": "attack", "sort_order": 10},
+      {"id": "magic", "label": "Magic", "kind": "magic", "sort_order": 30},
+      {"id": "abilities", "label": "Abilities", "kind": "abilities", "sort_order": 40},
+      {"id": "steal", "label": "Steal", "kind": "abilities_group", "sort_order": 41, "ability_group": "steal"},
+      {"id": "throw", "label": "Throw", "kind": "abilities_group", "sort_order": 42, "ability_group": "throw"},
+      {"id": "pray", "label": "Pray", "kind": "abilities_group", "sort_order": 43, "ability_group": "pray"},
+      {"id": "parry", "label": "Parry", "kind": "abilities_group", "sort_order": 44, "ability_group": "parry"},
+      {"id": "cover", "label": "Cover", "kind": "abilities_group", "sort_order": 45, "ability_group": "cover"},
+      {"id": "counter", "label": "Counter", "kind": "abilities_group", "sort_order": 46, "ability_group": "counter"},
+      {"id": "items", "label": "Items", "kind": "items", "sort_order": 50},
+      {"id": "defend", "label": "Defend", "kind": "defend", "sort_order": 60},
+      {"id": "row", "label": "Row", "kind": "row", "sort_order": 65},
+      {"id": "run", "label": "Run", "kind": "run", "sort_order": 70}
+    ],
+    "formulas": {
+      "physical": "atk - def / 2 + power",
+      "magic": "power + matk - mdef / 2",
+      "hit": "0.95 + (agi - target_eva) / 200",
+      "crit": "0.05 + lck / 200",
+      "crit_multiplier": 1.5
+    },
+    "boss_scaling": {
+      "enabled": true,
+      "hp_multiplier": 1.2,
+      "stat_multiplier": 1.1
+    },
+    "rows": {
+      "enabled": true,
+      "allow_battle_switch": true,
+      "back_row_attack_multiplier": 0.5,
+      "back_row_defense_multiplier": 0.5,
+      "ranged_weapon_categories": ["bow", "crossbow", "gun"],
+      "battle_shift": 2
+    }
+  },
+  "party_mode": "preset_rename",
+  "party_create": {
+    "starting_level": 1,
+    "name_length": 12
+  },
+  "exp_curve": {
+    "mode": "table",
+    "table": [0, 20, 60, 120, 200, 300, 420, 560, 720, 900],
+    "max_level": 10
+  },
+  "inventory": {
+    "max_stack": 99,
+    "items": [
+      {"id": "potion", "qty": 5},
+      {"id": "ether", "qty": 2},
+      {"id": "revival_ring", "qty": 1},
+      {"id": "stew_recipe", "qty": 1},
+      {"id": "raw_fish", "qty": 2},
+      {"id": "herb_bundle", "qty": 1}
+    ],
+    "equipment": [
+      {"id": "bronze_sword", "qty": 2},
+      {"id": "oak_staff", "qty": 1},
+      {"id": "bronze_armor", "qty": 2},
+      {"id": "linen_robe", "qty": 1}
+    ]
+  },
+  "systems": {
+    "items": true,
+    "magic": true,
+    "equipment": true,
+    "status": true,
+    "party": true,
+    "gameplay_stats": true,
+    "jobs": true,
+    "journal": true,
+    "fast_travel": true,
+    "overworld_map": true,
+    "save": true,
+    "settings": true,
+    "cooking": true,
+    "summons": false
+  },
+  "save": {
+    "slots_max": 10
+  },
+  "settings": {
+    "autosave_enabled": {
+      "value": true,
+      "visible": true,
+      "editable": true
+    },
+    "readiness_speed": {
+      "value": 2.5,
+      "min": 0.5,
+      "max": 5.0,
+      "step": 0.5,
+      "visible": true,
+      "editable": true
+    },
+    "battle_mode": {
+      "value": "dynamic_wait",
+      "options": ["dynamic_wait", "dynamic"],
+      "visible": true,
+      "editable": true
+    }
+  },
+  "render": {
+    "min_art_width": 90,
+    "min_art_height": 30,
+    "palette": "terminal"
+  },
+  "stats": {
+    "track": [
+      "time_played",
+      "enemies_defeated",
+      "max_damage",
+      "jobs_unlocked",
+      "crystals_collected",
+      "dungeons_cleared"
+    ]
+  },
+  "job_system": {
+    "progression_mode": "job",
+    "secondary_jobs": true,
+    "jp_mode": "earn",
+    "job_exp_curve": {
+      "mode": "table",
+      "table": [0, 5, 15, 30, 50, 75, 105, 140, 180, 225],
+      "max_level": 10
+    }
+  }
+}

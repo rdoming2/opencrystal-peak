@@ -1,0 +1,218 @@
+{
+  "version": 1,
+  "jobs": [
+    {
+      "id": "shallot_knight",
+      "name": "Shallot Knight",
+      "description": "A balanced knight combining offense and support.",
+      "magic_schools": ["white"],
+      "stats": {"hp": 24, "mp": 4, "str": 4, "int": 4, "vit": 4, "agi": 5, "lck": 4},
+      "growth": {
+        "mode": "formula",
+        "per_level": {
+          "hp": "2 + vit",
+          "mp": "1",
+          "str": "1",
+          "vit": "1",
+          "agi": "1",
+          "int": "1",
+          "lck": "1"
+        }
+      },
+      "equipment": {"weapons": ["sword", "staff"], "armor": ["plate", "robe"]},
+      "equipment_slots": ["weapon", "armor"],
+      "accessory_slots": 1,
+      "can_dual_wield": true,
+      "stat_modifiers": {
+        "str": {"add": 0, "mult": 1.0},
+        "int": {"add": 0, "mult": 1.0}
+      },
+      "starting_equipment": {
+        "weapon": "bronze_sword",
+        "armor": "bronze_armor"
+      },
+      "sprite": {"glyph": "@", "palette": "bright_cyan"},
+      "art": {"lines": [" O ", "<|]", "/ \\"], "palette": "white"},
+      "unlock_flag": null,
+      "is_default": true,
+      "sort_order": 0,
+      "spells": [],
+      "commands": ["magic", "abilities"]
+    },
+    {
+      "id": "fighter",
+      "name": "Fighter",
+      "description": "A brute force combatant who focuses on heavy blows.",
+      "magic_schools": [],
+      "stats": {"hp": 30, "mp": 0, "str": 8, "int": 2, "vit": 6, "agi": 3, "lck": 3},
+      "growth": {
+        "mode": "formula",
+        "per_level": {
+          "hp": "6 + vit",
+          "mp": "0",
+          "str": "2",
+          "vit": "2",
+          "agi": "1",
+          "int": "0",
+          "lck": "1"
+        }
+      },
+      "equipment": {"weapons": ["sword"], "armor": ["plate"]},
+      "equipment_slots": ["weapon", "armor"],
+      "accessory_slots": 1,
+      "can_dual_wield": false,
+      "stat_modifiers": {
+        "str": {"add": 2, "mult": 1.05},
+        "int": {"add": -1, "mult": 0.95}
+      },
+      "starting_equipment": {
+        "weapon": "bronze_sword",
+        "armor": "bronze_armor"
+      },
+      "sprite": {"glyph": "F", "palette": "bright_cyan"},
+      "art": {"lines": [" o ", "==|\\", "/ \\"], "palette": "bright_cyan"},
+      "unlock_flag": "job.fighter_unlocked",
+      "is_default": false,
+      "sort_order": 10,
+      "spells": [],
+      "abilities": [
+        {"id": "power_strike", "level": 2, "unlock_level": 2},
+        {"id": "coin_toss", "level": 3, "unlock_level": 3, "jp_cost": 8},
+        {"id": "cover", "level": 1, "unlock_level": 4, "jp_cost": 10}
+      ],
+      "commands": ["abilities"]
+    },
+    {
+      "id": "white_mage",
+      "name": "White Mage",
+      "description": "Support caster able to keep allies alive.",
+      "magic_schools": ["white"],
+      "stats": {"hp": 20, "mp": 10, "str": 2, "int": 8, "vit": 3, "agi": 4, "lck": 4},
+      "growth": {
+        "mode": "formula",
+        "per_level": {
+          "hp": "3 + ROUND(RAND(-1,1))",
+          "mp": "2 + ROUND(RAND(0,1) * 3)",
+          "str": "0",
+          "vit": "1",
+          "agi": "1",
+          "int": "2",
+          "lck": "1"
+        }
+      },
+      "equipment": {"weapons": ["staff"], "armor": ["robe"]},
+      "equipment_slots": ["weapon", "armor"],
+      "accessory_slots": 1,
+      "can_dual_wield": false,
+      "stat_modifiers": {
+        "int": {"add": 2, "mult": 1.05},
+        "str": {"add": -1, "mult": 0.9}
+      },
+      "starting_equipment": {
+        "weapon": "oak_staff",
+        "armor": "linen_robe"
+      },
+      "sprite": {"glyph": "W", "palette": "bright_cyan"},
+      "art": {"lines": ["(o)", "†| ", "/_\\"], "palette": "white"},
+      "unlock_flag": "job.white_mage_unlocked",
+      "is_default": false,
+      "sort_order": 20,
+      "magic_slots": {
+        "1": [3, 4, 4, 5, 6],
+        "2": [0, 0, 1, 1, 2],
+        "3": [0, 0, 0, 1, 1]
+      },
+      "spells": [
+        {"id": "cure", "level": 1, "unlock_level": 1},
+        {"id": "scan", "level": 1, "unlock_level": 2}
+      ],
+      "commands": ["magic"]
+    },
+    {
+      "id": "black_mage",
+      "name": "Black Mage",
+      "description": "Master of elemental destruction.",
+      "magic_schools": ["black"],
+      "stats": {"hp": 18, "mp": 12, "str": 2, "int": 9, "vit": 2, "agi": 4, "lck": 4},
+      "growth": {
+        "mode": "formula",
+        "per_level": {
+          "hp": "2 + ROUND(RAND(-1,1))",
+          "mp": "3 + ROUND(RAND(0,1) * 3)",
+          "str": "0",
+          "vit": "0",
+          "agi": "1",
+          "int": "2",
+          "lck": "1"
+        }
+      },
+      "equipment": {"weapons": ["staff"], "armor": ["robe"]},
+      "equipment_slots": ["weapon", "armor"],
+      "accessory_slots": 1,
+      "can_dual_wield": false,
+      "stat_modifiers": {
+        "int": {"add": 2, "mult": 1.05},
+        "str": {"add": -1, "mult": 0.9}
+      },
+      "starting_equipment": {
+        "weapon": "oak_staff",
+        "armor": "linen_robe"
+      },
+      "sprite": {"glyph": "B", "palette": "bright_cyan"},
+      "art": {"lines": ["*o ", "\\| ", "/_\\"], "palette": "bright_magenta"},
+      "unlock_flag": "job.black_mage_unlocked",
+      "is_default": false,
+      "sort_order": 30,
+      "magic_slots": {
+        "1": [2, 3, 4, 4, 5],
+        "2": [0, 1, 1, 2, 2],
+        "3": [0, 0, 0, 1, 1]
+      },
+      "spells": [
+        {"id": "fire", "level": 1, "unlock_level": 1},
+        {"id": "blizzard", "level": 1, "unlock_level": 2},
+        {"id": "thunder", "level": 1, "unlock_level": 3}
+      ],
+      "commands": ["magic"]
+    },
+    {
+      "id": "monk",
+      "name": "Monk",
+      "description": "A disciplined brawler who thrives without weapons.",
+      "magic_schools": [],
+      "stats": {"hp": 28, "mp": 2, "str": 6, "int": 2, "vit": 5, "agi": 6, "lck": 4},
+      "growth": {
+        "mode": "formula",
+        "per_level": {
+          "hp": "4 + vit",
+          "mp": "0",
+          "str": "2",
+          "vit": "2",
+          "agi": "2",
+          "int": "0",
+          "lck": "1"
+        }
+      },
+      "equipment": {"weapons": ["fist"], "armor": ["robe"]},
+      "equipment_slots": ["weapon", "armor"],
+      "accessory_slots": 1,
+      "can_dual_wield": false,
+      "stat_modifiers": {
+        "str": {"add": 1, "mult": 1.05},
+        "agi": {"add": 1, "mult": 1.05},
+        "int": {"add": -1, "mult": 0.95}
+      },
+      "sprite": {"glyph": "M", "palette": "bright_cyan"},
+      "art": {"lines": [" o ", "<|>", "/ \\"], "palette": "bright_yellow"},
+      "unlock_flag": "job.monk_unlocked",
+      "is_default": false,
+      "sort_order": 40,
+      "spells": [],
+      "abilities": [
+        {"id": "pummel", "level": 1, "unlock_level": 1},
+        {"id": "counter", "level": 1, "unlock_level": 4, "jp_cost": 10}
+      ],
+      "commands": ["abilities"]
+    }
+  ]
+}

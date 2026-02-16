@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "shops": [
+    {
+      "id": "tinker_wares",
+      "name": "Tinker Wares",
+      "currency": "gil",
+      "inventory": [
+        {"item": "potion", "price": 50}
+      ]
+    },
+    {
+      "id": "town_outfitter",
+      "name": "Town Outfitter",
+      "currency": "gil",
+      "inventory": [
+        {"item": "potion", "price": 50},
+        {"item": "warp_scroll", "price": 200},
+        {"item": "bronze_sword", "price": 200},
+        {"item": "oak_staff", "price": 180},
+        {"item": "bronze_armor", "price": 220},
+        {"item": "linen_robe", "price": 160}
+      ]
+    },
+    {
+      "id": "farm_produce",
+      "name": "Farm Produce",
+      "currency": "gil",
+      "inventory": [
+        {"item": "raw_fish", "price": 20},
+        {"item": "herb_bundle", "price": 15}
+      ]
+    }
+  ]
+}

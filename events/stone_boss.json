@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "id": "stone_boss",
+  "steps": [
+    {
+      "type": "start_battle",
+      "formation": [
+        {"enemy": "stone_colossus", "pos": [4, 2]}
+      ]
+    },
+    {"type": "npc_hide", "npc": "boss_stone"},
+    {"type": "wait", "ms": 120},
+    {"type": "npc_show", "npc": "boss_stone"},
+    {"type": "wait", "ms": 120},
+    {"type": "npc_hide", "npc": "boss_stone"},
+    {"type": "narration", "text": "The Stone rune stone pulses with renewed strength."},
+    {"type": "set_flag", "flag": "dungeon.stone_cleared"},
+    {"type": "stat_add", "stat": "dungeons_cleared", "value": 1},
+    {"type": "set_flag", "flag": "quest.rune_stones.stone"},
+    {"type": "stat_add", "stat": "crystals_collected", "value": 1},
+    {"type": "set_flag", "flag": "job.fighter_unlocked"},
+    {"type": "stat_add", "stat": "jobs_unlocked", "value": 1},
+    {"type": "narration", "text": "Job unlocked: Fighter."},
+    {"type": "set_flag", "flag": "system.job_change_unlocked"}
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "id": "farm_merchant",
+  "nodes": [
+    {
+      "id": "start",
+      "speaker": "Farm Merchant",
+      "text": "Fresh bundles and catch from the fields.",
+      "actions": [
+        {"type": "open_shop", "shop": "farm_produce"}
+      ],
+      "choices": [
+        {"label": "Thanks", "next": "end"}
+      ]
+    },
+    {"id": "end", "text": "Come back when you need supplies."}
+  ]
+}

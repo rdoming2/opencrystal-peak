@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "id": "town_historian",
+  "nodes": [
+    {
+      "id": "start",
+      "speaker": "Harbor Historian",
+      "text": "Long ago, shards of the Tide Crystal sank beneath the harbor caves. It's a side tale, but a worthy one.",
+      "choices": [
+        {"label": "Tell me more", "next": "quest"},
+        {
+          "label": "I found the shards",
+          "next": "turn_in",
+          "requires_flags": ["quest.tide_shards.find_shards"]
+        },
+        {"label": "Farewell", "next": "end"}
+      ]
+    },
+    {
+      "id": "quest",
+      "speaker": "Harbor Historian",
+      "text": "If you find any shards, bring them back and I'll record your name in the ledger.",
+      "actions": [
+        {"type": "set_flag", "flag": "quest.tide_shards.started"}
+      ],
+      "choices": [
+        {"label": "I'll search", "next": "end"}
+      ]
+    },
+    {
+      "id": "turn_in",
+      "speaker": "Harbor Historian",
+      "text": "Let me see your findings.",
+      "actions": [
+        {"type": "start_event", "event": "tide_shards_reward"}
+      ],
+      "choices": [
+        {"label": "Of course", "next": "end"}
+      ]
+    },
+    {
+      "id": "end",
+      "text": "May the tide guide you."
+    }
+  ]
+}

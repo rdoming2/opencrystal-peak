@@ -1,0 +1,110 @@
+{
+  "version": 1,
+  "layout": {
+    "left_width_ratio": 0.4,
+    "right_width_ratio": 0.6
+  },
+  "default_panel": "party_status",
+  "menu": [
+    {
+      "id": "items",
+      "label": "Items",
+      "action": "items",
+      "system": "items"
+    },
+    {
+      "id": "magic",
+      "label": "Magic",
+      "action": "magic",
+      "system": "magic"
+    },
+    {
+      "id": "abilities",
+      "label": "Abilities",
+      "action": "abilities"
+    },
+    {
+      "id": "equipment",
+      "label": "Equipment",
+      "action": "equipment",
+      "system": "equipment"
+    },
+    {
+      "id": "status",
+      "label": "Status",
+      "action": "status",
+      "system": "status"
+    },
+    {
+      "id": "gameplay_stats",
+      "label": "Gameplay Stats",
+      "action": "gameplay_stats",
+      "system": "gameplay_stats"
+    },
+    {
+      "id": "party",
+      "label": "Party",
+      "action": "party",
+      "system": "party"
+    },
+    {
+      "id": "jobs",
+      "label": "Jobs",
+      "action": "jobs",
+      "system": "jobs",
+      "unlock_flag": "system.job_change_unlocked",
+      "locked_behavior": "disable"
+    },
+    {
+      "id": "summons",
+      "label": "Summons",
+      "action": "summons",
+      "system": "summons",
+      "locked_behavior": "disable"
+    },
+    {
+      "id": "journal",
+      "label": "Journal",
+      "action": "journal",
+      "system": "journal"
+    },
+    {
+      "id": "overworld_map",
+      "label": "Overworld Map",
+      "action": "overworld_map",
+      "system": "overworld_map"
+    },
+    {
+      "id": "save",
+      "label": "Save",
+      "action": "save",
+      "system": "save",
+      "locked_behavior": "disable"
+    },
+    {
+      "id": "settings",
+      "label": "Settings",
+      "action": "settings",
+      "system": "settings"
+    },
+    {
+      "id": "exit",
+      "label": "Exit",
+      "action": "exit",
+      "enabled": true
+    }
+  ],
+  "panels": [
+    {
+      "id": "party_status",
+      "title": "Party",
+      "type": "party_summary"
+    },
+    {
+      "id": "gameplay_stats",
+      "title": "Gameplay Stats",
+      "type": "progress",
+      "source": "ui/gameplay_stats.json"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "id": "dragon_boss",
+  "steps": [
+    {
+      "type": "start_battle",
+      "formation": [
+        {"enemy": "ancient_dragon", "pos": [4, 2]}
+      ]
+    },
+    {"type": "narration", "text": "The dragon bows its horned head and the island grows still."},
+    {"type": "narration", "text": "A new path opens across the skies. Fast travel is now available."},
+    {"type": "set_flag", "flag": "world.fast_travel_unlocked"},
+    {"type": "set_flag", "flag": "dungeon.dragon_cleared"},
+    {"type": "stat_add", "stat": "dungeons_cleared", "value": 1},
+    {"type": "set_flag", "flag": "quest.rune_stones.dragon"},
+    {"type": "npc_hide", "npc": "boss_dragon"},
+    {"type": "npc_show", "npc": "boss_dragon_after"}
+  ]
+}

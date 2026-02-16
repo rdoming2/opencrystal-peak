@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "id": "dungeon_gale_spire",
+  "name": "Gale Spire - Floor 3",
+  "world": "gaia",
+  "width": 24,
+  "height": 12,
+  "tiles": [
+    "########################",
+    "#......................#",
+    "#....####..........#...#",
+    "#....#..#..........#...#",
+    "#....#..#..........#...#",
+    "#....####.......####...#",
+    "#......................#",
+    "#....####.......####...#",
+    "#....#..#.......#..#...#",
+    "#....####.......####...#",
+    "#......................#",
+    "########################"
+  ],
+  "legend": {
+    "#": {"tile": "wall", "passable": false, "palette": "bright_black"},
+    ".": {"tile": "floor", "passable": true, "palette": "bright_cyan"},
+    " ": {"tile": "floor", "passable": true, "palette": "bright_cyan"}
+  },
+  "encounters": [
+    {
+      "zone_id": "gale_spire",
+      "rect": [0, 0, 24, 12],
+      "table": "gale_spire"
+    }
+  ],
+  "encounter_rate": 0.12,
+  "events": [],
+  "npcs": [
+    {"id": "boss_gale", "pos": [18, 4]}
+  ],
+  "shops": [],
+  "allow_save": false,
+  "save_points": [[16, 4]],
+  "transitions": [
+    {
+      "id": "gale_spire_down",
+      "pos": [2, 2],
+      "target_map": "dungeon_gale_lift",
+      "target_pos": [20, 8],
+      "return_to_last": true,
+      "glyph": "<",
+      "palette": "bright_cyan"
+    }
+  ]
+}

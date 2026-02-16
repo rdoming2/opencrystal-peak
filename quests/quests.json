@@ -1,0 +1,116 @@
+{
+  "version": 1,
+  "categories": [
+    {
+      "id": "main",
+      "label": "Main Quests",
+      "sort_order": 10
+    },
+    {
+      "id": "side",
+      "label": "Side Quests",
+      "sort_order": 20
+    }
+  ],
+  "quests": [
+    {
+      "id": "rune_stones",
+      "title": "Runes of Gaia",
+      "category_id": "main",
+      "steps": [
+        {
+          "id": "started",
+          "text": "Speak with the mayor of Coral Town about the rune stones.",
+          "flag": "quest.rune_stones.started"
+        },
+        {
+          "id": "ember",
+          "text": "Reignite the Ember rune stone in the caverns.",
+          "flag": "quest.rune_stones.ember"
+        },
+        {
+          "id": "tide",
+          "text": "Reignite the Tide rune stone in the grotto.",
+          "flag": "quest.rune_stones.tide"
+        },
+        {
+          "id": "gale",
+          "text": "Reignite the Gale rune stone in the spire.",
+          "flag": "quest.rune_stones.gale"
+        },
+        {
+          "id": "stone",
+          "text": "Reignite the Stone rune stone in the vault.",
+          "flag": "quest.rune_stones.stone"
+        },
+        {
+          "id": "airship",
+          "text": "Meet the Sky Tinker after the four rune stones are restored.",
+          "flag": "quest.rune_stones.airship",
+          "show_flag": "quest.rune_stones.stone"
+        },
+        {
+          "id": "dragon",
+          "text": "Defeat the dragon in the bonus dungeon.",
+          "flag": "quest.rune_stones.dragon",
+          "show_flag": "quest.rune_stones.airship"
+        }
+      ]
+    },
+    {
+      "id": "tide_shards",
+      "title": "Shards of the Tide",
+      "category_id": "side",
+      "steps": [
+        {
+          "id": "started",
+          "text": "Speak with the Harbor Historian about the Tide Crystal shards.",
+          "flag": "quest.tide_shards.started"
+        },
+        {
+          "id": "find_shards",
+          "text": "Find the Tide shards in the harbor caves.",
+          "flag": "quest.tide_shards.find_shards",
+          "substeps": [
+            {
+              "id": "cave_1",
+              "text": "Search the northern cave.",
+              "flag": "quest.tide_shards.cave_1",
+              "show_flag": "quest.tide_shards.find_shards"
+            },
+            {
+              "id": "cave_2",
+              "text": "Search the southern cave.",
+              "flag": "quest.tide_shards.cave_2",
+              "show_flag": "quest.tide_shards.find_shards"
+            }
+          ]
+        },
+        {
+          "id": "return_shards",
+          "text": "Return the shards to the Harbor Historian.",
+          "flag": "quest.tide_shards.return_shards",
+          "show_flag": "quest.tide_shards.find_shards"
+        }
+      ]
+    },
+    {
+      "id": "lost_cat",
+      "title": "The Lost Cat",
+      "category_id": "side",
+      "steps": [
+        {
+          "id": "find_cat",
+          "text": "Find the missing cat in the alley.",
+          "flag": "quest.lost_cat.find_cat"
+        },
+        {
+          "id": "return_cat",
+          "text": "Return the cat to the innkeeper.",
+          "flag": "quest.lost_cat.return_cat",
+          "show_flag": "quest.lost_cat.find_cat"
+        }
+      ]
+    }
+  ]
+}

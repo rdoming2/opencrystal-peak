@@ -1,0 +1,217 @@
+{
+  "version": 1,
+  "elements": [
+    {"id": "fire", "label": "Fire"},
+    {"id": "ice", "label": "Ice"},
+    {"id": "lightning", "label": "Lightning"}
+  ],
+  "effects": [
+    {
+      "id": "apply_poison",
+      "label": "Apply Poison",
+      "kind": "apply_status",
+      "status": "poison",
+      "chance": 1.0
+    },
+    {
+      "id": "apply_paralysis",
+      "label": "Apply Paralysis",
+      "kind": "apply_status",
+      "status": "paralysis",
+      "chance": 1.0
+    },
+    {
+      "id": "apply_sleep",
+      "label": "Apply Sleep",
+      "kind": "apply_status",
+      "status": "sleep",
+      "chance": 1.0
+    },
+    {
+      "id": "apply_stone",
+      "label": "Apply Stone",
+      "kind": "apply_status",
+      "status": "stone",
+      "chance": 1.0
+    },
+    {
+      "id": "apply_protect",
+      "label": "Apply Protect",
+      "kind": "apply_status",
+      "status": "protect",
+      "chance": 1.0
+    },
+    {
+      "id": "apply_shell",
+      "label": "Apply Shell",
+      "kind": "apply_status",
+      "status": "shell",
+      "chance": 1.0
+    },
+    {
+      "id": "poison_tick",
+      "label": "Poison Tick",
+      "kind": "poison_tick",
+      "percent": 0.1
+    },
+    {
+      "id": "paralysis_skip",
+      "label": "Paralysis Skip",
+      "kind": "skip_turn",
+      "chance": 0.4
+    },
+    {
+      "id": "sleep_skip",
+      "label": "Sleep Skip",
+      "kind": "skip_turn",
+      "chance": 1.0
+    },
+    {
+      "id": "stone_immobile",
+      "label": "Stone Immobile",
+      "kind": "immobile"
+    },
+    {
+      "id": "protect_physical",
+      "label": "Protect Physical",
+      "kind": "damage_multiplier",
+      "damage_kind": "physical",
+      "multiplier": 0.5
+    },
+    {
+      "id": "shell_magic",
+      "label": "Shell Magic",
+      "kind": "damage_multiplier",
+      "damage_kind": "magic",
+      "multiplier": 0.5
+    },
+    {
+      "id": "undead_healing_inversion",
+      "label": "Undead Healing Inversion",
+      "kind": "healing_inversion"
+    },
+    {
+      "id": "resist_fire",
+      "label": "Resist Fire",
+      "kind": "element_multiplier",
+      "element": "fire",
+      "multiplier": 0.5
+    },
+    {
+      "id": "weak_fire",
+      "label": "Weak Fire",
+      "kind": "element_multiplier",
+      "element": "fire",
+      "multiplier": 1.5
+    },
+    {
+      "id": "resist_ice",
+      "label": "Resist Ice",
+      "kind": "element_multiplier",
+      "element": "ice",
+      "multiplier": 0.5
+    },
+    {
+      "id": "weak_ice",
+      "label": "Weak Ice",
+      "kind": "element_multiplier",
+      "element": "ice",
+      "multiplier": 1.5
+    },
+    {
+      "id": "resist_lightning",
+      "label": "Resist Lightning",
+      "kind": "element_multiplier",
+      "element": "lightning",
+      "multiplier": 0.5
+    },
+    {
+      "id": "weak_lightning",
+      "label": "Weak Lightning",
+      "kind": "element_multiplier",
+      "element": "lightning",
+      "multiplier": 1.5
+    }
+  ],
+  "statuses": [
+    {
+      "id": "poison",
+      "label": "Poison",
+      "short": "PSN",
+      "default_duration": 4,
+      "reapply": "refresh",
+      "tick": "turn_start",
+      "clear_on_battle_end": false,
+      "effects": ["poison_tick"]
+    },
+    {
+      "id": "paralysis",
+      "label": "Paralysis",
+      "short": "PRL",
+      "default_duration": 3,
+      "reapply": "refresh",
+      "tick": "turn_start",
+      "clear_on_battle_end": true,
+      "effects": ["paralysis_skip"]
+    },
+    {
+      "id": "sleep",
+      "label": "Sleep",
+      "short": "SLP",
+      "default_duration": 3,
+      "reapply": "refresh",
+      "tick": "turn_start",
+      "effects": ["sleep_skip"]
+    },
+    {
+      "id": "stone",
+      "label": "Stone",
+      "short": "STN",
+      "default_duration": 3,
+      "reapply": "refresh",
+      "tick": "turn_start",
+      "effects": ["stone_immobile"]
+    },
+    {
+      "id": "protect",
+      "label": "Protect",
+      "short": "PRO",
+      "default_duration": 4,
+      "reapply": "refresh",
+      "tick": "turn_start",
+      "clear_on_battle_end": true,
+      "effects": ["protect_physical"]
+    },
+    {
+      "id": "shell",
+      "label": "Shell",
+      "short": "SHL",
+      "default_duration": 4,
+      "reapply": "refresh",
+      "tick": "turn_start",
+      "clear_on_battle_end": true,
+      "effects": ["shell_magic"]
+    }
+  ],
+  "traits": [
+    {"id": "beast", "label": "Beast", "effects": []},
+    {"id": "dragon", "label": "Dragon", "effects": []},
+    {"id": "boss", "label": "Boss", "effects": []},
+    {"id": "elemental", "label": "Elemental", "effects": []},
+    {"id": "undead", "label": "Undead", "effects": ["undead_healing_inversion"]},
+    {"id": "resist_fire", "label": "Resist Fire", "effects": ["resist_fire"]},
+    {"id": "weak_fire", "label": "Weak Fire", "effects": ["weak_fire"]},
+    {"id": "resist_ice", "label": "Resist Ice", "effects": ["resist_ice"]},
+    {"id": "weak_ice", "label": "Weak Ice", "effects": ["weak_ice"]},
+    {
+      "id": "resist_lightning",
+      "label": "Resist Lightning",
+      "effects": ["resist_lightning"]
+    },
+    {
+      "id": "weak_lightning",
+      "label": "Weak Lightning",
+      "effects": ["weak_lightning"]
+    }
+  ]
+}

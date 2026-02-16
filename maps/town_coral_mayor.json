@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "id": "town_coral_mayor",
+  "name": "Mayor's House",
+  "world": "gaia",
+  "width": 16,
+  "height": 10,
+  "tiles": [
+    "################",
+    "#....dddddd....#",
+    "#....d....d....#",
+    "#....rrrrrr....#",
+    "#....rrrrrr....#",
+    "#....rr==rr....#",
+    "#....rrrrrr....#",
+    "#....rrrrrr....#",
+    "#..............#",
+    "########.#######"
+  ],
+  "legend": {
+    "#": {"tile": "wall", "passable": false, "palette": "bright_black"},
+    ".": {"tile": "floor", "passable": true, "palette": "bright_yellow"},
+    "=": {"tile": "table", "passable": false, "palette": "bright_black"},
+    "d": {"tile": "desk", "passable": false, "palette": "bright_black"},
+    "r": {"tile": "rug", "passable": true, "palette": "bright_red"}
+  },
+  "encounters": [],
+  "encounter_rate": 0.0,
+  "events": [],
+  "npcs": [
+    {"id": "town_mayor", "pos": [8, 4]}
+  ],
+  "chests": [
+    {
+      "id": "mayor_stash",
+      "pos": [3, 1],
+      "glyph_closed": "▣",
+      "glyph_open": "▢",
+      "palette": "bright_yellow",
+      "opened_flag": "town.mayor_stash_opened",
+      "loot": {
+        "items": [{"id": "potion", "qty": 1}],
+        "equipment": [{"id": "bronze_armor", "qty": 1}],
+        "currency": [{"id": "gil", "amount": 25}]
+      }
+    }
+  ],
+  "shops": [],
+  "allow_save": true,
+  "save_points": [],
+  "transitions": [
+    {
+      "id": "to_town",
+      "pos": [8, 9],
+      "target_map": "town_coral",
+      "target_pos": [35, 25],
+      "return_to_last": false,
+      "glyph": "<",
+      "palette": "bright_cyan"
+    }
+  ]
+}

@@ -1,0 +1,276 @@
+{
+  "version": 1,
+  "tables": [
+    {
+      "id": "gaia_grasslands",
+      "entries": [
+        {
+          "weight": 60,
+          "formation": [
+            {"enemy": "imp", "pos": [0, 1]},
+            {"enemy": "imp", "pos": [1, 2]}
+          ]
+        },
+        {
+          "weight": 40,
+          "formation": [
+            {"enemy": "wisp", "pos": [2, 1]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ember_shallows",
+      "entries": [
+        {
+          "weight": 60,
+          "formation": [
+            {"enemy": "cinderling", "pos": [0, 1]},
+            {"enemy": "cinderling", "pos": [1, 2]}
+          ]
+        },
+        {
+          "weight": 40,
+          "formation": [
+            {"enemy": "ash_wolf", "pos": [2, 2]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ember_depths",
+      "entries": [
+        {
+          "weight": 50,
+          "formation": [
+            {"enemy": "cinderling", "pos": [0, 1]},
+            {"enemy": "ash_wolf", "pos": [2, 2]}
+          ]
+        },
+        {
+          "weight": 50,
+          "formation": [
+            {"enemy": "ash_wolf", "pos": [1, 2]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ember_core",
+      "entries": [
+        {
+          "weight": 70,
+          "formation": [
+            {"enemy": "ash_wolf", "pos": [1, 2]}
+          ]
+        },
+        {
+          "weight": 30,
+          "formation": [
+            {"enemy": "cinderling", "pos": [0, 1]},
+            {"enemy": "ash_wolf", "pos": [2, 2]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tide_shallows",
+      "entries": [
+        {
+          "weight": 60,
+          "formation": [
+            {"enemy": "reef_mite", "pos": [0, 1]},
+            {"enemy": "reef_mite", "pos": [1, 2]}
+          ]
+        },
+        {
+          "weight": 40,
+          "formation": [
+            {"enemy": "brine_wisp", "pos": [2, 1]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tide_depths",
+      "entries": [
+        {
+          "weight": 50,
+          "formation": [
+            {"enemy": "reef_mite", "pos": [0, 1]},
+            {"enemy": "brine_wisp", "pos": [2, 1]}
+          ]
+        },
+        {
+          "weight": 50,
+          "formation": [
+            {"enemy": "brine_wisp", "pos": [1, 2]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tide_sanctum",
+      "entries": [
+        {
+          "weight": 70,
+          "formation": [
+            {"enemy": "brine_wisp", "pos": [1, 2]}
+          ]
+        },
+        {
+          "weight": 30,
+          "formation": [
+            {"enemy": "reef_mite", "pos": [0, 1]},
+            {"enemy": "brine_wisp", "pos": [2, 1]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gale_shallows",
+      "entries": [
+        {
+          "weight": 60,
+          "formation": [
+            {"enemy": "sky_sylph", "pos": [0, 1]},
+            {"enemy": "storm_raven", "pos": [2, 2]}
+          ]
+        },
+        {
+          "weight": 40,
+          "formation": [
+            {"enemy": "storm_raven", "pos": [1, 2]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gale_lift",
+      "entries": [
+        {
+          "weight": 50,
+          "formation": [
+            {"enemy": "sky_sylph", "pos": [0, 1]},
+            {"enemy": "sky_sylph", "pos": [1, 2]}
+          ]
+        },
+        {
+          "weight": 50,
+          "formation": [
+            {"enemy": "storm_raven", "pos": [2, 2]},
+            {"enemy": "storm_raven", "pos": [1, 1]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gale_spire",
+      "entries": [
+        {
+          "weight": 70,
+          "formation": [
+            {"enemy": "sky_sylph", "pos": [0, 1]},
+            {"enemy": "storm_raven", "pos": [2, 2]}
+          ]
+        },
+        {
+          "weight": 30,
+          "formation": [
+            {"enemy": "storm_raven", "pos": [1, 2]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stone_shallows",
+      "entries": [
+        {
+          "weight": 60,
+          "formation": [
+            {"enemy": "oreling", "pos": [0, 1]},
+            {"enemy": "oreling", "pos": [1, 2]}
+          ]
+        },
+        {
+          "weight": 40,
+          "formation": [
+            {"enemy": "basalt_turtle", "pos": [2, 2]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stone_crypt",
+      "entries": [
+        {
+          "weight": 50,
+          "formation": [
+            {"enemy": "oreling", "pos": [0, 1]},
+            {"enemy": "basalt_turtle", "pos": [2, 2]}
+          ]
+        },
+        {
+          "weight": 50,
+          "formation": [
+            {"enemy": "basalt_turtle", "pos": [1, 2]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stone_core",
+      "entries": [
+        {
+          "weight": 70,
+          "formation": [
+            {"enemy": "basalt_turtle", "pos": [1, 2]}
+          ]
+        },
+        {
+          "weight": 30,
+          "formation": [
+            {"enemy": "oreling", "pos": [0, 1]},
+            {"enemy": "basalt_turtle", "pos": [2, 2]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dragon_path",
+      "entries": [
+        {
+          "weight": 60,
+          "formation": [
+            {"enemy": "wyrmkin", "pos": [0, 1]},
+            {"enemy": "wyrmkin", "pos": [1, 2]}
+          ]
+        },
+        {
+          "weight": 40,
+          "formation": [
+            {"enemy": "ember_drake", "pos": [2, 2]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dragon_lair",
+      "entries": [
+        {
+          "weight": 70,
+          "formation": [
+            {"enemy": "ember_drake", "pos": [1, 2]}
+          ]
+        },
+        {
+          "weight": 30,
+          "formation": [
+            {"enemy": "wyrmkin", "pos": [0, 1]},
+            {"enemy": "ember_drake", "pos": [2, 2]}
+          ]
+        }
+      ]
+    }
+  ]
+}

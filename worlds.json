@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "worlds": [
+    {
+      "id": "gaia",
+      "name": "Gaia",
+      "starting_map": "overworld_gaia",
+      "overworld_map_id": "overworld_gaia",
+      "vehicles": ["ship", "airship"],
+      "fast_travel": {
+        "enabled": true,
+        "requires_flag": "world.fast_travel_unlocked"
+      },
+      "links": []
+    }
+  ]
+}

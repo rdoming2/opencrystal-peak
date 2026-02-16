@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "breakpoints": [
+    {
+      "id": "compact",
+      "min_width": 0,
+      "min_height": 0,
+      "behavior": {
+        "enemy_art": "glyph",
+        "hide_panel_titles": true
+      }
+    },
+    {
+      "id": "standard",
+      "min_width": 90,
+      "min_height": 34,
+      "behavior": {
+        "enemy_art": "auto",
+        "hide_panel_titles": false
+      }
+    }
+  ],
+  "layout": {
+    "battlefield": {"anchor": "top", "height_ratio": 0.6},
+    "command_row": {
+      "anchor": "bottom",
+      "height_ratio": 0.4,
+      "columns": [
+        {"id": "enemies", "width_ratio": 0.3},
+        {"id": "commands", "width_ratio": 0.3},
+        {"id": "party", "width_ratio": 0.4}
+      ]
+    },
+    "party_grid": {
+      "rows": 4
+    }
+  },
+  "log": {
+    "position": "pane_top",
+    "height": 3,
+    "auto_advance_ms": 700,
+    "allow_skip": true
+  },
+  "animation": {
+    "flash_ms": 150,
+    "flash_cycles": 2
+  },
+  "panels": {
+    "enemies": {"title": "Enemies", "highlight": {"style": "invert", "link_to_battlefield": true}},
+    "commands": {"title": "Commands", "items": ["Attack", "Magic", "Abilities", "Items", "Defend", "Run"], "page_size": 5},
+    "party": {"title": "Party", "show": ["hp", "mp", "readiness", "status"], "highlight": {"style": "underline", "link_to_battlefield": true}}
+  },
+  "menus": {
+    "attack": {"target": "enemy"},
+    "magic": {
+      "list": "spells",
+      "group_by": "school",
+      "columns": [
+        {"id": "name", "label": "Spell"},
+        {"id": "cost", "label": "Cost"}
+      ],
+      "target_from_spell": true
+    },
+    "abilities": {
+      "list": "abilities",
+      "columns": [
+        {"id": "name", "label": "Ability"},
+        {"id": "cost", "label": "Cost"}
+      ],
+      "target_from_ability": true
+    },
+    "items": {
+      "list": "inventory",
+      "columns": [
+        {"id": "name", "label": "Item"},
+        {"id": "qty", "label": "Qty"}
+      ],
+      "target_from_item": true
+    }
+  },
+  "selection": {
+    "target_cursor": "blink",
+    "battlefield_highlight": "outline",
+    "list_highlight": "invert"
+  }
+}

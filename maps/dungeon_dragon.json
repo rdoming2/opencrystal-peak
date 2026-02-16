@@ -1,0 +1,74 @@
+{
+  "version": 1,
+  "id": "dungeon_dragon",
+  "name": "Skyfang Isle - Floor 1",
+  "world": "gaia",
+  "width": 24,
+  "height": 12,
+  "tiles": [
+    "########################",
+    "#......................#",
+    "#....####.......####...#",
+    "#....#..#.......#..#...#",
+    "#....#..#.......#..#...#",
+    "#....####.......####...#",
+    "#......................#",
+    "#....####.......####...#",
+    "#....#..#.......#..#...#",
+    "#....####.......####...#",
+    "#......................#",
+    "########################"
+  ],
+  "legend": {
+    "#": {"tile": "wall", "passable": false, "palette": "bright_black"},
+    ".": {"tile": "floor", "passable": true, "palette": "bright_red"},
+    " ": {"tile": "floor", "passable": true, "palette": "bright_red"}
+  },
+  "encounters": [
+    {
+      "zone_id": "dragon_path",
+      "rect": [0, 0, 24, 12],
+      "table": "dragon_path"
+    }
+  ],
+  "encounter_rate": 0.14,
+  "events": [],
+  "npcs": [],
+  "doors": [
+    {
+      "id": "dragon_gate",
+      "pos": [20, 8],
+      "requires_flag": "dungeon.dragon_key",
+      "locked_text": "The rune gate is sealed.",
+      "target_map": "dungeon_dragon_depths",
+      "target_pos": [2, 2],
+      "return_to_last": false,
+      "glyph": "+",
+      "palette": "bright_yellow"
+    }
+  ],
+  "puzzles": [
+    {
+      "id": "dragon_switch",
+      "pos": [6, 6],
+      "text": "A rune switch clicks into place.",
+      "set_flag": "dungeon.dragon_key",
+      "glyph": "?",
+      "palette": "bright_magenta"
+    }
+  ],
+  "shops": [],
+  "allow_save": false,
+  "save_points": [],
+  "transitions": [
+    {
+      "id": "dragon_exit",
+      "pos": [2, 9],
+      "target_map": "overworld_gaia",
+      "target_pos": [50, 0],
+      "return_to_last": true,
+      "glyph": "<",
+      "palette": "bright_cyan"
+    }
+  ]
+}

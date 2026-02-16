@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "id": "boss_gale",
+  "nodes": [
+    {
+      "id": "start",
+      "speaker": "Gale Warden",
+      "text": "Stand true, or be unmade by the wind.",
+      "actions": [
+        {"type": "start_event", "event": "gale_boss"}
+      ],
+      "choices": [
+        {"label": "We stand", "next": "end"}
+      ]
+    },
+    {
+      "id": "end",
+      "text": ""
+    }
+  ]
+}

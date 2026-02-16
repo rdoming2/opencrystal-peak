@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "recipes": [
+    {
+      "id": "fish_skewer",
+      "name": "Fish Skewer",
+      "description": "A simple campfire skewer.",
+      "ingredients": [
+        {"id": "raw_fish", "qty": 1},
+        {"id": "herb_bundle", "qty": 1}
+      ],
+      "results": {
+        "items": [{"id": "fish_skewer", "qty": 1}],
+        "equipment": [],
+        "currency": []
+      }
+    },
+    {
+      "id": "hearty_stew",
+      "name": "Hearty Stew",
+      "description": "A warm stew for the road.",
+      "unlock_flag": "recipe.hearty_stew_unlocked",
+      "ingredients": [
+        {"id": "raw_fish", "qty": 2},
+        {"id": "herb_bundle", "qty": 1}
+      ],
+      "results": {
+        "items": [{"id": "hearty_stew", "qty": 1}],
+        "equipment": [],
+        "currency": []
+      }
+    }
+  ],
+  "campfires": [
+    {"id": "inn_kitchen", "label": "Inn Kitchen", "recipes": ["fish_skewer", "hearty_stew"]}
+  ]
+}

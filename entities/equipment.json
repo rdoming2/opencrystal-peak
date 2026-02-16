@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "equipment": [
+    {
+      "id": "bronze_sword",
+      "name": "Bronze Sword",
+      "category": "sword",
+      "slot": "weapon",
+      "allowed_jobs": null,
+      "stats": {"str": 2}
+    },
+    {
+      "id": "oak_staff",
+      "name": "Oak Staff",
+      "category": "staff",
+      "slot": "weapon",
+      "allowed_jobs": null,
+      "stats": {"int": 1}
+    },
+    {
+      "id": "bronze_armor",
+      "name": "Bronze Armor",
+      "category": "plate",
+      "slot": "armor",
+      "allowed_jobs": null,
+      "stats": {"def": 2}
+    },
+    {
+      "id": "linen_robe",
+      "name": "Linen Robe",
+      "category": "robe",
+      "slot": "armor",
+      "allowed_jobs": null,
+      "stats": {"mdef": 1},
+      "spells": ["protect", "shell"]
+    },
+    {
+      "id": "flame_mail",
+      "name": "Flame Mail",
+      "category": "plate",
+      "slot": "armor",
+      "allowed_jobs": null,
+      "stats": {"def": 3, "mdef": 1},
+      "traits": ["resist_fire"]
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "version": 1,
+  "abilities": [
+    {
+      "id": "power_strike",
+      "name": "Power Strike",
+      "description": "A heavy blow that hits harder than a basic attack.",
+      "default_target": "enemy",
+      "allowed_targets": ["enemy"],
+      "effect": {"type": "damage", "power": 6},
+      "cost": {"type": "hp", "value": 4}
+    },
+    {
+      "id": "coin_toss",
+      "name": "Coin Toss",
+      "description": "Spend currency to deal a quick burst of damage.",
+      "default_target": "enemy",
+      "allowed_targets": ["enemy"],
+      "effect": {"type": "damage", "power": 4},
+      "cost": {"type": "currency", "value": 10}
+    },
+    {
+      "id": "pummel",
+      "name": "Pummel",
+      "description": "A rapid flurry of bare-handed strikes.",
+      "default_target": "enemy",
+      "allowed_targets": ["enemy"],
+      "effect": {"type": "damage", "power": 5}
+    },
+    {
+      "id": "steal",
+      "name": "Steal",
+      "description": "Attempt to steal an item from an enemy.",
+      "command_group": "steal",
+      "default_target": "enemy",
+      "allowed_targets": ["enemy"],
+      "effect": {"type": "steal", "power": 50}
+    },
+    {
+      "id": "throw_knife",
+      "name": "Throw",
+      "description": "Hurl a throwing knife at the enemy.",
+      "command_group": "throw",
+      "default_target": "enemy",
+      "allowed_targets": ["enemy"],
+      "effect": {"type": "throw", "power": 10},
+      "cost": {"type": "item", "value": 1, "item_id": "throwing_knife"}
+    },
+    {
+      "id": "pray",
+      "name": "Pray",
+      "description": "A modest prayer that restores some HP to the party.",
+      "command_group": "pray",
+      "default_target": "party",
+      "allowed_targets": ["party"],
+      "target_mode": "multi",
+      "effect": {"type": "pray", "power": 8}
+    },
+    {
+      "id": "parry",
+      "name": "Parry",
+      "description": "Prepare to reduce the next physical hit.",
+      "command_group": "parry",
+      "default_target": "self",
+      "allowed_targets": ["self"],
+      "effect": {"type": "parry", "power": 0}
+    },
+    {
+      "id": "counter",
+      "name": "Counter",
+      "description": "Prepare to counter the next physical hit.",
+      "command_group": "counter",
+      "default_target": "self",
+      "allowed_targets": ["self"],
+      "effect": {"type": "counter", "power": 0}
+    },
+    {
+      "id": "cover",
+      "name": "Cover",
+      "description": "Guard an ally from the next hit.",
+      "command_group": "cover",
+      "default_target": "ally",
+      "allowed_targets": ["ally"],
+      "effect": {"type": "cover", "power": 0}
+    }
+  ]
+}

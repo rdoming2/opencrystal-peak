@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "id": "potion",
+      "name": "Potion",
+      "type": "consumable",
+      "description": "Restores a small amount of HP.",
+      "usage": {"context": "both", "target": "ally"},
+      "effect": {"type": "heal_hp", "power": 50}
+    },
+    {
+      "id": "ether",
+      "name": "Ether",
+      "type": "consumable",
+      "description": "Restores a small amount of MP.",
+      "usage": {"context": "both", "target": "ally"},
+      "effect": {"type": "heal_mp", "power": 10}
+    },
+    {
+      "id": "revival_ring",
+      "name": "Revival Ring",
+      "type": "consumable",
+      "description": "Revives a fallen ally with some HP.",
+      "usage": {"context": "both", "target": "ally"},
+      "effect": {"type": "revive", "power": 50}
+    },
+    {
+      "id": "antidote",
+      "name": "Antidote",
+      "type": "consumable",
+      "description": "Cures poison.",
+      "usage": {"context": "both", "target": "ally"},
+      "effect": {"type": "cure_status", "statuses": ["poison"]}
+    },
+    {
+      "id": "warp_scroll",
+      "name": "Warp Scroll",
+      "type": "travel",
+      "description": "Returns the party to the last overworld entry point.",
+      "usage": {"context": "field", "target": "party"},
+      "effect": {"type": "warp", "target": "last_overworld"}
+    },
+    {
+      "id": "stew_recipe",
+      "name": "Recipe: Hearty Stew",
+      "type": "key_item",
+      "description": "A recipe for a comforting stew.",
+      "usage": {"context": "field", "target": "self"},
+      "effect": {"type": "learn_recipe", "target": "hearty_stew"}
+    },
+    {
+      "id": "raw_fish",
+      "name": "Raw Fish",
+      "type": "ingredient",
+      "description": "Fresh catch, best cooked over a flame.",
+      "usage": {"context": "field", "target": "self"},
+      "effect": {"type": "none"}
+    },
+    {
+      "id": "herb_bundle",
+      "name": "Herb Bundle",
+      "type": "ingredient",
+      "description": "Aromatic herbs for simple meals.",
+      "usage": {"context": "field", "target": "self"},
+      "effect": {"type": "none"}
+    },
+    {
+      "id": "fish_skewer",
+      "name": "Fish Skewer",
+      "type": "consumable",
+      "description": "A warm skewer that restores HP.",
+      "usage": {"context": "field", "target": "ally"},
+      "effect": {"type": "heal_hp", "power": 80}
+    },
+    {
+      "id": "hearty_stew",
+      "name": "Hearty Stew",
+      "type": "consumable",
+      "description": "A hearty bowl that restores more HP.",
+      "usage": {"context": "field", "target": "ally"},
+      "effect": {"type": "heal_hp", "power": 140}
+    },
+    {
+      "id": "throwing_knife",
+      "name": "Throwing Knife",
+      "type": "consumable",
+      "description": "A balanced knife meant to be thrown in battle.",
+      "usage": {"context": "battle", "target": "enemy"},
+      "effect": {"type": "damage", "power": 10}
+    }
+  ]
+}

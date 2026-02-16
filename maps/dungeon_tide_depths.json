@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "id": "dungeon_tide_depths",
+  "name": "Tide Grotto - Floor 2",
+  "world": "gaia",
+  "width": 24,
+  "height": 12,
+  "tiles": [
+    "########################",
+    "#......................#",
+    "#....####.......####...#",
+    "#....#..#.......#..#...#",
+    "#....#..#.......#..#...#",
+    "#....####.......####...#",
+    "#......................#",
+    "#....####.......####...#",
+    "#....#..#.......#..#...#",
+    "#....####.......#.##...#",
+    "#......................#",
+    "########################"
+  ],
+  "legend": {
+    "#": {"tile": "wall", "passable": false, "palette": "bright_black"},
+    ".": {"tile": "floor", "passable": true, "palette": "cyan"},
+    " ": {"tile": "floor", "passable": true, "palette": "cyan"}
+  },
+  "encounters": [
+    {
+      "zone_id": "tide_depths",
+      "rect": [0, 0, 24, 12],
+      "table": "tide_depths"
+    }
+  ],
+  "encounter_rate": 0.12,
+  "events": [],
+  "npcs": [],
+  "puzzles": [
+    {
+      "id": "tide_shard_south",
+      "pos": [18, 8],
+      "text": "Another Tide shard rests among the stones.",
+      "set_flag": "quest.tide_shards.cave_2",
+      "event": "tide_shards_check",
+      "glyph": "?",
+      "palette": "bright_magenta"
+    }
+  ],
+  "shops": [],
+  "allow_save": false,
+  "save_points": [],
+  "transitions": [
+    {
+      "id": "tide_depths_up",
+      "pos": [2, 2],
+      "target_map": "dungeon_tide",
+      "target_pos": [8, 4],
+      "return_to_last": true,
+      "glyph": "<",
+      "palette": "bright_cyan"
+    },
+    {
+      "id": "tide_depths_down",
+      "pos": [20, 8],
+      "target_map": "dungeon_tide_sanctum",
+      "target_pos": [2, 2],
+      "return_to_last": false,
+      "glyph": ">",
+      "palette": "bright_cyan"
+    }
+  ]
+}

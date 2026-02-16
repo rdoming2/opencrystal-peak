@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "id": "sky_tinker",
+  "nodes": [
+    {
+      "id": "start",
+      "speaker": "Sky Tinker",
+      "text": "Something on your mind?",
+      "choices": [
+        {"label": "See wares", "next": "wares"},
+        {"label": "Ask about lore", "next": "airship"},
+        {"label": "Nevermind", "next": "end"}
+      ]
+    },
+    {
+      "id": "wares",
+      "speaker": "Sky Tinker",
+      "text": "Take a look. The road is rough out there.",
+      "actions": [
+        {"type": "open_shop", "shop": "tinker_wares"}
+      ]
+    },
+    {
+      "id": "airship",
+      "speaker": "Sky Tinker",
+      "text": "Bring me proof the four rune stones are safe.",
+      "actions": [
+        {"type": "start_event", "event": "airship_reward"}
+      ]
+    },
+    {
+      "id": "end",
+      "text": "May the winds favor you."
+    }
+  ]
+}

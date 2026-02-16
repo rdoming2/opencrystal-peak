@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "id": "dungeon_ember_core",
+  "name": "Ember Caverns - Floor 3",
+  "world": "gaia",
+  "width": 24,
+  "height": 12,
+  "tiles": [
+    "########################",
+    "#......................#",
+    "#....####.......#..#...#",
+    "#....#..#.......#..#...#",
+    "#....#..#..........#...#",
+    "#....####.......####...#",
+    "#......................#",
+    "#....####.......####...#",
+    "#....#..#.......#..#...#",
+    "#....####.......####...#",
+    "#......................#",
+    "########################"
+  ],
+  "legend": {
+    "#": {"tile": "wall", "passable": false, "palette": "bright_black"},
+    ".": {"tile": "floor", "passable": true, "palette": "yellow"},
+    " ": {"tile": "floor", "passable": true, "palette": "yellow"}
+  },
+  "encounters": [
+    {
+      "zone_id": "ember_core",
+      "rect": [0, 0, 24, 12],
+      "table": "ember_core"
+    }
+  ],
+  "encounter_rate": 0.12,
+  "events": [],
+  "npcs": [
+    {"id": "boss_ember", "pos": [18, 4]}
+  ],
+  "shops": [],
+  "allow_save": false,
+  "save_points": [[16, 4]],
+  "transitions": [
+    {
+      "id": "ember_core_up",
+      "pos": [2, 2],
+      "target_map": "dungeon_ember_depths",
+      "target_pos": [20, 8],
+      "return_to_last": true,
+      "glyph": "<",
+      "palette": "bright_cyan"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "roster": [
+    {
+      "id": "alric",
+      "name": "Shallot",
+      "job_id": "shallot_knight",
+      "level": 1,
+      "base_stats": {"hp": 24, "mp": 4, "str": 4, "int": 4, "vit": 4, "agi": 5, "lck": 4}
+    },
+    {
+      "id": "sera",
+      "name": "Cress",
+      "job_id": "shallot_knight",
+      "level": 1,
+      "base_stats": {"hp": 24, "mp": 4, "str": 4, "int": 4, "vit": 4, "agi": 5, "lck": 4}
+    },
+    {
+      "id": "rion",
+      "name": "Leek",
+      "job_id": "shallot_knight",
+      "level": 1,
+      "base_stats": {"hp": 24, "mp": 4, "str": 4, "int": 4, "vit": 4, "agi": 5, "lck": 4}
+    },
+    {
+      "id": "talia",
+      "name": "Bulb",
+      "job_id": "shallot_knight",
+      "level": 1,
+      "base_stats": {"hp": 24, "mp": 4, "str": 4, "int": 4, "vit": 4, "agi": 5, "lck": 4}
+    }
+  ],
+  "starting_party": ["alric", "sera", "rion", "talia"],
+  "reserve": []
+}

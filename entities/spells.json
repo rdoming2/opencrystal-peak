@@ -1,0 +1,137 @@
+{
+  "version": 1,
+  "schools": [
+    {"id": "white", "name": "White"},
+    {"id": "black", "name": "Black"}
+  ],
+  "spells": [
+    {
+      "id": "cure",
+      "name": "Cure",
+      "school": "white",
+      "tier": 1,
+      "cost": {"type": "mp", "value": 3},
+      "default_target": "ally",
+      "allowed_targets": ["ally", "enemy"],
+      "target_mode": "single",
+      "effect": {"type": "heal", "power": 20}
+    },
+    {
+      "id": "fire",
+      "name": "Fire",
+      "school": "black",
+      "tier": 1,
+      "cost": {"type": "mp", "value": 4},
+      "default_target": "enemy",
+      "allowed_targets": ["enemy"],
+      "target_mode": "both",
+      "multi_attenuation": 0.6,
+      "effect": {"type": "damage", "power": 22, "element": "fire"}
+    },
+    {
+      "id": "scan",
+      "name": "Scan",
+      "school": "white",
+      "tier": 1,
+      "cost": {"type": "mp", "value": 2},
+      "default_target": "enemy",
+      "allowed_targets": ["enemy"],
+      "target_mode": "single",
+      "effect": {"type": "scan", "power": 0}
+    },
+    {
+      "id": "blizzard",
+      "name": "Blizzard",
+      "school": "black",
+      "tier": 1,
+      "cost": {"type": "mp", "value": 4},
+      "default_target": "enemy",
+      "allowed_targets": ["enemy"],
+      "target_mode": "both",
+      "multi_attenuation": 0.6,
+      "effect": {"type": "damage", "power": 22, "element": "ice"}
+    },
+    {
+      "id": "thunder",
+      "name": "Thunder",
+      "school": "black",
+      "tier": 1,
+      "cost": {"type": "mp", "value": 4},
+      "default_target": "enemy",
+      "allowed_targets": ["enemy"],
+      "target_mode": "both",
+      "multi_attenuation": 0.6,
+      "effect": {"type": "damage", "power": 22, "element": "lightning"}
+    },
+    {
+      "id": "poison",
+      "name": "Poison",
+      "school": "black",
+      "tier": 1,
+      "cost": {"type": "mp", "value": 4},
+      "default_target": "enemy",
+      "allowed_targets": ["enemy"],
+      "target_mode": "both",
+      "multi_attenuation": 0.6,
+      "effect": {"type": "status", "power": 0, "effects": ["apply_poison"]}
+    },
+    {
+      "id": "paralyze",
+      "name": "Paralyze",
+      "school": "black",
+      "tier": 1,
+      "cost": {"type": "mp", "value": 4},
+      "default_target": "enemy",
+      "allowed_targets": ["enemy"],
+      "target_mode": "both",
+      "multi_attenuation": 0.6,
+      "effect": {"type": "status", "power": 0, "effects": ["apply_paralysis"]}
+    },
+    {
+      "id": "sleep",
+      "name": "Sleep",
+      "school": "black",
+      "tier": 1,
+      "cost": {"type": "mp", "value": 4},
+      "default_target": "enemy",
+      "allowed_targets": ["enemy"],
+      "target_mode": "both",
+      "multi_attenuation": 0.6,
+      "effect": {"type": "status", "power": 0, "effects": ["apply_sleep"]}
+    },
+    {
+      "id": "stone",
+      "name": "Stone",
+      "school": "black",
+      "tier": 1,
+      "cost": {"type": "mp", "value": 6},
+      "default_target": "enemy",
+      "allowed_targets": ["enemy"],
+      "target_mode": "both",
+      "multi_attenuation": 0.6,
+      "effect": {"type": "status", "power": 0, "effects": ["apply_stone"]}
+    },
+    {
+      "id": "protect",
+      "name": "Protect",
+      "school": "white",
+      "tier": 1,
+      "cost": {"type": "mp", "value": 3},
+      "default_target": "ally",
+      "allowed_targets": ["ally", "party"],
+      "target_mode": "single",
+      "effect": {"type": "status", "power": 0, "effects": ["apply_protect"]}
+    },
+    {
+      "id": "shell",
+      "name": "Shell",
+      "school": "white",
+      "tier": 1,
+      "cost": {"type": "mp", "value": 3},
+      "default_target": "ally",
+      "allowed_targets": ["ally", "party"],
+      "target_mode": "single",
+      "effect": {"type": "status", "power": 0, "effects": ["apply_shell"]}
+    }
+  ]
+}

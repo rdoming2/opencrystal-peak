@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "id": "dungeon_dragon_depths",
+  "name": "Skyfang Isle - Floor 2",
+  "world": "gaia",
+  "width": 24,
+  "height": 12,
+  "tiles": [
+    "########################",
+    "#......................#",
+    "#....####........###...#",
+    "#....#..#..........#...#",
+    "#....#..#..........#...#",
+    "#....####........###...#",
+    "#......................#",
+    "#....####.......####...#",
+    "#....#..#.......#..#...#",
+    "#....####.......####...#",
+    "#......................#",
+    "########################"
+  ],
+  "legend": {
+    "#": {"tile": "wall", "passable": false, "palette": "bright_black"},
+    ".": {"tile": "floor", "passable": true, "palette": "bright_red"},
+    " ": {"tile": "floor", "passable": true, "palette": "bright_red"}
+  },
+  "encounters": [
+    {
+      "zone_id": "dragon_lair",
+      "rect": [0, 0, 24, 12],
+      "table": "dragon_lair"
+    }
+  ],
+  "encounter_rate": 0.14,
+  "events": [],
+  "npcs": [
+    {"id": "boss_dragon", "pos": [18, 4]},
+    {"id": "boss_dragon_after", "pos": [18, 4], "requires_flags": ["dungeon.dragon_cleared"]}
+  ],
+  "shops": [],
+  "allow_save": false,
+  "save_points": [[16, 4]],
+  "transitions": [
+    {
+      "id": "dragon_depths_up",
+      "pos": [2, 2],
+      "target_map": "dungeon_dragon",
+      "target_pos": [20, 8],
+      "return_to_last": true,
+      "glyph": "<",
+      "palette": "bright_cyan"
+    }
+  ]
+}

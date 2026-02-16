@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "id": "gale_boss",
+  "steps": [
+    {
+      "type": "start_battle",
+      "formation": [
+        {"enemy": "gale_warden", "pos": [4, 2]}
+      ]
+    },
+    {"type": "npc_hide", "npc": "boss_gale"},
+    {"type": "wait", "ms": 120},
+    {"type": "npc_show", "npc": "boss_gale"},
+    {"type": "wait", "ms": 120},
+    {"type": "npc_hide", "npc": "boss_gale"},
+    {"type": "narration", "text": "The Gale rune stone clears, its song steady."},
+    {"type": "set_flag", "flag": "dungeon.gale_cleared"},
+    {"type": "stat_add", "stat": "dungeons_cleared", "value": 1},
+    {"type": "set_flag", "flag": "quest.rune_stones.gale"},
+    {"type": "stat_add", "stat": "crystals_collected", "value": 1},
+    {"type": "set_flag", "flag": "job.monk_unlocked"},
+    {"type": "stat_add", "stat": "jobs_unlocked", "value": 1},
+    {"type": "narration", "text": "Job unlocked: Monk."},
+    {"type": "set_flag", "flag": "system.job_change_unlocked"}
+  ]
+}

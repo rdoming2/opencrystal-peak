@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "stats": {
+    "base": [
+      {"id": "hp", "name": "HP", "min": 0},
+      {"id": "mp", "name": "MP", "min": 0},
+      {"id": "str", "name": "STR"},
+      {"id": "int", "name": "INT"},
+      {"id": "vit", "name": "VIT"},
+      {"id": "agi", "name": "AGI"},
+      {"id": "lck", "name": "LCK"}
+    ],
+    "derived": [
+      {"id": "atk", "name": "ATK"},
+      {"id": "matk", "name": "MATK"},
+      {"id": "def", "name": "DEF"},
+      {"id": "mdef", "name": "MDEF"},
+      {"id": "eva", "name": "EVA"}
+    ],
+    "formulas": {
+      "atk": "str * 2",
+      "matk": "int * 2",
+      "def": "vit * 2",
+      "mdef": "int + vit",
+      "eva": "agi + lck / 2"
+    }
+  }
+}

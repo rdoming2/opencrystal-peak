@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "vehicles": [
+    {
+      "id": "ship",
+      "name": "Ship",
+      "speed": 2,
+      "allowed_tiles": ["water"],
+      "unlock_flag": "vehicle.ship_unlocked",
+      "glyph": "S",
+      "palette": "bright_cyan"
+    },
+    {
+      "id": "airship",
+      "name": "Airship",
+      "speed": 4,
+      "allowed_tiles": ["grass", "mountain", "water"],
+      "unlock_flag": "vehicle.airship_unlocked",
+      "glyph": "A",
+      "palette": "bright_cyan"
+    }
+  ]
+}

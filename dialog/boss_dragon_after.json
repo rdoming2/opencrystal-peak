@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "id": "boss_dragon_after",
+  "nodes": [
+    {
+      "id": "start",
+      "speaker": "Ancient Dragon",
+      "text": "You fought with honor. Let the sky remember your names.",
+      "choices": [
+        {"label": "We will", "next": "end"}
+      ]
+    },
+    {
+      "id": "end",
+      "text": ""
+    }
+  ]
+}

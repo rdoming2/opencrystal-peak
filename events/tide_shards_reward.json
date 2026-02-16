@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "id": "tide_shards_reward",
+  "steps": [
+    {
+      "type": "require_flags",
+      "flags": ["quest.tide_shards.find_shards"]
+    },
+    {
+      "type": "set_flag",
+      "flag": "quest.tide_shards.return_shards"
+    },
+    {
+      "type": "learn_recipe",
+      "recipe": "hearty_stew"
+    },
+    {
+      "type": "dialog",
+      "speaker": "Harbor Historian",
+      "text": "Excellent work. Accept this recipe as thanks."
+    }
+  ]
+}

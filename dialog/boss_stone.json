@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "id": "boss_stone",
+  "nodes": [
+    {
+      "id": "start",
+      "speaker": "Stone Colossus",
+      "text": "Stone endures. So must you.",
+      "actions": [
+        {"type": "start_event", "event": "stone_boss"}
+      ],
+      "choices": [
+        {"label": "We endure", "next": "end"}
+      ]
+    },
+    {
+      "id": "end",
+      "text": ""
+    }
+  ]
+}

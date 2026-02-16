@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "title": "Demo",
+  "logo": {
+    "lines": [
+      "    .   .   /#\\     .",
+      "  *        /*##\\  .    *",
+      "'      .  /**###\\    .  '",
+      "    <    /***####\\      >",
+      "  .   *  \\***####/  *   .",
+      "*       . \\**###/   .    *",
+      "    .      \\*##/  *      .",
+      "  '      *  \\#/  .    '",
+      "     OpenCrystal Engine"
+    ],
+    "line_palettes": [
+      "bright_cyan",
+      "bright_cyan",
+      "bright_cyan",
+      "bright_cyan",
+      "cyan",
+      "cyan",
+      "cyan",
+      "cyan",
+      "white"
+    ]
+  },
+  "menu": [
+    {"id": "new_game", "label": "New Game"},
+    {"id": "load_game", "label": "Load"},
+    {"id": "settings", "label": "Settings"},
+    {"id": "exit", "label": "Exit"}
+  ],
+  "footer": {
+    "left": "Adventure awaits the chosen.",
+    "right": "Demo build"
+  }
+}

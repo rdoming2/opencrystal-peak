@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "id": "farm_dog",
+  "nodes": [
+    {
+      "id": "start",
+      "speaker": "Farm Dog",
+      "text": "Woof!",
+      "choices": [
+        {"label": "Pat the dog", "next": "end"}
+      ]
+    },
+    {"id": "end", "text": "The dog seems happy."}
+  ]
+}

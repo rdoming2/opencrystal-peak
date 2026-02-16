@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "id": "farmhand",
+  "nodes": [
+    {
+      "id": "start",
+      "speaker": "Farmhand",
+      "text": "The soil is good this season. The herbs are strong.",
+      "choices": [
+        {"label": "Good luck", "next": "end"}
+      ]
+    },
+    {"id": "end", "text": "Mind the fences on your way out."}
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "id": "tide_shards_check",
+  "steps": [
+    {
+      "type": "dialog",
+      "speaker": "Harbor Historian",
+      "text": "You recover a Tide shard from the grotto walls."
+    },
+    {
+      "type": "require_flags",
+      "flags": ["quest.tide_shards.cave_1", "quest.tide_shards.cave_2"]
+    },
+    {
+      "type": "set_flag",
+      "flag": "quest.tide_shards.find_shards"
+    },
+    {
+      "type": "dialog",
+      "speaker": "Harbor Historian",
+      "text": "Both shards are secured. Return to the historian."
+    }
+  ]
+}

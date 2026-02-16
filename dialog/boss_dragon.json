@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "id": "boss_dragon",
+  "nodes": [
+    {
+      "id": "start",
+      "speaker": "Ancient Dragon",
+      "text": "You have kindled the runes. Now face the flame.",
+      "actions": [
+        {"type": "start_event", "event": "dragon_boss"}
+      ],
+      "choices": [
+        {"label": "We face you", "next": "end"}
+      ]
+    },
+    {
+      "id": "end",
+      "text": ""
+    }
+  ]
+}

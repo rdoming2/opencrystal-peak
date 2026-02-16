@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "id": "town_mayor",
+  "nodes": [
+    {
+      "id": "start",
+      "speaker": "Mayor Trill",
+      "text": "Coral Town is safe for now, but the rune stones are failing beyond our walls.",
+      "choices": [
+        {"label": "How can we help?", "next": "quest"},
+        {"label": "Not yet", "next": "end"}
+      ]
+    },
+    {
+      "id": "quest",
+      "speaker": "Mayor Trill",
+      "text": "Check the four elemental rune stones: Ember, Tide, Gale, and Stone. Restore them before Gaia goes dark.",
+      "actions": [
+        {"type": "set_flag", "flag": "quest.rune_stones.started"},
+        {"type": "start_event", "event": "rune_stones_briefing"}
+      ],
+      "choices": [
+        {"label": "We will go", "next": "end"}
+      ]
+    },
+    {
+      "id": "end",
+      "text": "May the tides and winds favor you."
+    }
+  ]
+}

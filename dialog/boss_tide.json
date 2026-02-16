@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "id": "boss_tide",
+  "nodes": [
+    {
+      "id": "start",
+      "speaker": "Tide Guardian",
+      "text": "The tide remembers. Show me your calm.",
+      "actions": [
+        {"type": "start_event", "event": "tide_clear"}
+      ],
+      "choices": [
+        {"label": "We steady", "next": "end"}
+      ]
+    },
+    {
+      "id": "end",
+      "text": ""
+    }
+  ]
+}

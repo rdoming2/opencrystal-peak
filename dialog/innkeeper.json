@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "id": "innkeeper",
+  "nodes": [
+    {
+      "id": "start",
+      "speaker": "Coral Innkeeper",
+      "text": "Welcome to Coral Inn. Would you like to rest?",
+      "choices": [
+        {"label": "Rest (50 G)", "next": "rest"},
+        {"label": "No thanks", "next": "end"}
+      ]
+    },
+    {
+      "id": "rest",
+      "speaker": "Coral Innkeeper",
+      "text": "Your party is fully restored.",
+      "actions": [
+        {"type": "rest_party"},
+        {"type": "learn_recipe", "recipe": "hearty_stew"}
+      ],
+      "choices": [
+        {"label": "Thanks", "next": "end"}
+      ]
+    },
+    {
+      "id": "end",
+      "text": "Come back anytime."
+    }
+  ]
+}

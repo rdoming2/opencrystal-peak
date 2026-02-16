@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "id": "rune_stones_briefing",
+  "steps": [
+    {
+      "type": "narration",
+      "text": "The Shallot Knights receive their charge to rekindle the four rune stones."
+    }
+  ]
+}

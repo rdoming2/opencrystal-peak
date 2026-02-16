@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "id": "boss_ember",
+  "nodes": [
+    {
+      "id": "start",
+      "speaker": "Ember Sentinel",
+      "text": "Ash and steel. Prove your ember-heart.",
+      "actions": [
+        {"type": "start_event", "event": "ember_clear"}
+      ],
+      "choices": [
+        {"label": "Ignite", "next": "end"}
+      ]
+    },
+    {
+      "id": "end",
+      "text": ""
+    }
+  ]
+}

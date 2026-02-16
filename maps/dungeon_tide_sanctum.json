@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "id": "dungeon_tide_sanctum",
+  "name": "Tide Grotto - Floor 3",
+  "world": "gaia",
+  "width": 24,
+  "height": 12,
+  "tiles": [
+    "########################",
+    "#......................#",
+    "#....####.......####...#",
+    "#....#..#..........#...#",
+    "#....#..#..........#...#",
+    "#....####.......####...#",
+    "#......................#",
+    "#....####.......####...#",
+    "#....#..#.......#..#...#",
+    "#....####.......####...#",
+    "#......................#",
+    "########################"
+  ],
+  "legend": {
+    "#": {"tile": "wall", "passable": false, "palette": "bright_black"},
+    ".": {"tile": "floor", "passable": true, "palette": "cyan"},
+    " ": {"tile": "floor", "passable": true, "palette": "cyan"}
+  },
+  "encounters": [
+    {
+      "zone_id": "tide_sanctum",
+      "rect": [0, 0, 24, 12],
+      "table": "tide_sanctum"
+    }
+  ],
+  "encounter_rate": 0.12,
+  "events": [],
+  "npcs": [
+    {"id": "boss_tide", "pos": [18, 4]}
+  ],
+  "shops": [],
+  "allow_save": false,
+  "save_points": [[16, 4]],
+  "transitions": [
+    {
+      "id": "tide_sanctum_up",
+      "pos": [2, 2],
+      "target_map": "dungeon_tide_depths",
+      "target_pos": [20, 8],
+      "return_to_last": true,
+      "glyph": "<",
+      "palette": "bright_cyan"
+    }
+  ]
+}

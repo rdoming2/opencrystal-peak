@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "id": "town_coral_shop",
+  "name": "Coral Outfitters",
+  "world": "gaia",
+  "width": 16,
+  "height": 10,
+  "tiles": [
+    "################",
+    "#..............#",
+    "#..............#",
+    "#==============#",
+    "#..............#",
+    "#..............#",
+    "#..............#",
+    "#..............#",
+    "#..............#",
+    "########.#######"
+  ],
+  "legend": {
+    "#": {"tile": "wall", "passable": false, "palette": "bright_black"},
+    ".": {"tile": "floor", "passable": true, "palette": "bright_yellow"},
+    "=": {"tile": "counter", "passable": false, "palette": "bright_black"},
+    "s": {"tile": "shelf", "passable": false, "palette": "bright_black"}
+  },
+  "encounters": [],
+  "encounter_rate": 0.0,
+  "events": [],
+  "npcs": [ 
+     {"id": "town_merchant", "pos": [8, 2]}
+  ],
+  "shops": [{"id": "town_outfitter", "pos": [8, 2]}],
+  "allow_save": true,
+  "save_points": [],
+  "transitions": [
+    {
+      "id": "to_town",
+      "pos": [8, 9],
+      "target_map": "town_coral",
+      "target_pos": [8, 9],
+      "return_to_last": false,
+      "glyph": "<",
+      "palette": "bright_cyan"
+    }
+  ]
+}

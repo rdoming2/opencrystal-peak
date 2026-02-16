@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "id": "town_merchant",
+  "nodes": [
+    {
+      "id": "start",
+      "speaker": "Coral Merchant",
+      "text": "Stock up before you head out.",
+      "actions": [
+        {"type": "open_shop", "shop": "town_outfitter"}
+      ],
+      "choices": [
+        {"label": "Thanks", "next": "end"}
+      ]
+    },
+    {"id": "end", "text": "Come back anytime."}
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "bindings": {
+    "move_up": ["Up", "W", "K"],
+    "move_down": ["Down", "S", "J"],
+    "move_left": ["Left", "A", "H"],
+    "move_right": ["Right", "D", "L"],
+    "confirm": ["Enter", "C"],
+    "cancel": ["X"],
+    "menu": ["I", "Escape"],
+    "pause": ["Space"],
+    "quit": ["Q"]
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "version": 1,
+  "npcs": [
+    {
+      "id": "wanderer",
+      "name": "Sky Tinker",
+      "sprite": "wanderer",
+      "palette": "bright_magenta",
+      "dialog": "sky_tinker",
+      "behavior": {"type": "roam", "radius": 4, "persist": true}
+    },
+    {
+      "id": "town_merchant",
+      "name": "Coral Merchant",
+      "sprite": "merchant",
+      "palette": "bright_yellow",
+      "dialog": "town_merchant",
+      "behavior": {"type": "static"},
+      "interaction_range": 2
+    },
+    {
+      "id": "town_historian",
+      "name": "Harbor Historian",
+      "sprite": "sage",
+      "palette": "bright_cyan",
+      "dialog": "town_historian",
+      "behavior": {"type": "static"}
+    },
+    {
+      "id": "innkeeper",
+      "name": "Coral Innkeeper",
+      "sprite": "innkeeper",
+      "palette": "bright_yellow",
+      "dialog": "innkeeper",
+      "behavior": {"type": "static"},
+      "interaction_range": 2
+    },
+    {
+      "id": "town_mayor",
+      "name": "Mayor Trill",
+      "sprite": "mayor",
+      "palette": "bright_green",
+      "dialog": "town_mayor",
+      "behavior": {"type": "static"}
+    },
+    {
+      "id": "boss_ember",
+      "name": "Ember Sentinel",
+      "sprite": "guardian",
+      "palette": "bright_red",
+      "dialog": "boss_ember",
+      "behavior": {"type": "static"}
+    },
+    {
+      "id": "boss_tide",
+      "name": "Tide Guardian",
+      "sprite": "guardian",
+      "palette": "bright_cyan",
+      "dialog": "boss_tide",
+      "behavior": {"type": "static"}
+    },
+    {
+      "id": "boss_gale",
+      "name": "Gale Warden",
+      "sprite": "guardian",
+      "palette": "bright_cyan",
+      "dialog": "boss_gale",
+      "behavior": {"type": "static"}
+    },
+    {
+      "id": "boss_stone",
+      "name": "Stone Colossus",
+      "sprite": "guardian",
+      "palette": "bright_yellow",
+      "dialog": "boss_stone",
+      "behavior": {"type": "static"}
+    },
+    {
+      "id": "boss_dragon",
+      "name": "Ancient Dragon",
+      "sprite": "dragon",
+      "palette": "bright_red",
+      "dialog": "boss_dragon",
+      "behavior": {"type": "static"}
+    },
+    {
+      "id": "boss_dragon_after",
+      "name": "Ancient Dragon",
+      "sprite": "dragon",
+      "palette": "bright_yellow",
+      "dialog": "boss_dragon_after",
+      "behavior": {"type": "static"}
+    },
+    {
+      "id": "farm_merchant",
+      "name": "Farm Merchant",
+      "sprite": "merchant",
+      "palette": "bright_yellow",
+      "dialog": "farm_merchant",
+      "behavior": {"type": "static"},
+      "interaction_range": 2
+    },
+    {
+      "id": "farmhand",
+      "name": "Farmhand",
+      "sprite": "farmer",
+      "palette": "bright_green",
+      "dialog": "farmhand",
+      "behavior": {"type": "static"}
+    },
+    {
+      "id": "farm_dog",
+      "name": "Farm Dog",
+      "sprite": "dog",
+      "palette": "bright_cyan",
+      "dialog": "farm_dog",
+      "behavior": {"type": "roam", "radius": 2, "persist": true}
+    }
+  ]
+}
