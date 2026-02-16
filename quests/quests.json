@@ -24,30 +24,41 @@
           "flag": "quest.rune_stones.started"
         },
         {
-          "id": "ember",
-          "text": "Reignite the Ember rune stone in the caverns.",
-          "flag": "quest.rune_stones.ember"
-        },
-        {
-          "id": "tide",
-          "text": "Reignite the Tide rune stone in the grotto.",
-          "flag": "quest.rune_stones.tide"
-        },
-        {
-          "id": "gale",
-          "text": "Reignite the Gale rune stone in the spire.",
-          "flag": "quest.rune_stones.gale"
-        },
-        {
-          "id": "stone",
-          "text": "Reignite the Stone rune stone in the vault.",
-          "flag": "quest.rune_stones.stone"
+          "id": "clear_dungeons",
+          "text": "Clear the rune stone dungeons",
+          "flag": "quest.rune_stones.complete",
+          "substeps": [
+            {
+              "id": "ember",
+              "text": "Reignite the Ember rune stone in the caverns.",
+              "flag": "quest.rune_stones.ember",
+              "show_flag": "quest.rune_stones.started"
+            },
+            {
+              "id": "tide",
+              "text": "Reignite the Tide rune stone in the grotto.",
+              "flag": "quest.rune_stones.tide",
+              "show_flag": "quest.rune_stones.started"
+            },
+            {
+              "id": "gale",
+              "text": "Reignite the Gale rune stone in the spire.",
+              "flag": "quest.rune_stones.gale",
+              "show_flag": "quest.rune_stones.started"
+            },
+            {
+              "id": "stone",
+              "text": "Reignite the Stone rune stone in the vault.",
+              "flag": "quest.rune_stones.stone",
+              "show_flag": "quest.rune_stones.started"
+            }
+          ]
         },
         {
           "id": "airship",
           "text": "Meet the Sky Tinker after the four rune stones are restored.",
           "flag": "quest.rune_stones.airship",
-          "show_flag": "quest.rune_stones.stone"
+          "show_flag": "quest.rune_stones.complete"
         },
         {
           "id": "dragon",

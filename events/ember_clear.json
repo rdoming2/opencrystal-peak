@@ -21,6 +21,16 @@
     {"type": "set_flag", "flag": "job.black_mage_unlocked"},
     {"type": "stat_add", "stat": "jobs_unlocked", "value": 1},
     {"type": "narration", "text": "Job unlocked: Black Mage."},
-    {"type": "set_flag", "flag": "system.job_change_unlocked"}
+    {"type": "set_flag", "flag": "system.job_change_unlocked"},
+    {
+      "type": "require_flags",
+      "flags": [
+        "quest.rune_stones.ember",
+        "quest.rune_stones.tide",
+        "quest.rune_stones.gale",
+        "quest.rune_stones.stone"
+      ]
+    },
+    {"type": "set_flag", "flag": "quest.rune_stones.complete"}
   ]
 }
