@@ -2,7 +2,7 @@
   "version": 1,
   "id": "intro_cutscene",
   "steps": [
-    {"type": "narration", "text": "Before the crystals dimmed, the seas were calm."},
+    {"type": "narration", "text": "Before the runestones dimmed, the seas were calm."},
     {"type": "narration", "text": "Now the tides churn, and the sky hums with unrest."}
   ]
 }

@@ -36,7 +36,6 @@
   "npcs": [
     {"id": "boss_ember", "pos": [18, 4]}
   ],
-  "shops": [],
   "allow_save": false,
   "save_points": [[16, 4]],
   "transitions": [

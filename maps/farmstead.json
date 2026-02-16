@@ -33,7 +33,6 @@
     {"id": "farmhand", "pos": [2, 7]},
     {"id": "farm_dog", "pos": [5, 2]}
   ],
-  "shops": [{"id": "farm_produce", "pos": [9, 4]}],
   "allow_save": true,
   "save_points": [],
   "transitions": [

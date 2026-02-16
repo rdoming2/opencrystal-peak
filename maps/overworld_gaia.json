@@ -69,9 +69,6 @@
       ]
     }
   ],
-  "shops": [
-    {"id": "tinker_wares", "pos": [58, 30]}
-  ],
   "allow_save": true,
   "save_points": [],
   "vehicles": [

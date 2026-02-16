@@ -1,7 +1,0 @@
-{
-  "version": 1,
-  "id": "intro_scene",
-  "steps": [
-    {"type": "narration", "text": "The crystals whisper in the tide."}
-  ]
-}

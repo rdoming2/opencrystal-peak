@@ -29,7 +29,6 @@
   "npcs": [ 
      {"id": "town_merchant", "pos": [8, 2]}
   ],
-  "shops": [{"id": "town_outfitter", "pos": [8, 2]}],
   "allow_save": true,
   "save_points": [],
   "transitions": [

@@ -37,7 +37,6 @@
     {"id": "boss_dragon", "pos": [18, 4]},
     {"id": "boss_dragon_after", "pos": [18, 4], "requires_flags": ["dungeon.dragon_cleared"]}
   ],
-  "shops": [],
   "allow_save": false,
   "save_points": [[16, 4]],
   "transitions": [

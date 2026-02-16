@@ -34,7 +34,6 @@
   "encounter_rate": 0.12,
   "events": [],
   "npcs": [],
-  "shops": [],
   "allow_save": false,
   "save_points": [],
   "transitions": [

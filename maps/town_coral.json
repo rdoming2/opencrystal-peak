@@ -60,7 +60,6 @@
     {"id": "sign_shop", "pos": [11, 9], "glyph": "⚑", "palette": "bright_yellow", "text": "Coral Outfitters"},
     {"id": "sign_mayor", "pos": [38, 25], "glyph": "⚑", "palette": "bright_yellow", "text": "Mayor's House"}
   ],
-  "shops": [],
   "allow_save": true,
   "save_points": [],
   "transitions": [
