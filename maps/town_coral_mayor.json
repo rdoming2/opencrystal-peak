@@ -41,7 +41,7 @@
       "loot": {
         "items": [{"id": "potion", "qty": 1}],
         "equipment": [{"id": "bronze_armor", "qty": 1}],
-        "currency": [{"id": "gil", "amount": 25}]
+        "currency": [{"id": "gold", "amount": 25}]
       }
     }
   ],

@@ -4,7 +4,7 @@
     {
       "id": "tinker_wares",
       "name": "Tinker Wares",
-      "currency": "gil",
+      "currency": "gold",
       "inventory": [
         {"item": "potion", "price": 50}
       ]
@@ -12,7 +12,7 @@
     {
       "id": "town_outfitter",
       "name": "Town Outfitter",
-      "currency": "gil",
+      "currency": "gold",
       "inventory": [
         {"item": "potion", "price": 50},
         {"item": "warp_scroll", "price": 200},
@@ -25,7 +25,7 @@
     {
       "id": "farm_produce",
       "name": "Farm Produce",
-      "currency": "gil",
+      "currency": "gold",
       "inventory": [
         {"item": "raw_fish", "price": 20},
         {"item": "herb_bundle", "price": 15}

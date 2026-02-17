@@ -5,7 +5,7 @@
     {
       "id": "start",
       "speaker": "Farm Merchant",
-      "text": "Fresh bundles and catch from the fields.",
+      "text": "Fresh bundles from the field and catch from the lakes.",
       "actions": [
         {"type": "open_shop", "shop": "farm_produce"}
       ],

@@ -95,7 +95,7 @@
       "id": "to_tide",
       "pos": [40, 22],
       "target_map": "dungeon_tide",
-      "target_pos": [6, 4],
+      "target_pos": [7, 6],
       "glyph": "D",
       "palette": "bright_magenta"
     },
