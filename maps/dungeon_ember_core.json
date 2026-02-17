@@ -36,15 +36,28 @@
   "npcs": [
     {"id": "boss_ember", "pos": [18, 4]}
   ],
+  "doors": [
+    {
+      "id": "ember_core_gate",
+      "pos": [20, 8],
+      "requires_flag": "dungeon.ember_rune_seal",
+      "locked_text": "The rune gate is sealed.",
+      "target_map": "dungeon_ember",
+      "target_pos": [85, 30],
+      "return_to_last": false,
+      "glyph": "+",
+      "palette": "bright_yellow"
+    }
+  ],
   "allow_save": false,
   "save_points": [[16, 4]],
   "transitions": [
     {
-      "id": "ember_core_up",
+      "id": "ember_core_up_1",
       "pos": [2, 2],
       "target_map": "dungeon_ember_depths",
       "target_pos": [20, 8],
-      "return_to_last": true,
+      "return_to_last": false,
       "glyph": "<",
       "palette": "bright_cyan"
     }

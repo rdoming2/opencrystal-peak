@@ -41,8 +41,8 @@
       "id": "ember_depths_up",
       "pos": [2, 2],
       "target_map": "dungeon_ember",
-      "target_pos": [8, 4],
-      "return_to_last": true,
+      "target_pos": [112, 70],
+      "return_to_last": false,
       "glyph": "<",
       "palette": "bright_cyan"
     },

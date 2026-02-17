@@ -87,7 +87,7 @@
       "id": "to_ember",
       "pos": [10, 10],
       "target_map": "dungeon_ember",
-      "target_pos": [6, 4],
+      "target_pos": [7, 6],
       "glyph": "D",
       "palette": "bright_magenta"
     },
