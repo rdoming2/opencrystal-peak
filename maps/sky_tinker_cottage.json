@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "id": "sky_tinker_cottage",
+  "name": "Tinker Cottage",
+  "world": "gaia",
+  "width": 16,
+  "height": 10,
+  "tiles": [
+    "################",
+    "#..............#",
+    "#..tt....====..#",
+    "#..tt....====..#",
+    "#..............#",
+    "#....####......#",
+    "#....#..#......#",
+    "#....####......#",
+    "#..............#",
+    "########.#######"
+  ],
+  "legend": {
+    "#": {"tile": "wall", "passable": false, "palette": "bright_black"},
+    ".": {"tile": "floor", "passable": true, "palette": "bright_yellow"},
+    "t": {"tile": "table", "passable": false, "palette": "bright_black"},
+    "=": {"tile": "workbench", "passable": false, "palette": "bright_black"}
+  },
+  "encounters": [],
+  "encounter_rate": 0.0,
+  "events": [],
+  "npcs": [
+    {"id": "wanderer", "pos": [5, 4]}
+  ],
+  "allow_save": true,
+  "save_points": [],
+  "transitions": [
+    {
+      "id": "to_meadow",
+      "pos": [8, 9],
+      "target_map": "sky_tinker_meadow",
+      "target_pos": [12, 9],
+      "return_to_last": false,
+      "glyph": "<",
+      "palette": "bright_cyan"
+    }
+  ]
+}

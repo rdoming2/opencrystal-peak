@@ -5,7 +5,7 @@
     {
       "id": "start",
       "speaker": "Sky Tinker",
-      "text": "Something on your mind?",
+      "text": "Looking for the engineer behind the airship?",
       "choices": [
         {"label": "See wares", "next": "wares"},
         {"label": "Ask about lore", "next": "airship"},
@@ -23,7 +23,7 @@
     {
       "id": "airship",
       "speaker": "Sky Tinker",
-      "text": "Bring me proof the four rune stones are safe.",
+      "text": "I built the airship, but it only runs on the power of all four rune stones.",
       "actions": [
         {"type": "start_event", "event": "airship_reward"}
       ]

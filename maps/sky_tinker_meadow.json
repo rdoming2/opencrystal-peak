@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "id": "sky_tinker_meadow",
+  "name": "Tinker Meadow",
+  "world": "gaia",
+  "width": 28,
+  "height": 16,
+  "tiles": [
+    "^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+    "^^^^^^^..............^^^^^^^",
+    "^^^^^^..***.....***..^^^^^^^",
+    "^^^^^^..***..^^..***..^^^^^^",
+    "^^^^^^......^^......~~~~~~~~",
+    "^^^^^^.............~~~~~~~~~",
+    "^^^^^^....MMMMM....~~~~~~~~~",
+    "^^^^^^....#####....~~~~..^^^",
+    "^^^^^^....##.##....~~~...^^^",
+    "^^^^^^.............~~....^^^",
+    "^^^^^^..***....***..~....^^^",
+    "^^^^^^..***....***..~....^^^",
+    "^^^^^^..............~....^^^",
+    "^^^^^^......*.......~....^^^",
+    "^^^^^^..............~....^^^",
+    "^^^^^^^^^^^^......^^^^^^^^^^"
+  ],
+  "legend": {
+    "^": {"tile": "forest", "passable": false, "palette": "green"},
+    ".": {"tile": "grass", "passable": true, "palette": "green"},
+    "#": {"tile": "cottage", "passable": false, "palette": "bright_black"},
+    "M": {"tile": "roof", "passable": false, "palette": "red"},
+    "~": {"tile": "water", "passable": false, "palette": "blue"},
+    "*": {"tile": "flowers", "passable": true, "palette": "bright_yellow"}
+  },
+  "encounters": [],
+  "encounter_rate": 0.0,
+  "events": [],
+  "npcs": [],
+  "allow_save": true,
+  "save_points": [],
+  "transitions": [
+    {
+      "id": "to_overworld",
+      "pos": [14, 15],
+      "target_map": "overworld_gaia",
+      "target_pos": [20, 3],
+      "return_to_last": false,
+      "glyph": "<",
+      "palette": "bright_cyan"
+    },
+    {
+      "id": "to_sky_tinker_cottage",
+      "pos": [12, 8],
+      "target_map": "sky_tinker_cottage",
+      "target_pos": [8, 8],
+      "return_to_last": false,
+      "glyph": ">",
+      "palette": "bright_cyan"
+    }
+  ]
+}
