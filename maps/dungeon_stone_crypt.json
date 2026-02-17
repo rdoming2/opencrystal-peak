@@ -7,16 +7,16 @@
   "height": 12,
   "tiles": [
     "########################",
-    "#......................#",
-    "#....####.......####...#",
-    "#....#..#.......#..#...#",
-    "#....#..#.......#..#...#",
-    "#....####.......####...#",
-    "#......................#",
-    "#....####.......####...#",
-    "#....#..#.......#..#...#",
-    "#....####.......####...#",
-    "#......................#",
+    "#....#......##.....#...#",
+    "#....#..##..##..##.#...#",
+    "#.##.#..##......##.#.###",
+    "#.#..#......##..#..#...#",
+    "#.#..###..####..#..###.#",
+    "#....#....#..#..#......#",
+    "###..#..###..#..####...#",
+    "#....#...............#.#",
+    "#..####..##..##..###.#.#",
+    "#........#......#......#",
     "########################"
   ],
   "legend": {
@@ -34,6 +34,34 @@
   "encounter_rate": 0.12,
   "events": [],
   "npcs": [],
+  "doors": [
+    {
+      "id": "stone_core_gate",
+      "pos": [20, 8],
+      "requires_flag": "dungeon.stone_key",
+      "locked_text": "The rune gate is sealed.",
+      "target_map": "dungeon_stone_core",
+      "target_pos": [2, 2],
+      "return_to_last": false,
+      "glyph": "+",
+      "palette": "bright_yellow"
+    }
+  ],
+  "chests": [
+    {
+      "id": "stone_crypt_cache",
+      "pos": [17, 10],
+      "glyph_closed": "▣",
+      "glyph_open": "▢",
+      "palette": "bright_yellow",
+      "opened_flag": "dungeon.stone_crypt_cache_opened",
+      "loot": {
+        "items": [{"id": "ether", "qty": 1}],
+        "equipment": [{"id": "bronze_armor", "qty": 1}],
+        "currency": [{"id": "gold", "amount": 65}]
+      }
+    }
+  ],
   "allow_save": false,
   "save_points": [],
   "transitions": [
@@ -44,15 +72,6 @@
       "target_pos": [20, 8],
       "return_to_last": true,
       "glyph": "<",
-      "palette": "bright_cyan"
-    },
-    {
-      "id": "stone_crypt_down",
-      "pos": [20, 8],
-      "target_map": "dungeon_stone_core",
-      "target_pos": [2, 2],
-      "return_to_last": false,
-      "glyph": ">",
       "palette": "bright_cyan"
     }
   ]
