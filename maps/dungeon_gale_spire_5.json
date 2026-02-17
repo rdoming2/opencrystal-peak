@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "id": "dungeon_gale_spire",
-  "name": "Gale Spire - Floor 3",
+  "id": "dungeon_gale_spire_5",
+  "name": "Gale Spire - Floor 5",
   "world": "gaia",
   "width": 24,
   "height": 12,
@@ -9,8 +9,8 @@
     "########################",
     "#......................#",
     "#....####.......####...#",
-    "#....#..#..........#...#",
-    "#....#..#..........#...#",
+    "#....#..#.......#......#",
+    "#....#..#.......####...#",
     "#....####.......####...#",
     "#......................#",
     "#....####.......####...#",
@@ -38,18 +38,18 @@
   "save_points": [],
   "transitions": [
     {
-      "id": "gale_spire_down",
+      "id": "gale_spire_5_down",
       "pos": [2, 2],
-      "target_map": "dungeon_gale_lift",
+      "target_map": "dungeon_gale_spire_4",
       "target_pos": [20, 8],
       "return_to_last": true,
       "glyph": "<",
       "palette": "bright_cyan"
     },
     {
-      "id": "gale_spire_up",
+      "id": "gale_spire_5_up",
       "pos": [20, 8],
-      "target_map": "dungeon_gale_spire_4",
+      "target_map": "dungeon_gale_spire_6",
       "target_pos": [2, 2],
       "return_to_last": false,
       "glyph": ">",
