@@ -79,8 +79,8 @@
       "id": "dragon_exit",
       "pos": [2, 9],
       "target_map": "overworld_gaia",
-      "target_pos": [50, 0],
-      "return_to_last": true,
+      "target_pos": [32, 18],
+      "return_to_last": false,
       "glyph": "<",
       "palette": "bright_cyan"
     }
