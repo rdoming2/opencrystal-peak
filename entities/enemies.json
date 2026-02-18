@@ -9,7 +9,7 @@
       "sprite": {"glyph": "i", "palette": "enemy"},
       "art": {"lines": ["  /\\/\\ ", "( ..)", "/__\\"], "palette": "enemy"},
       "exp": 6,
-      "currency": 8,
+      "currency": [{"id": "gold", "amount": 8}],
       "jp": 2,
       "loot": [{"item": "potion", "chance": 0.2}]
     },
@@ -21,7 +21,7 @@
       "sprite": {"glyph": "*", "palette": "enemy_magic"},
       "art": {"lines": [" .*. ", "( * )", " ' ' "], "palette": "enemy_magic"},
       "exp": 8,
-      "currency": 12,
+      "currency": [{"id": "gold", "amount": 12}],
       "jp": 3,
       "loot": [{"item": "ether", "chance": 0.1}]
     },
@@ -33,7 +33,7 @@
       "sprite": {"glyph": "c", "palette": "enemy"},
       "art": {"lines": ["( )", "( )", ") ("], "palette": "enemy"},
       "exp": 12,
-      "currency": 14,
+      "currency": [{"id": "gold", "amount": 14}],
       "jp": 4,
       "loot": [{"item": "potion", "chance": 0.15}]
     },
@@ -45,7 +45,7 @@
       "sprite": {"glyph": "w", "palette": "enemy"},
       "art": {"lines": ["/\\ ", "(  )", " \\/ "], "palette": "enemy"},
       "exp": 14,
-      "currency": 16,
+      "currency": [{"id": "gold", "amount": 16}],
       "jp": 4,
       "loot": [{"item": "potion", "chance": 0.1}]
     },
@@ -57,7 +57,7 @@
       "sprite": {"glyph": "r", "palette": "enemy_magic"},
       "art": {"lines": [" . ", "(o)", " ' "], "palette": "enemy_magic"},
       "exp": 12,
-      "currency": 13,
+      "currency": [{"id": "gold", "amount": 13}],
       "jp": 4,
       "loot": [{"item": "ether", "chance": 0.12}]
     },
@@ -69,7 +69,7 @@
       "sprite": {"glyph": "*", "palette": "enemy_magic"},
       "art": {"lines": [" .*. ", "( * )", " ' ' "], "palette": "enemy_magic"},
       "exp": 14,
-      "currency": 15,
+      "currency": [{"id": "gold", "amount": 15}],
       "jp": 4,
       "loot": [{"item": "ether", "chance": 0.12}]
     },
@@ -81,7 +81,7 @@
       "sprite": {"glyph": "s", "palette": "enemy_magic"},
       "art": {"lines": [" . ", "<o>", " / "], "palette": "enemy_magic"},
       "exp": 16,
-      "currency": 18,
+      "currency": [{"id": "gold", "amount": 18}],
       "jp": 5,
       "loot": [{"item": "ether", "chance": 0.12}]
     },
@@ -93,7 +93,7 @@
       "sprite": {"glyph": "v", "palette": "enemy"},
       "art": {"lines": [" |>", " /\\", " / "], "palette": "enemy"},
       "exp": 16,
-      "currency": 19,
+      "currency": [{"id": "gold", "amount": 19}],
       "jp": 5,
       "loot": [{"item": "potion", "chance": 0.1}]
     },
@@ -105,7 +105,7 @@
       "sprite": {"glyph": "o", "palette": "enemy"},
       "art": {"lines": ["( )", "( )", "(_)"], "palette": "enemy"},
       "exp": 18,
-      "currency": 20,
+      "currency": [{"id": "gold", "amount": 20}],
       "jp": 5,
       "loot": [{"item": "potion", "chance": 0.1}]
     },
@@ -117,7 +117,7 @@
       "sprite": {"glyph": "t", "palette": "enemy"},
       "art": {"lines": ["/^^\\", "(  )", "\\__/"], "palette": "enemy"},
       "exp": 20,
-      "currency": 22,
+      "currency": [{"id": "gold", "amount": 22}],
       "jp": 6,
       "loot": [{"item": "potion", "chance": 0.12}]
     },
@@ -129,7 +129,7 @@
       "sprite": {"glyph": "d", "palette": "enemy"},
       "art": {"lines": ["/\\_", "(  )", " \\/ "], "palette": "enemy"},
       "exp": 22,
-      "currency": 24,
+      "currency": [{"id": "gold", "amount": 24}],
       "jp": 6,
       "loot": [{"item": "ether", "chance": 0.12}]
     },
@@ -141,7 +141,7 @@
       "sprite": {"glyph": "d", "palette": "enemy"},
       "art": {"lines": ["/\\ ", "(><)", "\\/"], "palette": "enemy"},
       "exp": 24,
-      "currency": 26,
+      "currency": [{"id": "gold", "amount": 26}],
       "jp": 7,
       "loot": [{"item": "ether", "chance": 0.15}]
     },
@@ -153,7 +153,7 @@
       "sprite": {"glyph": "E", "palette": "enemy"},
       "art": {"lines": [" /\\ ", "<==>", "/__\\"], "palette": "enemy"},
       "exp": 80,
-      "currency": 90,
+      "currency": [{"id": "gold", "amount": 90}],
       "jp": 12,
       "loot": []
     },
@@ -165,7 +165,7 @@
       "sprite": {"glyph": "T", "palette": "enemy_magic"},
       "art": {"lines": [" ~~~ ", "(o_o)", " /_\\"], "palette": "enemy_magic"},
       "exp": 85,
-      "currency": 95,
+      "currency": [{"id": "gold", "amount": 95}],
       "jp": 12,
       "loot": []
     },
@@ -177,7 +177,7 @@
       "sprite": {"glyph": "G", "palette": "enemy_magic"},
       "art": {"lines": [" /*\\ ", "<o>", "/___\\"], "palette": "enemy_magic"},
       "exp": 90,
-      "currency": 100,
+      "currency": [{"id": "gold", "amount": 100}],
       "jp": 13,
       "loot": []
     },
@@ -189,7 +189,7 @@
       "sprite": {"glyph": "S", "palette": "enemy"},
       "art": {"lines": ["[##]", "(  )", "/__\\"], "palette": "enemy"},
       "exp": 95,
-      "currency": 110,
+      "currency": [{"id": "gold", "amount": 110}],
       "jp": 13,
       "loot": []
     },
@@ -201,7 +201,7 @@
       "sprite": {"glyph": "D", "palette": "enemy"},
       "art": {"lines": ["/^^\\", "(==)", "\\__/"], "palette": "enemy"},
       "exp": 180,
-      "currency": 160,
+      "currency": [{"id": "gold", "amount": 160}],
       "jp": 20,
       "loot": []
     }

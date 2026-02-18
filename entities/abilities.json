@@ -17,7 +17,7 @@
       "default_target": "enemy",
       "allowed_targets": ["enemy"],
       "effect": {"type": "damage", "power": 4},
-      "cost": {"type": "currency", "value": 10}
+      "cost": {"type": "currency", "value": 10, "currency_id": "gold"}
     },
     {
       "id": "pummel",
