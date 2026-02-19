@@ -31,6 +31,17 @@
     {"id": "settings", "label": "Settings"},
     {"id": "exit", "label": "Exit"}
   ],
+  "gameover": {
+    "title": "Game Over",
+    "subtitle": "The peak stands unbroken.",
+    "menu": [
+      {"id": "retry_battle", "label": "Retry Battle"},
+      {"id": "load_latest", "label": "Load Latest Save"},
+      {"id": "load_autosave", "label": "Load Autosave"},
+      {"id": "return_title", "label": "Return to Title"},
+      {"id": "exit", "label": "Exit"}
+    ]
+  },
   "footer": {
     "left": "Adventure awaits the chosen.",
     "right": "Demo build"

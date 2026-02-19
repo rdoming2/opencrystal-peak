@@ -65,6 +65,13 @@
     "battle.log.throw": "{actor} throws {item} at {target} for {damage} HP.",
     "battle.log.pray": "{actor} prays and the party recovers {amount} HP.",
     "battle.defeat_message": "The party was defeated.",
-    "battle.defeat_return": "Returning to the main menu."
+    "battle.defeat_return": "Returning to the main menu.",
+    "gameover.title": "Game Over",
+    "gameover.subtitle": "Your journey ends here.",
+    "gameover.retry_battle": "Retry Battle",
+    "gameover.load_latest": "Load Latest Save",
+    "gameover.load_autosave": "Load Autosave",
+    "gameover.return_title": "Return to Title",
+    "gameover.exit": "Exit"
   }
 }
