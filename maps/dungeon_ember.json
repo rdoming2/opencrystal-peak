@@ -89,15 +89,36 @@
     "########################################################################################################################"
   ],
   "legend": {
-    "#": {"tile": "wall", "passable": false, "palette": "bright_black"},
-    ".": {"tile": "floor", "passable": true, "palette": "yellow"},
-    "^": {"tile": "lava", "passable": false, "palette": "bright_red"},
-    " ": {"tile": "floor", "passable": true, "palette": "yellow"}
+    "#": {
+      "tile": "wall",
+      "passable": false,
+      "palette": "bright_black"
+    },
+    ".": {
+      "tile": "floor",
+      "passable": true,
+      "palette": "yellow"
+    },
+    "^": {
+      "tile": "lava",
+      "passable": false,
+      "palette": "bright_red"
+    },
+    " ": {
+      "tile": "floor",
+      "passable": true,
+      "palette": "yellow"
+    }
   },
   "encounters": [
     {
       "zone_id": "ember_core",
-      "rect": [0, 0, 120, 80],
+      "rect": [
+        0,
+        0,
+        120,
+        80
+      ],
       "table": "ember_shallows"
     }
   ],
@@ -107,7 +128,10 @@
   "doors": [
     {
       "id": "ember_niche_gate",
-      "pos": [57, 65],
+      "pos": [
+        57,
+        65
+      ],
       "requires_flag": "dungeon.ember_rune_niche",
       "locked_text": "The rune gate is sealed.",
       "glyph": "+",
@@ -117,7 +141,10 @@
   "puzzles": [
     {
       "id": "ember_rune_niche",
-      "pos": [79, 25],
+      "pos": [
+        79,
+        25
+      ],
       "text": "A rune scar is etched into the basalt, still warm to the touch.",
       "set_flag": "dungeon.ember_rune_niche",
       "glyph": "?",
@@ -125,7 +152,10 @@
     },
     {
       "id": "ember_rune_seal",
-      "pos": [66, 46],
+      "pos": [
+        66,
+        46
+      ],
       "text": "A sealed ember plate hums softly behind the stone.",
       "set_flag": "dungeon.ember_rune_seal",
       "glyph": "?",
@@ -135,70 +165,146 @@
   "chests": [
     {
       "id": "ember_cache",
-      "pos": [85, 19],
-      "glyph_closed": "▣",
-      "glyph_open": "▢",
+      "pos": [
+        85,
+        19
+      ],
+      "glyph_closed": "\u25a3",
+      "glyph_open": "\u25a2",
       "palette": "bright_yellow",
       "opened_flag": "dungeon.ember_cache_opened",
       "loot": {
-        "items": [{"id": "potion", "qty": 2}],
-        "equipment": [{"id": "bronze_sword", "qty": 1}],
-        "currency": [{"id": "gold", "amount": 45}]
+        "items": [
+          {
+            "id": "potion",
+            "qty": 2
+          }
+        ],
+        "equipment": [
+          {
+            "id": "bronze_sword",
+            "qty": 1
+          }
+        ],
+        "currency": [
+          {
+            "id": "gold",
+            "amount": 45
+          }
+        ]
       }
     },
     {
       "id": "ember_cache_ridge",
-      "pos": [77, 25],
-      "glyph_closed": "▣",
-      "glyph_open": "▢",
+      "pos": [
+        77,
+        25
+      ],
+      "glyph_closed": "\u25a3",
+      "glyph_open": "\u25a2",
       "palette": "bright_yellow",
       "opened_flag": "dungeon.ember_cache_ridge_opened",
       "loot": {
-        "items": [{"id": "potion", "qty": 1}, {"id": "ether", "qty": 1}],
+        "items": [
+          {
+            "id": "potion",
+            "qty": 1
+          },
+          {
+            "id": "ether",
+            "qty": 1
+          }
+        ],
         "equipment": [],
-        "currency": [{"id": "gold", "amount": 60}]
+        "currency": [
+          {
+            "id": "gold",
+            "amount": 60
+          }
+        ]
       }
     },
     {
       "id": "ember_cache_depths",
-      "pos": [59, 70],
-      "glyph_closed": "▣",
-      "glyph_open": "▢",
+      "pos": [
+        59,
+        70
+      ],
+      "glyph_closed": "\u25a3",
+      "glyph_open": "\u25a2",
       "palette": "bright_yellow",
       "opened_flag": "dungeon.ember_cache_depths_opened",
       "loot": {
-        "items": [{"id": "ether", "qty": 1}],
-        "equipment": [{"id": "bronze_armor", "qty": 1}],
-        "currency": [{"id": "gold", "amount": 75}]
+        "items": [
+          {
+            "id": "ether",
+            "qty": 1
+          }
+        ],
+        "equipment": [
+          {
+            "id": "bronze_armor",
+            "qty": 1
+          }
+        ],
+        "currency": [
+          {
+            "id": "gold",
+            "amount": 75
+          }
+        ]
       }
     }
   ],
   "allow_save": false,
-  "save_points": [[8, 6]],
+  "save_points": [
+    [
+      8,
+      6
+    ]
+  ],
   "transitions": [
     {
       "id": "exit_ember",
-      "pos": [6, 6],
+      "pos": [
+        6,
+        6
+      ],
       "target_map": "overworld_gaia",
-      "target_pos": [11, 10],
+      "target_pos": [
+        44,
+        40
+      ],
       "return_to_last": true,
       "glyph": ">",
       "palette": "bright_cyan"
     },
     {
       "id": "ember_to_depths",
-      "pos": [112, 70],
+      "pos": [
+        112,
+        70
+      ],
       "target_map": "dungeon_ember_depths",
-      "target_pos": [2, 2],
+      "target_pos": [
+        2,
+        2
+      ],
       "return_to_last": false,
       "glyph": ">",
       "palette": "bright_cyan"
     },
     {
       "id": "ember_to_core",
-      "pos": [85, 30],
+      "pos": [
+        85,
+        30
+      ],
       "target_map": "dungeon_ember_core",
-      "target_pos": [20, 8],
+      "target_pos": [
+        20,
+        8
+      ],
       "return_to_last": false,
       "glyph": ">",
       "palette": "bright_cyan"

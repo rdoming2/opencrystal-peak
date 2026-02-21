@@ -20,14 +20,31 @@
     "########################"
   ],
   "legend": {
-    "#": {"tile": "wall", "passable": false, "palette": "bright_black"},
-    ".": {"tile": "floor", "passable": true, "palette": "bright_red"},
-    " ": {"tile": "floor", "passable": true, "palette": "bright_red"}
+    "#": {
+      "tile": "wall",
+      "passable": false,
+      "palette": "bright_black"
+    },
+    ".": {
+      "tile": "floor",
+      "passable": true,
+      "palette": "bright_red"
+    },
+    " ": {
+      "tile": "floor",
+      "passable": true,
+      "palette": "bright_red"
+    }
   },
   "encounters": [
     {
       "zone_id": "dragon_path",
-      "rect": [0, 0, 24, 12],
+      "rect": [
+        0,
+        0,
+        24,
+        12
+      ],
       "table": "dragon_path"
     }
   ],
@@ -37,11 +54,17 @@
   "doors": [
     {
       "id": "dragon_gate",
-      "pos": [20, 8],
+      "pos": [
+        20,
+        8
+      ],
       "requires_flag": "dungeon.dragon_key",
       "locked_text": "The rune gate is sealed.",
       "target_map": "dungeon_dragon_depths",
-      "target_pos": [2, 2],
+      "target_pos": [
+        2,
+        2
+      ],
       "return_to_last": false,
       "glyph": "+",
       "palette": "bright_yellow"
@@ -50,7 +73,10 @@
   "puzzles": [
     {
       "id": "dragon_switch",
-      "pos": [6, 6],
+      "pos": [
+        6,
+        6
+      ],
       "text": "A rune switch clicks into place.",
       "set_flag": "dungeon.dragon_key",
       "glyph": "?",
@@ -60,15 +86,28 @@
   "chests": [
     {
       "id": "dragon_cache_bridge",
-      "pos": [18, 6],
-      "glyph_closed": "▣",
-      "glyph_open": "▢",
+      "pos": [
+        18,
+        6
+      ],
+      "glyph_closed": "\u25a3",
+      "glyph_open": "\u25a2",
       "palette": "bright_yellow",
       "opened_flag": "dungeon.dragon_cache_bridge_opened",
       "loot": {
-        "items": [{"id": "ether", "qty": 1}],
+        "items": [
+          {
+            "id": "ether",
+            "qty": 1
+          }
+        ],
         "equipment": [],
-        "currency": [{"id": "gold", "amount": 80}]
+        "currency": [
+          {
+            "id": "gold",
+            "amount": 80
+          }
+        ]
       }
     }
   ],
@@ -77,9 +116,15 @@
   "transitions": [
     {
       "id": "dragon_exit",
-      "pos": [2, 9],
+      "pos": [
+        2,
+        9
+      ],
       "target_map": "overworld_gaia",
-      "target_pos": [32, 18],
+      "target_pos": [
+        128,
+        72
+      ],
       "return_to_last": false,
       "glyph": "<",
       "palette": "bright_cyan"

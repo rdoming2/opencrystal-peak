@@ -20,14 +20,31 @@
     "########################"
   ],
   "legend": {
-    "#": {"tile": "wall", "passable": false, "palette": "bright_black"},
-    ".": {"tile": "floor", "passable": true, "palette": "bright_cyan"},
-    " ": {"tile": "floor", "passable": true, "palette": "bright_cyan"}
+    "#": {
+      "tile": "wall",
+      "passable": false,
+      "palette": "bright_black"
+    },
+    ".": {
+      "tile": "floor",
+      "passable": true,
+      "palette": "bright_cyan"
+    },
+    " ": {
+      "tile": "floor",
+      "passable": true,
+      "palette": "bright_cyan"
+    }
   },
   "encounters": [
     {
       "zone_id": "gale_shallows",
-      "rect": [0, 0, 24, 12],
+      "rect": [
+        0,
+        0,
+        24,
+        12
+      ],
       "table": "gale_shallows"
     }
   ],
@@ -39,18 +56,30 @@
   "transitions": [
     {
       "id": "gale_exit",
-      "pos": [2, 9],
+      "pos": [
+        2,
+        9
+      ],
       "target_map": "overworld_gaia",
-      "target_pos": [52, 8],
+      "target_pos": [
+        208,
+        32
+      ],
       "return_to_last": true,
       "glyph": "<",
       "palette": "bright_cyan"
     },
     {
       "id": "gale_to_lift",
-      "pos": [20, 8],
+      "pos": [
+        20,
+        8
+      ],
       "target_map": "dungeon_gale_lift",
-      "target_pos": [2, 2],
+      "target_pos": [
+        2,
+        2
+      ],
       "return_to_last": false,
       "glyph": ">",
       "palette": "bright_cyan"

@@ -20,27 +20,67 @@
     "##################"
   ],
   "legend": {
-    "#": {"tile": "fence", "passable": false, "palette": "bright_black"},
-    ".": {"tile": "grass", "passable": true, "palette": "green"},
-    ",": {"tile": "crops", "passable": false, "palette": "bright_yellow"},
-    "=": {"tile": "counter", "passable": false, "palette": "bright_black"}
+    "#": {
+      "tile": "fence",
+      "passable": false,
+      "palette": "bright_black"
+    },
+    ".": {
+      "tile": "grass",
+      "passable": true,
+      "palette": "green"
+    },
+    ",": {
+      "tile": "crops",
+      "passable": false,
+      "palette": "bright_yellow"
+    },
+    "=": {
+      "tile": "counter",
+      "passable": false,
+      "palette": "bright_black"
+    }
   },
   "encounters": [],
   "encounter_rate": 0.0,
   "events": [],
   "npcs": [
-    {"id": "farm_merchant", "pos": [9, 4]},
-    {"id": "farmhand", "pos": [2, 7]},
-    {"id": "farm_dog", "pos": [5, 2]}
+    {
+      "id": "farm_merchant",
+      "pos": [
+        9,
+        4
+      ]
+    },
+    {
+      "id": "farmhand",
+      "pos": [
+        2,
+        7
+      ]
+    },
+    {
+      "id": "farm_dog",
+      "pos": [
+        5,
+        2
+      ]
+    }
   ],
   "allow_save": true,
   "save_points": [],
   "transitions": [
     {
       "id": "to_overworld",
-      "pos": [8, 10],
+      "pos": [
+        8,
+        10
+      ],
       "target_map": "overworld_gaia",
-      "target_pos": [12, 18],
+      "target_pos": [
+        48,
+        72
+      ],
       "return_to_last": false,
       "glyph": "<",
       "palette": "bright_cyan"

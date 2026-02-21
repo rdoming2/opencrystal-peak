@@ -20,14 +20,31 @@
     "########################"
   ],
   "legend": {
-    "#": {"tile": "wall", "passable": false, "palette": "bright_black"},
-    ".": {"tile": "floor", "passable": true, "palette": "bright_yellow"},
-    " ": {"tile": "floor", "passable": true, "palette": "bright_yellow"}
+    "#": {
+      "tile": "wall",
+      "passable": false,
+      "palette": "bright_black"
+    },
+    ".": {
+      "tile": "floor",
+      "passable": true,
+      "palette": "bright_yellow"
+    },
+    " ": {
+      "tile": "floor",
+      "passable": true,
+      "palette": "bright_yellow"
+    }
   },
   "encounters": [
     {
       "zone_id": "stone_shallows",
-      "rect": [0, 0, 24, 12],
+      "rect": [
+        0,
+        0,
+        24,
+        12
+      ],
       "table": "stone_shallows"
     }
   ],
@@ -37,7 +54,10 @@
   "puzzles": [
     {
       "id": "stone_switch",
-      "pos": [6, 6],
+      "pos": [
+        6,
+        6
+      ],
       "text": "A crumbling column shifts and a mechanism clicks somewhere below.",
       "set_flag": "dungeon.stone_key",
       "glyph": "?",
@@ -47,15 +67,28 @@
   "chests": [
     {
       "id": "stone_cache_columns",
-      "pos": [18, 6],
-      "glyph_closed": "▣",
-      "glyph_open": "▢",
+      "pos": [
+        18,
+        6
+      ],
+      "glyph_closed": "\u25a3",
+      "glyph_open": "\u25a2",
       "palette": "bright_yellow",
       "opened_flag": "dungeon.stone_cache_columns_opened",
       "loot": {
-        "items": [{"id": "potion", "qty": 2}],
+        "items": [
+          {
+            "id": "potion",
+            "qty": 2
+          }
+        ],
         "equipment": [],
-        "currency": [{"id": "gold", "amount": 55}]
+        "currency": [
+          {
+            "id": "gold",
+            "amount": 55
+          }
+        ]
       }
     }
   ],
@@ -64,18 +97,30 @@
   "transitions": [
     {
       "id": "stone_exit",
-      "pos": [2, 9],
+      "pos": [
+        2,
+        9
+      ],
       "target_map": "overworld_gaia",
-      "target_pos": [20, 26],
+      "target_pos": [
+        80,
+        104
+      ],
       "return_to_last": true,
       "glyph": "<",
       "palette": "bright_cyan"
     },
     {
       "id": "stone_to_crypt",
-      "pos": [20, 8],
+      "pos": [
+        20,
+        8
+      ],
       "target_map": "dungeon_stone_crypt",
-      "target_pos": [2, 2],
+      "target_pos": [
+        2,
+        2
+      ],
       "return_to_last": false,
       "glyph": ">",
       "palette": "bright_cyan"

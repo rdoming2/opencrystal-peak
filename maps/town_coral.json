@@ -40,62 +40,159 @@
     "########################.#######################"
   ],
   "legend": {
-    "#": {"tile": "wall", "passable": false, "palette": "bright_black"},
-    ".": {"tile": "floor", "passable": true, "palette": "bright_green"},
-    "^": {"tile": "roof", "passable": false, "palette": "bright_red"},
-    "~": {"tile": "water", "passable": false, "palette": "blue"},
-    "=": {"tile": "bridge", "passable": true, "palette": "bright_yellow"}
+    "#": {
+      "tile": "wall",
+      "passable": false,
+      "palette": "bright_black"
+    },
+    ".": {
+      "tile": "floor",
+      "passable": true,
+      "palette": "bright_green"
+    },
+    "^": {
+      "tile": "roof",
+      "passable": false,
+      "palette": "bright_red"
+    },
+    "~": {
+      "tile": "water",
+      "passable": false,
+      "palette": "blue"
+    },
+    "=": {
+      "tile": "bridge",
+      "passable": true,
+      "palette": "bright_yellow"
+    }
   },
   "encounters": [],
   "encounter_rate": 0.0,
   "events": [
-    {"id": "fish_watching", "trigger": "on_step", "pos": [13,21], "script": "fish_watching"}
+    {
+      "id": "fish_watching",
+      "trigger": "on_step",
+      "pos": [
+        13,
+        21
+      ],
+      "script": "fish_watching"
+    }
   ],
   "npcs": [
-    {"id": "town_runner", "pos": [2, 12]},
-    {"id": "town_historian", "pos": [33, 26]},
-    {"id": "coral_villager", "pos": [24, 10]}
+    {
+      "id": "town_runner",
+      "pos": [
+        2,
+        12
+      ]
+    },
+    {
+      "id": "town_historian",
+      "pos": [
+        33,
+        26
+      ]
+    },
+    {
+      "id": "coral_villager",
+      "pos": [
+        24,
+        10
+      ]
+    }
   ],
   "signs": [
-    {"id": "sign_inn", "pos": [38, 9], "glyph": "⚑", "palette": "bright_yellow", "text": "Coral Inn"},
-    {"id": "sign_shop", "pos": [11, 9], "glyph": "⚑", "palette": "bright_yellow", "text": "Coral Outfitters"},
-    {"id": "sign_mayor", "pos": [38, 25], "glyph": "⚑", "palette": "bright_yellow", "text": "Mayor's House"}
+    {
+      "id": "sign_inn",
+      "pos": [
+        38,
+        9
+      ],
+      "glyph": "\u2691",
+      "palette": "bright_yellow",
+      "text": "Coral Inn"
+    },
+    {
+      "id": "sign_shop",
+      "pos": [
+        11,
+        9
+      ],
+      "glyph": "\u2691",
+      "palette": "bright_yellow",
+      "text": "Coral Outfitters"
+    },
+    {
+      "id": "sign_mayor",
+      "pos": [
+        38,
+        25
+      ],
+      "glyph": "\u2691",
+      "palette": "bright_yellow",
+      "text": "Mayor's House"
+    }
   ],
   "allow_save": true,
   "save_points": [],
   "transitions": [
     {
       "id": "to_overworld",
-      "pos": [24, 31],
+      "pos": [
+        24,
+        31
+      ],
       "target_map": "overworld_gaia",
-      "target_pos": [29, 30],
+      "target_pos": [
+        116,
+        120
+      ],
       "return_to_last": false,
       "glyph": ">",
       "palette": "bright_cyan"
     },
     {
       "id": "to_inn",
-      "pos": [35, 8],
+      "pos": [
+        35,
+        8
+      ],
       "target_map": "town_coral_inn",
-      "target_pos": [8, 8],
+      "target_pos": [
+        8,
+        8
+      ],
       "return_to_last": false,
       "glyph": ">",
       "palette": "bright_cyan"
     },
     {
       "id": "to_shop",
-      "pos": [8, 8],
+      "pos": [
+        8,
+        8
+      ],
       "target_map": "town_coral_shop",
-      "target_pos": [8, 8],
+      "target_pos": [
+        8,
+        8
+      ],
       "return_to_last": false,
       "glyph": ">",
       "palette": "bright_cyan"
     },
     {
       "id": "to_mayor",
-      "pos": [35, 24],
+      "pos": [
+        35,
+        24
+      ],
       "target_map": "town_coral_mayor",
-      "target_pos": [8, 8],
+      "target_pos": [
+        8,
+        8
+      ],
       "return_to_last": false,
       "glyph": ">",
       "palette": "bright_cyan"

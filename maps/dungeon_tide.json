@@ -88,15 +88,36 @@
     "########################################################################################################################"
   ],
   "legend": {
-    "#": {"tile": "wall", "passable": false, "palette": "bright_black"},
-    ".": {"tile": "floor", "passable": true, "palette": "cyan"},
-    "~": {"tile": "water", "passable": false, "palette": "blue"},
-    " ": {"tile": "floor", "passable": true, "palette": "cyan"}
+    "#": {
+      "tile": "wall",
+      "passable": false,
+      "palette": "bright_black"
+    },
+    ".": {
+      "tile": "floor",
+      "passable": true,
+      "palette": "cyan"
+    },
+    "~": {
+      "tile": "water",
+      "passable": false,
+      "palette": "blue"
+    },
+    " ": {
+      "tile": "floor",
+      "passable": true,
+      "palette": "cyan"
+    }
   },
   "encounters": [
     {
       "zone_id": "tide_core",
-      "rect": [0, 0, 120, 80],
+      "rect": [
+        0,
+        0,
+        120,
+        80
+      ],
       "table": "tide_shallows"
     }
   ],
@@ -106,7 +127,10 @@
   "doors": [
     {
       "id": "tide_gate",
-      "pos": [31, 49],
+      "pos": [
+        31,
+        49
+      ],
       "requires_flag": "dungeon.tide_key",
       "locked_text": "The rune gate is sealed.",
       "glyph": "+",
@@ -116,7 +140,10 @@
   "puzzles": [
     {
       "id": "tide_shard_north",
-      "pos": [11, 37],
+      "pos": [
+        11,
+        37
+      ],
       "text": "A Tide shard glows faintly in the damp air.",
       "set_flag": "quest.tide_shards.cave_1",
       "event": "tide_shards_check",
@@ -125,7 +152,10 @@
     },
     {
       "id": "tide_shard_south",
-      "pos": [39, 58],
+      "pos": [
+        39,
+        58
+      ],
       "text": "A Tide shard glows faintly in the damp air.",
       "set_flag": "quest.tide_shards.cave_2",
       "event": "tide_shards_check",
@@ -134,7 +164,10 @@
     },
     {
       "id": "tide_switch",
-      "pos": [83, 44],
+      "pos": [
+        83,
+        44
+      ],
       "text": "A plate moves under your touch and you hear a rumble elsewhere.",
       "set_flag": "dungeon.tide_key",
       "glyph": "?",
@@ -144,48 +177,100 @@
   "chests": [
     {
       "id": "tide_cache_reef",
-      "pos": [104, 17],
-      "glyph_closed": "▣",
-      "glyph_open": "▢",
+      "pos": [
+        104,
+        17
+      ],
+      "glyph_closed": "\u25a3",
+      "glyph_open": "\u25a2",
       "palette": "bright_yellow",
       "opened_flag": "dungeon.tide_cache_reef_opened",
       "loot": {
-        "items": [{"id": "potion", "qty": 1}, {"id": "ether", "qty": 1}],
+        "items": [
+          {
+            "id": "potion",
+            "qty": 1
+          },
+          {
+            "id": "ether",
+            "qty": 1
+          }
+        ],
         "equipment": [],
-        "currency": [{"id": "gold", "amount": 55}]
+        "currency": [
+          {
+            "id": "gold",
+            "amount": 55
+          }
+        ]
       }
     },
     {
       "id": "tide_cache_shelf",
-      "pos": [31, 66],
-      "glyph_closed": "▣",
-      "glyph_open": "▢",
+      "pos": [
+        31,
+        66
+      ],
+      "glyph_closed": "\u25a3",
+      "glyph_open": "\u25a2",
       "palette": "bright_yellow",
       "opened_flag": "dungeon.tide_cache_shelf_opened",
       "loot": {
-        "items": [{"id": "potion", "qty": 2}],
-        "equipment": [{"id": "linen_robe", "qty": 1}],
-        "currency": [{"id": "gold", "amount": 70}]
+        "items": [
+          {
+            "id": "potion",
+            "qty": 2
+          }
+        ],
+        "equipment": [
+          {
+            "id": "linen_robe",
+            "qty": 1
+          }
+        ],
+        "currency": [
+          {
+            "id": "gold",
+            "amount": 70
+          }
+        ]
       }
     }
   ],
   "allow_save": false,
-  "save_points": [[112, 72]],
+  "save_points": [
+    [
+      112,
+      72
+    ]
+  ],
   "transitions": [
     {
       "id": "exit_tide",
-      "pos": [6, 6],
+      "pos": [
+        6,
+        6
+      ],
       "target_map": "overworld_gaia",
-      "target_pos": [39, 22],
+      "target_pos": [
+        156,
+        88
+      ],
       "return_to_last": true,
       "glyph": ">",
       "palette": "bright_cyan"
     },
     {
       "id": "tide_to_depths",
-      "pos": [112, 70],
+      "pos": [
+        112,
+        70
+      ],
       "target_map": "dungeon_tide_depths",
-      "target_pos": [2, 2],
+      "target_pos": [
+        2,
+        2
+      ],
       "return_to_last": false,
       "glyph": ">",
       "palette": "bright_cyan"
