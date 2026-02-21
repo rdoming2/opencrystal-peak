@@ -272,8 +272,8 @@
       ],
       "target_map": "overworld_gaia",
       "target_pos": [
-        44,
-        40
+        50,
+        37
       ],
       "return_to_last": true,
       "glyph": ">",
