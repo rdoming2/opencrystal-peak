@@ -7,9 +7,9 @@
       "speaker": "Farmhand",
       "text": "The soil is good this season. The herbs are strong.",
       "choices": [
-        {"label": "Good luck", "next": "end"}
+        {"label": "Good luck", "next": "end_text"}
       ]
     },
-    {"id": "end", "text": "Mind the fences on your way out."}
+    {"id": "end_text", "text": "Mind the fences on your way out."}
   ]
 }

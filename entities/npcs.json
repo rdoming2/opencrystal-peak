@@ -27,6 +27,14 @@
       "behavior": {"type": "static"}
     },
     {
+      "id": "town_runner",
+      "name": "Harbor Runner",
+      "sprite": "wanderer",
+      "palette": "bright_yellow",
+      "dialog": "town_runner",
+      "behavior": {"type": "static"}
+    },
+    {
       "id": "coral_villager",
       "name": "Pippa",
       "sprite": "farmer",

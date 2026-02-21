@@ -8,7 +8,7 @@
       "text": "Coral Town is safe for now, but the rune stones are failing beyond our walls.",
       "choices": [
         {"label": "How can we help?", "next": "quest"},
-        {"label": "Not yet", "next": "end"}
+        {"label": "Not yet", "next": "end_text"}
       ]
     },
     {
@@ -20,11 +20,11 @@
         {"type": "start_event", "event": "rune_stones_briefing"}
       ],
       "choices": [
-        {"label": "We will go", "next": "end"}
+        {"label": "We will go", "next": "end_text"}
       ]
     },
     {
-      "id": "end",
+      "id": "end_text",
       "text": "May the tides and winds favor you."
     }
   ]

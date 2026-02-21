@@ -19,8 +19,13 @@
       "category_id": "main",
       "steps": [
         {
+          "id": "summons",
+          "text": "A harbor runner delivers an urgent summons. Meet the mayor in Coral Town.",
+          "flag": "quest.rune_stones.summons"
+        },
+        {
           "id": "started",
-          "text": "Speak with the mayor of Coral Town about the rune stones.",
+          "text": "Meet with the mayor of Coral Town about the rune stones.",
           "flag": "quest.rune_stones.started"
         },
         {

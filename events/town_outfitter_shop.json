@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "id": "town_outfitter_shop",
+  "steps": [
+    {"type": "open_shop", "shop": "town_outfitter"},
+    {
+      "type": "dialog",
+      "speaker": "Coral Merchant",
+      "text": "Come back anytime."
+    }
+  ]
+}

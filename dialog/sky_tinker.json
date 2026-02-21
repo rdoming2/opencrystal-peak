@@ -9,7 +9,7 @@
       "choices": [
         {"label": "See wares", "next": "wares"},
         {"label": "Ask about lore", "next": "airship"},
-        {"label": "Nevermind", "next": "end"}
+        {"label": "Nevermind", "next": "end_text"}
       ]
     },
     {
@@ -29,7 +29,7 @@
       ]
     },
     {
-      "id": "end",
+      "id": "end_text",
       "text": "May the winds favor you."
     }
   ]

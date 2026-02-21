@@ -33,7 +33,7 @@
   "campfires": [
     {
       "id": "inn_campfire",
-      "pos": [5, 6],
+      "pos": [4, 5],
       "campfire_id": "inn_kitchen",
       "glyph": "C",
       "palette": "bright_red"

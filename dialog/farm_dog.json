@@ -7,9 +7,9 @@
       "speaker": "Farm Dog",
       "text": "Woof!",
       "choices": [
-        {"label": "Pat the dog", "next": "end"}
+        {"label": "Pat the dog", "next": "end_text"}
       ]
     },
-    {"id": "end", "text": "The dog seems happy."}
+    {"id": "end_text", "text": "The dog seems happy."}
   ]
 }

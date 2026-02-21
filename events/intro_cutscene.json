@@ -3,6 +3,21 @@
   "id": "intro_cutscene",
   "steps": [
     {"type": "narration", "text": "Before the runestones dimmed, the seas were calm."},
-    {"type": "narration", "text": "Now the tides churn, and the sky hums with unrest."}
+    {"type": "narration", "text": "Now the tides churn, and the sky hums with unrest."},
+    {"type": "npc_show", "npc": "town_runner", "pos": [2, 12]},
+    {"type": "npc_move", "npc": "town_runner", "pos": [11, 12]},
+    {
+      "type": "dialog",
+      "speaker": "Harbor Runner",
+      "text": "Storm squalls keep slamming the docks. The mayor asked me to find you."
+    },
+    {
+      "type": "dialog",
+      "speaker": "Harbor Runner",
+      "text": "Meet him at his house right away. The rune stones cannot wait."
+    },
+    {"type": "set_flag", "flag": "quest.rune_stones.summons"},
+    {"type": "npc_move", "npc": "town_runner", "pos": [2, 12]},
+    {"type": "npc_hide", "npc": "town_runner"}
   ]
 }

@@ -10,9 +10,9 @@
         {"type": "open_shop", "shop": "farm_produce"}
       ],
       "choices": [
-        {"label": "Thanks", "next": "end"}
+        {"label": "Thanks", "next": "end_text"}
       ]
     },
-    {"id": "end", "text": "Come back when you need supplies."}
+    {"id": "end_text", "text": "Come back when you need supplies."}
   ]
 }

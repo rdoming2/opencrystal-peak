@@ -10,11 +10,11 @@
         {"type": "start_event", "event": "stone_boss"}
       ],
       "choices": [
-        {"label": "We endure", "next": "end"}
+        {"label": "We endure", "next": "end_text"}
       ]
     },
     {
-      "id": "end",
+      "id": "end_text",
       "text": ""
     }
   ]

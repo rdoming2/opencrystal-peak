@@ -7,11 +7,11 @@
       "speaker": "Ancient Dragon",
       "text": "You fought with honor. Let the sky remember your names.",
       "choices": [
-        {"label": "We will", "next": "end"}
+        {"label": "We will", "next": "end_text"}
       ]
     },
     {
-      "id": "end",
+      "id": "end_text",
       "text": ""
     }
   ]

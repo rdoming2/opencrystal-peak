@@ -7,9 +7,9 @@
       "speaker": "Pippa",
       "text": "I name the birds. That one is Captain Crumb, and she steals snacks on purpose.",
       "choices": [
-        {"label": "Adorable", "next": "end"}
+        {"label": "Okay...", "next": "end_text"}
       ]
     },
-    {"id": "end", "text": "If you see her, tell her I said squawk."}
+    {"id": "end_text", "text": "If you see her, tell her I said squawk."}
   ]
 }

@@ -52,6 +52,7 @@
     {"id": "fish_watching", "trigger": "on_step", "pos": [13,21], "script": "fish_watching"}
   ],
   "npcs": [
+    {"id": "town_runner", "pos": [2, 12]},
     {"id": "town_historian", "pos": [33, 26]},
     {"id": "coral_villager", "pos": [24, 10]}
   ],
@@ -68,7 +69,7 @@
       "pos": [24, 31],
       "target_map": "overworld_gaia",
       "target_pos": [29, 30],
-      "return_to_last": true,
+      "return_to_last": false,
       "glyph": ">",
       "palette": "bright_cyan"
     },

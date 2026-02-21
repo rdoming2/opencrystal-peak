@@ -124,7 +124,9 @@
       },
       "spells": [
         {"id": "cure", "level": 1, "unlock_level": 1},
-        {"id": "scan", "level": 1, "unlock_level": 2}
+        {"id": "scan", "level": 1, "unlock_level": 2},
+        {"id": "protect", "level": 1, "unlock_level": 4},
+        {"id": "shell", "level": 1, "unlock_level": 6}
       ],
       "commands": ["magic"]
     },
@@ -171,7 +173,11 @@
       "spells": [
         {"id": "fire", "level": 1, "unlock_level": 1},
         {"id": "blizzard", "level": 1, "unlock_level": 2},
-        {"id": "thunder", "level": 1, "unlock_level": 3}
+        {"id": "thunder", "level": 1, "unlock_level": 3},
+        {"id": "poison", "level": 1, "unlock_level": 4},
+        {"id": "sleep", "level": 1, "unlock_level": 6},
+        {"id": "paralyze", "level": 1, "unlock_level": 7},
+        {"id": "stone", "level": 1, "unlock_level": 8}
       ],
       "commands": ["magic"]
     },

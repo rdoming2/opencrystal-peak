@@ -10,11 +10,11 @@
         {"type": "start_event", "event": "gale_boss"}
       ],
       "choices": [
-        {"label": "We stand", "next": "end"}
+        {"label": "We stand", "next": "end_text"}
       ]
     },
     {
-      "id": "end",
+      "id": "end_text",
       "text": ""
     }
   ]

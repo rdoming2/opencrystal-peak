@@ -8,7 +8,7 @@
       "text": "Welcome to Coral Inn. Would you like to rest?",
       "choices": [
         {"label": "Rest (50 G)", "next": "rest"},
-        {"label": "No thanks", "next": "end"}
+        {"label": "No thanks", "next": "end_text"}
       ]
     },
     {
@@ -20,11 +20,11 @@
         {"type": "learn_recipe", "recipe": "hearty_stew"}
       ],
       "choices": [
-        {"label": "Thanks", "next": "end"}
+        {"label": "Thanks", "next": "end_text"}
       ]
     },
     {
-      "id": "end",
+      "id": "end_text",
       "text": "Come back anytime."
     }
   ]
