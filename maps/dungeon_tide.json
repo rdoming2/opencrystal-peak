@@ -253,10 +253,10 @@
       ],
       "target_map": "overworld_gaia",
       "target_pos": [
-        156,
+        134,
         88
       ],
-      "return_to_last": true,
+      "return_to_last": false,
       "glyph": ">",
       "palette": "bright_cyan"
     },

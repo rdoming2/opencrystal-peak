@@ -26,12 +26,12 @@
       {"id": "attack", "label": "Attack", "kind": "attack", "sort_order": 10},
       {"id": "magic", "label": "Magic", "kind": "magic", "sort_order": 30},
       {"id": "abilities", "label": "Abilities", "kind": "abilities", "sort_order": 40},
-      {"id": "steal", "label": "Steal", "kind": "abilities_group", "sort_order": 41, "ability_group": "steal"},
-      {"id": "throw", "label": "Throw", "kind": "abilities_group", "sort_order": 42, "ability_group": "throw"},
-      {"id": "pray", "label": "Pray", "kind": "abilities_group", "sort_order": 43, "ability_group": "pray"},
-      {"id": "parry", "label": "Parry", "kind": "abilities_group", "sort_order": 44, "ability_group": "parry"},
-      {"id": "cover", "label": "Cover", "kind": "abilities_group", "sort_order": 45, "ability_group": "cover"},
-      {"id": "counter", "label": "Counter", "kind": "abilities_group", "sort_order": 46, "ability_group": "counter"},
+      {"id": "steal", "label": "Steal", "kind": "abilities", "sort_order": 41, "ability_id": "steal"},
+      {"id": "throw", "label": "Throw", "kind": "abilities", "sort_order": 42, "ability_id": "throw_knife"},
+      {"id": "pray", "label": "Pray", "kind": "abilities", "sort_order": 43, "ability_id": "pray"},
+      {"id": "parry", "label": "Parry", "kind": "abilities", "sort_order": 44, "ability_id": "parry"},
+      {"id": "cover", "label": "Cover", "kind": "abilities", "sort_order": 45, "ability_id": "cover"},
+      {"id": "counter", "label": "Counter", "kind": "abilities", "sort_order": 46, "ability_id": "counter"},
       {"id": "items", "label": "Items", "kind": "items", "sort_order": 50},
       {"id": "defend", "label": "Defend", "kind": "defend", "sort_order": 60},
       {"id": "row", "label": "Row", "kind": "row", "sort_order": 65},
@@ -146,7 +146,7 @@
     "jp_mode": "earn",
     "job_exp_curve": {
       "mode": "table",
-      "table": [0, 15, 45, 90, 150, 225, 315, 420, 540, 675],
+      "table": [0, 45, 180, 390, 660, 990, 1380, 1840, 2380, 3000],
       "max_level": 10
     }
   }

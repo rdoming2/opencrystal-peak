@@ -227,21 +227,21 @@
         7,
         6
       ],
-      "glyph": "D",
+      "glyph": "\u2617",
       "palette": "bright_magenta"
     },
     {
       "id": "to_tide",
       "pos": [
-        160,
-        88
+        134,
+        87
       ],
       "target_map": "dungeon_tide",
       "target_pos": [
         7,
         6
       ],
-      "glyph": "D",
+      "glyph": "\u2617",
       "palette": "bright_magenta"
     },
     {
@@ -255,7 +255,7 @@
         2,
         9
       ],
-      "glyph": "D",
+      "glyph": "\u2617",
       "palette": "bright_magenta"
     },
     {
@@ -283,7 +283,7 @@
         2,
         9
       ],
-      "glyph": "D",
+      "glyph": "\u2617",
       "palette": "bright_magenta"
     },
     {
@@ -297,7 +297,7 @@
         2,
         8
       ],
-      "glyph": "D",
+      "glyph": "\u2617",
       "palette": "bright_magenta"
     },
     {
