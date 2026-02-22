@@ -7,7 +7,7 @@
       "category": "sword",
       "slot": "weapon",
       "allowed_jobs": null,
-      "price": 200,
+      "price": {"gold": 200},
       "stats": {"str": 2}
     },
     {
@@ -16,7 +16,7 @@
       "category": "staff",
       "slot": "weapon",
       "allowed_jobs": null,
-      "price": 180,
+      "price": {"gold": 180},
       "stats": {"int": 1}
     },
     {
@@ -25,7 +25,7 @@
       "category": "plate",
       "slot": "armor",
       "allowed_jobs": null,
-      "price": 220,
+      "price": {"gold": 220},
       "stats": {"def": 2}
     },
     {
@@ -34,7 +34,7 @@
       "category": "robe",
       "slot": "armor",
       "allowed_jobs": null,
-      "price": 160,
+      "price": {"gold": 160},
       "stats": {"mdef": 1},
       "spells": ["protect", "shell"]
     },
@@ -44,7 +44,7 @@
       "category": "plate",
       "slot": "armor",
       "allowed_jobs": null,
-      "price": 420,
+      "price": {"gold": 420},
       "stats": {"def": 3, "mdef": 1},
       "traits": ["resist_fire"]
     }
