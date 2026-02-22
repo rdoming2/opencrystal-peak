@@ -26,9 +26,12 @@
       "id": "farm_produce",
       "name": "Farm Produce",
       "currency": "gold",
+      "currency_pool": "tracked",
+      "currency_amount": 75,
+      "sell_behavior": "stock",
       "inventory": [
-        {"item": "raw_fish", "price": 20},
-        {"item": "herb_bundle", "price": 15}
+        {"item": "raw_fish", "price": 20, "stock": 5},
+        {"item": "herb_bundle", "price": 15, "stock": 8}
       ]
     }
   ]
