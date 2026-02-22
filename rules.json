@@ -118,6 +118,14 @@
       "visible": true,
       "editable": true
     },
+    "difficulty_scale": {
+      "value": 1.0,
+      "min": 0.5,
+      "max": 2.0,
+      "step": 0.1,
+      "visible": true,
+      "editable": true
+    },
     "battle_mode": {
       "value": "dynamic_wait",
       "options": ["dynamic_wait", "dynamic"],
