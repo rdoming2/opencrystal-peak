@@ -2,9 +2,14 @@
   "version": 1,
   "id": "dungeon_ember",
   "name": "Ember Caverns - Floor 1",
+  "hide_name": false,
   "world": "gaia",
   "width": 120,
   "height": 80,
+  "loop": {
+    "x": false,
+    "y": false
+  },
   "tiles": [
     "########################################################################################################################",
     "########################################################################################################################",
@@ -88,12 +93,7 @@
     "########################################################################################################################"
   ],
   "legend": {
-    "#": {
-      "tile": "wall",
-      "passable": false,
-      "palette": "bright_black"
-    },
-    ".": {
+    " ": {
       "tile": "floor",
       "passable": true,
       "palette": "yellow"
@@ -103,7 +103,12 @@
       "passable": false,
       "palette": "bright_red"
     },
-    " ": {
+    "#": {
+      "tile": "wall",
+      "passable": false,
+      "palette": "bright_black"
+    },
+    ".": {
       "tile": "floor",
       "passable": true,
       "palette": "yellow"
@@ -124,52 +129,16 @@
   "encounter_rate": 0.05,
   "events": [],
   "npcs": [],
-  "doors": [
-    {
-      "id": "ember_niche_gate",
-      "pos": [
-        57,
-        65
-      ],
-      "requires_flag": "dungeon.ember_rune_niche",
-      "locked_text": "The rune gate is sealed.",
-      "glyph": "+",
-      "palette": "bright_yellow"
-    }
-  ],
-  "puzzles": [
-    {
-      "id": "ember_rune_niche",
-      "pos": [
-        79,
-        25
-      ],
-      "text": "A rune scar is etched into the basalt, still warm to the touch.",
-      "set_flag": "dungeon.ember_rune_niche",
-      "glyph": "?",
-      "palette": "bright_magenta"
-    },
-    {
-      "id": "ember_rune_seal",
-      "pos": [
-        66,
-        46
-      ],
-      "text": "A sealed ember plate hums softly behind the stone.",
-      "set_flag": "dungeon.ember_rune_seal",
-      "glyph": "?",
-      "palette": "bright_magenta"
-    }
-  ],
+  "signs": [],
   "chests": [
     {
       "id": "ember_cache",
       "pos": [
         85,
-        19
+        18
       ],
-      "glyph_closed": "\u25a3",
-      "glyph_open": "\u25a2",
+      "glyph_closed": "▣",
+      "glyph_open": "▢",
       "palette": "bright_yellow",
       "opened_flag": "dungeon.ember_cache_opened",
       "loot": {
@@ -197,10 +166,10 @@
       "id": "ember_cache_ridge",
       "pos": [
         77,
-        25
+        24
       ],
-      "glyph_closed": "\u25a3",
-      "glyph_open": "\u25a2",
+      "glyph_closed": "▣",
+      "glyph_open": "▢",
       "palette": "bright_yellow",
       "opened_flag": "dungeon.ember_cache_ridge_opened",
       "loot": {
@@ -227,10 +196,10 @@
       "id": "ember_cache_depths",
       "pos": [
         59,
-        70
+        69
       ],
-      "glyph_closed": "\u25a3",
-      "glyph_open": "\u25a2",
+      "glyph_closed": "▣",
+      "glyph_open": "▢",
       "palette": "bright_yellow",
       "opened_flag": "dungeon.ember_cache_depths_opened",
       "loot": {
@@ -258,8 +227,8 @@
   "allow_save": false,
   "save_points": [
     [
-      8,
-      6
+      105,
+      76
     ]
   ],
   "transitions": [
@@ -274,6 +243,9 @@
         50,
         37
       ],
+      "label": null,
+      "requires_flag": null,
+      "cost": null,
       "return_to_last": true,
       "glyph": ">",
       "palette": "bright_cyan"
@@ -282,13 +254,16 @@
       "id": "ember_to_depths",
       "pos": [
         112,
-        70
+        69
       ],
       "target_map": "dungeon_ember_depths",
       "target_pos": [
         2,
         2
       ],
+      "label": null,
+      "requires_flag": null,
+      "cost": null,
       "return_to_last": false,
       "glyph": ">",
       "palette": "bright_cyan"
@@ -304,9 +279,59 @@
         20,
         8
       ],
+      "label": null,
+      "requires_flag": null,
+      "cost": null,
       "return_to_last": false,
       "glyph": ">",
       "palette": "bright_cyan"
     }
-  ]
+  ],
+  "vehicles": [],
+  "doors": [
+    {
+      "id": "ember_niche_gate",
+      "pos": [
+        57,
+        64
+      ],
+      "requires_flag": "dungeon.ember_rune_niche",
+      "locked_text": "The rune gate is sealed.",
+      "locked_event": null,
+      "target_map": null,
+      "target_pos": null,
+      "return_to_last": false,
+      "glyph": "+",
+      "palette": "bright_yellow"
+    }
+  ],
+  "puzzles": [
+    {
+      "id": "ember_rune_niche",
+      "pos": [
+        79,
+        24
+      ],
+      "requires_flags": null,
+      "text": "A rune scar is etched into the basalt, still warm to the touch.",
+      "event": null,
+      "set_flag": "dungeon.ember_rune_niche",
+      "glyph": "?",
+      "palette": "bright_magenta"
+    },
+    {
+      "id": "ember_rune_seal",
+      "pos": [
+        67,
+        45
+      ],
+      "requires_flags": null,
+      "text": "A sealed ember plate hums softly behind the stone.",
+      "event": null,
+      "set_flag": "dungeon.ember_rune_seal",
+      "glyph": "?",
+      "palette": "bright_magenta"
+    }
+  ],
+  "campfires": []
 }

@@ -68,6 +68,7 @@
     "table": [0, 45, 180, 390, 660, 990, 1380, 1840, 2380, 3000],
     "max_level": 10
   },
+  "progression_mode": "job",
   "inventory": {
     "max_stack": 99,
     "items": [
@@ -159,7 +160,6 @@
     ]
   },
   "job_system": {
-    "progression_mode": "job",
     "secondary_jobs": true,
     "jp_mode": "earn",
     "job_exp_curve": {
