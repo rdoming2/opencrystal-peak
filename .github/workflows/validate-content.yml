@@ -1,0 +1,30 @@
+name: Validate Content
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout content
+        uses: actions/checkout@v4
+
+      - name: Checkout engine
+        uses: actions/checkout@v4
+        with:
+          repository: rdoming2/opencrystal-engine
+          ref: main
+          path: engine
+
+      - name: Set up Rust
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Build cryst
+        working-directory: engine
+        run: cargo build --release -p cryst
+
+      - name: Validate content
+        run: engine/target/release/cryst validate --content "$GITHUB_WORKSPACE"
