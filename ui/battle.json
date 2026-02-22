@@ -43,7 +43,18 @@
     "flash_cycles": 2
   },
   "panels": {
-    "enemies": {"title": "Enemies", "highlight": {"style": "invert", "link_to_battlefield": true}},
+    "enemies": {
+      "title": "Enemies",
+      "highlight": {"style": "invert", "link_to_battlefield": true},
+      "hp_colors": {
+        "enabled": true,
+        "thresholds": [
+          {"ratio": 0.25, "palette": "red"},
+          {"ratio": 0.5, "palette": "yellow"},
+          {"ratio": 1.0, "palette": "none"}
+        ]
+      }
+    },
     "commands": {"title": "Commands", "items": ["Attack", "Magic", "Abilities", "Items", "Defend", "Run"], "page_size": 5},
     "party": {"title": "Party", "show": ["hp", "mp", "readiness", "status"], "highlight": {"style": "underline", "link_to_battlefield": true}}
   },

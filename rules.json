@@ -123,17 +123,27 @@
       "options": ["dynamic_wait", "dynamic"],
       "visible": true,
       "editable": true
+    },
+    "death_markers_visible": {
+      "value": true,
+      "visible": true,
+      "editable": true
     }
   },
   "render": {
     "min_art_width": 90,
     "min_art_height": 30,
-    "palette": "terminal"
+    "palette": "terminal",
+    "death_markers": {
+      "show_on_map": true,
+      "glyph": "✞"
+    }
   },
   "stats": {
     "track": [
       "time_played",
       "enemies_defeated",
+      "player_deaths",
       "max_damage",
       "jobs_unlocked",
       "crystals_collected",

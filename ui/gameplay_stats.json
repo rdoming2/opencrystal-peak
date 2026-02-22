@@ -9,6 +9,7 @@
         {"label": "Dungeons", "value": "dungeons_cleared"},
         {"label": "Jobs", "value": "jobs_unlocked"},
         {"label": "Enemies", "value": "enemies_defeated"},
+        {"label": "Deaths", "value": "player_deaths"},
         {"label": "Max Damage", "value": "max_damage"},
         {"label": "Play Time", "value": "time_played"}
       ]
