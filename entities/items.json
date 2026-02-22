@@ -6,6 +6,7 @@
       "name": "Potion",
       "type": "consumable",
       "description": "Restores a small amount of HP.",
+      "price": 50,
       "usage": {"context": "both", "target": "ally"},
       "effect": {"type": "heal_hp", "power": 50}
     },
@@ -14,6 +15,7 @@
       "name": "Ether",
       "type": "consumable",
       "description": "Restores a small amount of MP.",
+      "price": 80,
       "usage": {"context": "both", "target": "ally"},
       "effect": {"type": "heal_mp", "power": 10}
     },
@@ -22,6 +24,7 @@
       "name": "Revival Ring",
       "type": "consumable",
       "description": "Revives a fallen ally with some HP.",
+      "price": 200,
       "usage": {"context": "both", "target": "ally"},
       "effect": {"type": "revive", "power": 50}
     },
@@ -30,6 +33,7 @@
       "name": "Antidote",
       "type": "consumable",
       "description": "Cures poison.",
+      "price": 30,
       "usage": {"context": "both", "target": "ally"},
       "effect": {"type": "cure_status", "statuses": ["poison"]}
     },
@@ -38,6 +42,7 @@
       "name": "Warp Scroll",
       "type": "travel",
       "description": "Returns the party to the last overworld entry point.",
+      "price": 200,
       "usage": {"context": "field", "target": "party"},
       "effect": {"type": "warp", "target": "last_overworld"}
     },
@@ -46,6 +51,7 @@
       "name": "Recipe: Hearty Stew",
       "type": "key_item",
       "description": "A recipe for a comforting stew.",
+      "sellable": false,
       "usage": {"context": "field", "target": "self"},
       "effect": {"type": "learn_recipe", "target": "hearty_stew"}
     },
@@ -54,6 +60,7 @@
       "name": "Raw Fish",
       "type": "ingredient",
       "description": "Fresh catch, best cooked over a flame.",
+      "price": 20,
       "usage": {"context": "field", "target": "self"},
       "effect": {"type": "none"}
     },
@@ -62,6 +69,7 @@
       "name": "Herb Bundle",
       "type": "ingredient",
       "description": "Aromatic herbs for simple meals.",
+      "price": 15,
       "usage": {"context": "field", "target": "self"},
       "effect": {"type": "none"}
     },
@@ -70,6 +78,7 @@
       "name": "Fish Skewer",
       "type": "consumable",
       "description": "A warm skewer that restores HP.",
+      "price": 60,
       "usage": {"context": "field", "target": "ally"},
       "effect": {"type": "heal_hp", "power": 80}
     },
@@ -78,6 +87,7 @@
       "name": "Hearty Stew",
       "type": "consumable",
       "description": "A hearty bowl that restores more HP.",
+      "price": 120,
       "usage": {"context": "field", "target": "ally"},
       "effect": {"type": "heal_hp", "power": 140}
     },
@@ -86,6 +96,7 @@
       "name": "Throwing Knife",
       "type": "consumable",
       "description": "A balanced knife meant to be thrown in battle.",
+      "price": 40,
       "usage": {"context": "battle", "target": "enemy"},
       "effect": {"type": "damage", "power": 10}
     }
