@@ -2,10 +2,14 @@
   "version": 1,
   "id": "overworld_gaia",
   "name": "Gaia Overworld",
+  "hide_name": false,
   "world": "gaia",
   "width": 256,
   "height": 144,
-  "loop": {"x": true, "y": true},
+  "loop": {
+    "x": true,
+    "y": true
+  },
   "tiles": [
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
@@ -153,30 +157,30 @@
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
   ],
   "legend": {
-    "~": {
-      "tile": "water",
-      "passable": false,
-      "palette": "blue"
-    },
     ".": {
       "tile": "grass",
       "passable": true,
       "palette": "green"
     },
-    "^": {
-      "tile": "mountain",
+    "#": {
+      "tile": "lava",
       "passable": false,
-      "palette": "bright_black"
+      "palette": "bright_red"
+    },
+    "~": {
+      "tile": "water",
+      "passable": false,
+      "palette": "blue"
     },
     "=": {
       "tile": "bridge",
       "passable": true,
       "palette": "bright_yellow"
     },
-    "#": {
-      "tile": "lava",
+    "^": {
+      "tile": "mountain",
       "passable": false,
-      "palette": "bright_red"
+      "palette": "bright_black"
     }
   },
   "encounters": [
@@ -194,27 +198,10 @@
   "encounter_rate": 0.08,
   "events": [],
   "npcs": [],
+  "signs": [],
+  "chests": [],
   "allow_save": true,
   "save_points": [],
-  "vehicles": [
-    {
-      "vehicle_id": "ship",
-      "pos": [
-        0,
-        4
-      ]
-    },
-    {
-      "vehicle_id": "airship",
-      "pos": [
-        76,
-        12
-      ],
-      "requires_flags": [
-        "vehicle.airship_unlocked"
-      ]
-    }
-  ],
   "transitions": [
     {
       "id": "to_ember",
@@ -227,7 +214,11 @@
         7,
         6
       ],
-      "glyph": "\u2617",
+      "label": null,
+      "requires_flag": null,
+      "cost": null,
+      "return_to_last": false,
+      "glyph": "☗",
       "palette": "bright_magenta"
     },
     {
@@ -241,7 +232,11 @@
         7,
         6
       ],
-      "glyph": "\u2617",
+      "label": null,
+      "requires_flag": null,
+      "cost": null,
+      "return_to_last": false,
+      "glyph": "☗",
       "palette": "bright_magenta"
     },
     {
@@ -255,7 +250,11 @@
         2,
         9
       ],
-      "glyph": "\u2617",
+      "label": null,
+      "requires_flag": null,
+      "cost": null,
+      "return_to_last": false,
+      "glyph": "☗",
       "palette": "bright_magenta"
     },
     {
@@ -269,6 +268,10 @@
         14,
         15
       ],
+      "label": null,
+      "requires_flag": null,
+      "cost": null,
+      "return_to_last": false,
       "glyph": "H",
       "palette": "bright_green"
     },
@@ -283,7 +286,11 @@
         2,
         9
       ],
-      "glyph": "\u2617",
+      "label": null,
+      "requires_flag": null,
+      "cost": null,
+      "return_to_last": false,
+      "glyph": "☗",
       "palette": "bright_magenta"
     },
     {
@@ -297,7 +304,11 @@
         2,
         8
       ],
-      "glyph": "\u2617",
+      "label": null,
+      "requires_flag": null,
+      "cost": null,
+      "return_to_last": false,
+      "glyph": "☗",
       "palette": "bright_magenta"
     },
     {
@@ -311,6 +322,10 @@
         24,
         30
       ],
+      "label": null,
+      "requires_flag": null,
+      "cost": null,
+      "return_to_last": false,
       "glyph": "T",
       "palette": "bright_cyan"
     },
@@ -325,8 +340,35 @@
         8,
         10
       ],
+      "label": null,
+      "requires_flag": null,
+      "cost": null,
+      "return_to_last": false,
       "glyph": "F",
       "palette": "bright_green"
     }
-  ]
+  ],
+  "vehicles": [
+    {
+      "vehicle_id": "ship",
+      "pos": [
+        0,
+        4
+      ],
+      "requires_flags": null
+    },
+    {
+      "vehicle_id": "airship",
+      "pos": [
+        83,
+        12
+      ],
+      "requires_flags": [
+        "vehicle.airship_unlocked"
+      ]
+    }
+  ],
+  "doors": [],
+  "puzzles": [],
+  "campfires": []
 }
