@@ -111,12 +111,12 @@
       "palette": "bright_cyan"
     },
     {
-      "id": "stone_to_crypt",
+      "id": "stone_to_depths",
       "pos": [
         20,
         8
       ],
-      "target_map": "dungeon_stone_crypt",
+      "target_map": "dungeon_stone_depths",
       "target_pos": [
         2,
         2

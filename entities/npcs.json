@@ -60,6 +60,14 @@
       "behavior": {"type": "static"}
     },
     {
+      "id": "shipbuilder",
+      "name": "Shipbuilder Neri",
+      "sprite": "merchant",
+      "palette": "bright_yellow",
+      "dialog": "shipbuilder",
+      "behavior": {"type": "roam", "radius": 3, "idle_chance": 0.35, "persist": true}
+    },
+    {
       "id": "boss_ember",
       "name": "Ember Sentinel",
       "sprite": "guardian",

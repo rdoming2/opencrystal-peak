@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "id": "bridge_repair_turnin",
+  "steps": [
+    {
+      "type": "require_items",
+      "item": "stonebind_rivet",
+      "qty": 5,
+      "text": "You still need 5 Stonebind Rivets from the Stone Vault."
+    },
+    {
+      "type": "dialog",
+      "speaker": "Shipbuilder Neri",
+      "text": "These will do nicely. Give me a moment."
+    },
+    {"type": "remove_item", "item": "stonebind_rivet", "qty": 5},
+    {"type": "set_flag", "flag": "quest.bridge_repair.gather_rivets"},
+    {"type": "set_flag", "flag": "quest.bridge_repair.repair_bridge"},
+    {"type": "set_flag", "flag": "world.bridge_fixed"},
+    {
+      "type": "narration",
+      "text": "The bridge has been reinforced and is safe to cross."
+    }
+  ]
+}

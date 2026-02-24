@@ -2,9 +2,14 @@
   "version": 1,
   "id": "town_coral",
   "name": "Coral Harbor",
+  "hide_name": false,
   "world": "gaia",
   "width": 48,
   "height": 32,
+  "loop": {
+    "x": false,
+    "y": false
+  },
   "tiles": [
     "################################################",
     "#..............................................#",
@@ -40,20 +45,15 @@
     "########################.#######################"
   ],
   "legend": {
-    "#": {
-      "tile": "wall",
+    "^": {
+      "tile": "roof",
       "passable": false,
-      "palette": "bright_black"
+      "palette": "bright_red"
     },
     ".": {
       "tile": "floor",
       "passable": true,
       "palette": "bright_green"
-    },
-    "^": {
-      "tile": "roof",
-      "passable": false,
-      "palette": "bright_red"
     },
     "~": {
       "tile": "water",
@@ -64,6 +64,11 @@
       "tile": "bridge",
       "passable": true,
       "palette": "bright_yellow"
+    },
+    "#": {
+      "tile": "wall",
+      "passable": false,
+      "palette": "bright_black"
     }
   },
   "encounters": [],
@@ -72,11 +77,12 @@
     {
       "id": "fish_watching",
       "trigger": "on_step",
+      "script": "fish_watching",
+      "zone": null,
       "pos": [
         13,
         21
-      ],
-      "script": "fish_watching"
+      ]
     }
   ],
   "npcs": [
@@ -85,20 +91,37 @@
       "pos": [
         2,
         12
-      ]
+      ],
+      "script": null,
+      "requires_flags": null
     },
     {
       "id": "town_historian",
       "pos": [
         33,
         26
-      ]
+      ],
+      "script": null,
+      "requires_flags": null
     },
     {
       "id": "coral_villager",
       "pos": [
         24,
         10
+      ],
+      "script": null,
+      "requires_flags": null
+    },
+    {
+      "id": "shipbuilder",
+      "pos": [
+        9,
+        27
+      ],
+      "script": null,
+      "requires_flags": [
+        "quest.bridge_repair.started"
       ]
     }
   ],
@@ -109,7 +132,7 @@
         38,
         9
       ],
-      "glyph": "\u2691",
+      "glyph": "⚑",
       "palette": "bright_yellow",
       "text": "Coral Inn"
     },
@@ -119,7 +142,7 @@
         11,
         9
       ],
-      "glyph": "\u2691",
+      "glyph": "⚑",
       "palette": "bright_yellow",
       "text": "Coral Outfitters"
     },
@@ -129,11 +152,12 @@
         38,
         25
       ],
-      "glyph": "\u2691",
+      "glyph": "⚑",
       "palette": "bright_yellow",
       "text": "Mayor's House"
     }
   ],
+  "chests": [],
   "allow_save": true,
   "save_points": [],
   "transitions": [
@@ -148,6 +172,9 @@
         120,
         120
       ],
+      "label": null,
+      "requires_flag": null,
+      "cost": null,
       "return_to_last": false,
       "glyph": ">",
       "palette": "bright_cyan"
@@ -163,6 +190,9 @@
         8,
         8
       ],
+      "label": null,
+      "requires_flag": null,
+      "cost": null,
       "return_to_last": false,
       "glyph": ">",
       "palette": "bright_cyan"
@@ -178,6 +208,9 @@
         8,
         8
       ],
+      "label": null,
+      "requires_flag": null,
+      "cost": null,
       "return_to_last": false,
       "glyph": ">",
       "palette": "bright_cyan"
@@ -193,9 +226,16 @@
         8,
         8
       ],
+      "label": null,
+      "requires_flag": null,
+      "cost": null,
       "return_to_last": false,
       "glyph": ">",
       "palette": "bright_cyan"
     }
-  ]
+  ],
+  "vehicles": [],
+  "doors": [],
+  "puzzles": [],
+  "campfires": []
 }

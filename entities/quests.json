@@ -127,6 +127,36 @@
           "show_flag": "quest.lost_cat.find_cat"
         }
       ]
+    },
+    {
+      "id": "bridge_repair",
+      "title": "Mending Bridges",
+      "category_id": "side",
+      "steps": [
+        {
+          "id": "started",
+          "text": "Examine the damaged bridge in the overworld.",
+          "flag": "quest.bridge_repair.started"
+        },
+        {
+          "id": "meet_shipbuilder",
+          "text": "Find a shipbuilder in Coral Harbor who can help.",
+          "flag": "quest.bridge_repair.meet_shipbuilder",
+          "show_flag": "quest.bridge_repair.started"
+        },
+        {
+          "id": "gather_rivets",
+          "text": "Collect 5 Stonebind Rivets from creatures in the Stone Vault.",
+          "flag": "quest.bridge_repair.gather_rivets",
+          "show_flag": "quest.bridge_repair.meet_shipbuilder"
+        },
+        {
+          "id": "repair_bridge",
+          "text": "Return to the shipbuilder to repair the bridge.",
+          "flag": "quest.bridge_repair.repair_bridge",
+          "show_flag": "quest.bridge_repair.gather_rivets"
+        }
+      ]
     }
   ]
 }

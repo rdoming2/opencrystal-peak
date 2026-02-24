@@ -107,7 +107,10 @@
       "exp": 15,
       "currency": [{"id": "gold", "amount": 20}],
       "jp": 5,
-      "loot": [{"item": "potion", "chance": 0.1}]
+      "loot": [
+        {"item": "potion", "chance": 0.1},
+        {"item": "stonebind_rivet", "chance": 0.08}
+      ]
     },
     {
       "id": "basalt_turtle",
@@ -119,7 +122,10 @@
       "exp": 17,
       "currency": [{"id": "gold", "amount": 22}],
       "jp": 6,
-      "loot": [{"item": "potion", "chance": 0.12}]
+      "loot": [
+        {"item": "potion", "chance": 0.12},
+        {"item": "stonebind_rivet", "chance": 0.06}
+      ]
     },
     {
       "id": "wyrmkin",

@@ -201,6 +201,25 @@
       ]
     },
     {
+      "id": "stone_depths",
+      "entries": [
+        {
+          "weight": 55,
+          "formation": [
+            {"enemy": "oreling", "pos": [0, 1]},
+            {"enemy": "basalt_turtle", "pos": [2, 2]}
+          ]
+        },
+        {
+          "weight": 45,
+          "formation": [
+            {"enemy": "oreling", "pos": [1, 2]},
+            {"enemy": "oreling", "pos": [2, 3]}
+          ]
+        }
+      ]
+    },
+    {
       "id": "stone_crypt",
       "entries": [
         {

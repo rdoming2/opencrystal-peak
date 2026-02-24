@@ -56,6 +56,15 @@
       "effect": {"type": "learn_recipe", "target": "hearty_stew"}
     },
     {
+      "id": "stonebind_rivet",
+      "name": "Stonebind Rivet",
+      "type": "key_item",
+      "description": "A rare rivet harvested from Stone Vault creatures.",
+      "sellable": false,
+      "usage": {"context": "field", "target": "self"},
+      "effect": {"type": "none"}
+    },
+    {
       "id": "raw_fish",
       "name": "Raw Fish",
       "type": "ingredient",

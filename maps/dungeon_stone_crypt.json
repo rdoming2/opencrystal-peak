@@ -1,7 +1,7 @@
 {
   "version": 1,
   "id": "dungeon_stone_crypt",
-  "name": "Stone Vault - Floor 2",
+  "name": "Stone Vault - Floor 3",
   "world": "gaia",
   "width": 24,
   "height": 12,
@@ -68,7 +68,7 @@
     {
       "id": "stone_crypt_up",
       "pos": [2, 2],
-      "target_map": "dungeon_stone",
+      "target_map": "dungeon_stone_depths",
       "target_pos": [20, 8],
       "return_to_last": true,
       "glyph": "<",

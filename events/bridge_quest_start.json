@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "id": "bridge_quest_start",
+  "steps": [
+    {
+      "type": "narration",
+      "text": "The bridge groans under its own weight. A shipbuilder in Coral Harbor might know how to fix it."
+    },
+    {"type": "set_flag", "flag": "quest.bridge_repair.started"}
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "id": "shipbuilder",
+  "nodes": [
+    {
+      "id": "start",
+      "speaker": "Shipbuilder Neri",
+      "text": "That bridge is splintered. I can mend it, but I need five Stonebind Rivets from the Stone Vault.",
+      "actions": [
+        {"type": "set_flag", "flag": "quest.bridge_repair.meet_shipbuilder"}
+      ],
+      "choices": [
+        {"label": "I'll find them.", "next": "end_text"},
+        {
+          "label": "I have the rivets.",
+          "next": "turn_in",
+          "requires_flags": ["quest.bridge_repair.meet_shipbuilder"]
+        }
+      ]
+    },
+    {
+      "id": "turn_in",
+      "speaker": "Shipbuilder Neri",
+      "text": "Let me see what you've brought.",
+      "actions": [
+        {"type": "start_event", "event": "bridge_repair_turnin"}
+      ],
+      "choices": [
+        {"label": "Here.", "next": "end_text"}
+      ]
+    },
+    {
+      "id": "end_text",
+      "text": "I'll keep watch for the tide."
+    }
+  ]
+}
