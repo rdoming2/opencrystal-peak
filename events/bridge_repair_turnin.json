@@ -6,7 +6,8 @@
       "type": "require_items",
       "item": "stonebind_rivet",
       "qty": 5,
-      "text": "You still need 5 Stonebind Rivets from the Stone Vault."
+      "speaker": "Shipbuilder Neri",
+      "text": "You still need 5 Stonebind Rivets. Search for them in the Stone Vault."
     },
     {
       "type": "dialog",
@@ -18,8 +19,9 @@
     {"type": "set_flag", "flag": "quest.bridge_repair.repair_bridge"},
     {"type": "set_flag", "flag": "world.bridge_fixed"},
     {
-      "type": "narration",
-      "text": "The bridge has been reinforced and is safe to cross."
+      "type": "dialog",
+      "speaker": "Shipbuilder Neri",
+      "text": "That bridge should last another 20 years at least. Thanks for your help."
     }
   ]
 }
