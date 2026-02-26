@@ -16,6 +16,21 @@
           "formation": [
             {"enemy": "wisp", "pos": [2, 1]}
           ]
+        },
+        {
+          "weight": 50,
+          "tile": "forest",
+          "formation": [
+            {"enemy": "imp", "pos": [0, 1]},
+            {"enemy": "wisp", "pos": [2, 1]}
+          ]
+        },
+        {
+          "weight": 50,
+          "tile": "desert",
+          "formation": [
+            {"enemy": "ash_wolf", "pos": [1, 2]}
+          ]
         }
       ]
     },
