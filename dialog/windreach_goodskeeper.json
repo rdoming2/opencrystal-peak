@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "id": "windreach_goodskeeper",
+  "nodes": [
+    {
+      "id": "start",
+      "speaker": "Windreach Supplier",
+      "text": "Need something warm or something swift?",
+      "actions": [
+        {"type": "open_shop", "shop": "windreach_goods"}
+      ],
+      "choices": [
+        {"label": "Thanks", "next": "end_text"}
+      ]
+    },
+    {"id": "end_text", "text": "Keep your pack ready."}
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "id": "fae_armorer",
+  "nodes": [
+    {
+      "id": "start",
+      "speaker": "Fae Armorer",
+      "text": "Crystal-fine craft, light as a whisper.",
+      "actions": [
+        {"type": "open_shop", "shop": "fae_armory"}
+      ],
+      "choices": [
+        {"label": "Thanks", "next": "end_text"}
+      ]
+    },
+    {"id": "end_text", "text": "Weave it well."}
+  ]
+}

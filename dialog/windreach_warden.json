@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "id": "windreach_warden",
+  "nodes": [
+    {
+      "id": "start",
+      "speaker": "Spire Warden",
+      "text": "Only those bearing the Windward Seal may ride the lift. Seek one in Bramble Ford.",
+      "choices": [
+        {"label": "We'll find the seal.", "next": "accept"},
+        {"label": "Present the seal.", "next": "turn_in", "requires_flags": ["quest.gale_pass.started"]},
+        {"label": "The lift is open.", "next": "complete", "requires_flags": ["quest.gale_pass.complete"]},
+        {"label": "Not now.", "next": "end"}
+      ]
+    },
+    {
+      "id": "accept",
+      "speaker": "Spire Warden",
+      "text": "Return with the seal and I will grant passage.",
+      "actions": [
+        {"type": "set_flag", "flag": "quest.gale_pass.started"}
+      ],
+      "choices": [
+        {"label": "Understood", "next": "end"}
+      ]
+    },
+    {
+      "id": "turn_in",
+      "speaker": "Spire Warden",
+      "text": "Let me see it.",
+      "actions": [
+        {"type": "start_event", "event": "gale_pass_turnin"}
+      ],
+      "choices": [
+        {"label": "Thanks", "next": "end"}
+      ]
+    },
+    {
+      "id": "complete",
+      "speaker": "Spire Warden",
+      "text": "The lift stands ready. Use it when you are prepared.",
+      "choices": [
+        {"label": "Thanks", "next": "end"}
+      ]
+    },
+    {"id": "end", "text": ""}
+  ]
+}

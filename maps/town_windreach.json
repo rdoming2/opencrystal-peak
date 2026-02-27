@@ -1,0 +1,177 @@
+{
+  "version": 1,
+  "id": "town_windreach",
+  "name": "Windreach",
+  "hide_name": false,
+  "world": "gaia",
+  "width": 32,
+  "height": 20,
+  "loop": {
+    "x": false,
+    "y": false
+  },
+  "tiles": [
+    "################################",
+    "#..............................#",
+    "#..............................#",
+    "#..^^^^^^^^..^^^^^^^^..^^^^^^..#",
+    "#..^^^^^^^^..^^^^^^^^..^^^^^^..#",
+    "#..########..########..######..#",
+    "#..########..########..######..#",
+    "#..............................#",
+    "#..............................#",
+    "#..............................#",
+    "#..............................#",
+    "#..^^^^^^..^^^^^^^^..^^^^^^^^..#",
+    "#..^^^^^^..^^^^^^^^..^^^^^^^^..#",
+    "#..######..########..########..#",
+    "#..######..########..########..#",
+    "#..............................#",
+    "#..............................#",
+    "#..............................#",
+    "#..............................#",
+    "###############.################"
+  ],
+  "legend": {
+    "^": {"tile": "roof", "passable": false, "palette": "bright_red"},
+    ".": {"tile": "floor", "passable": true, "palette": "bright_green"},
+    "#": {"tile": "wall", "passable": false, "palette": "bright_black"}
+  },
+  "encounters": [],
+  "encounter_rate": 0.0,
+  "events": [],
+  "npcs": [
+    {
+      "id": "windreach_warden",
+      "pos": [
+        24,
+        15
+      ],
+      "script": null,
+      "requires_flags": null
+    }
+  ],
+  "signs": [
+    {
+      "id": "sign_inn",
+      "pos": [
+        23,
+        8
+      ],
+      "glyph": "⚑",
+      "palette": "bright_yellow",
+      "text": "Windreach Inn"
+    },
+    {
+      "id": "sign_armory",
+      "pos": [
+        7,
+        8
+      ],
+      "glyph": "⚑",
+      "palette": "bright_yellow",
+      "text": "Windreach Armory"
+    },
+    {
+      "id": "sign_goods",
+      "pos": [
+        7,
+        16
+      ],
+      "glyph": "⚑",
+      "palette": "bright_yellow",
+      "text": "Windreach Supplies"
+    },
+    {
+      "id": "sign_warden",
+      "pos": [
+        24,
+        16
+      ],
+      "glyph": "⚑",
+      "palette": "bright_yellow",
+      "text": "Spire Warden"
+    }
+  ],
+  "chests": [],
+  "allow_save": true,
+  "save_points": [],
+  "transitions": [
+    {
+      "id": "to_overworld",
+      "pos": [
+        15,
+        19
+      ],
+      "target_map": "overworld_gaia",
+      "target_pos": [
+        180,
+        26
+      ],
+      "label": null,
+      "requires_flag": null,
+      "cost": null,
+      "return_to_last": false,
+      "glyph": "<",
+      "palette": "bright_cyan"
+    },
+    {
+      "id": "to_inn",
+      "pos": [
+        22,
+        7
+      ],
+      "target_map": "town_windreach_inn",
+      "target_pos": [
+        8,
+        8
+      ],
+      "label": null,
+      "requires_flag": null,
+      "cost": null,
+      "return_to_last": false,
+      "glyph": ">",
+      "palette": "bright_cyan"
+    },
+    {
+      "id": "to_armory",
+      "pos": [
+        6,
+        7
+      ],
+      "target_map": "town_windreach_armory",
+      "target_pos": [
+        8,
+        8
+      ],
+      "label": null,
+      "requires_flag": null,
+      "cost": null,
+      "return_to_last": false,
+      "glyph": ">",
+      "palette": "bright_cyan"
+    },
+    {
+      "id": "to_goods",
+      "pos": [
+        6,
+        15
+      ],
+      "target_map": "town_windreach_goods",
+      "target_pos": [
+        8,
+        8
+      ],
+      "label": null,
+      "requires_flag": null,
+      "cost": null,
+      "return_to_last": false,
+      "glyph": ">",
+      "palette": "bright_cyan"
+    }
+  ],
+  "vehicles": [],
+  "doors": [],
+  "puzzles": [],
+  "campfires": []
+}

@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "id": "bramble_goodskeeper",
+  "nodes": [
+    {
+      "id": "start",
+      "speaker": "Bramble Provisioner",
+      "text": "Supplies for the road and the wood.",
+      "actions": [
+        {"type": "open_shop", "shop": "bramble_provisions"}
+      ],
+      "choices": [
+        {"label": "Thanks", "next": "end_text"}
+      ]
+    },
+    {"id": "end_text", "text": "Stay stocked out there."}
+  ]
+}

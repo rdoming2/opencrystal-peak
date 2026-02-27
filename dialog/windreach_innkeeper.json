@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "id": "windreach_innkeeper",
+  "nodes": [
+    {
+      "id": "start",
+      "speaker": "Windreach Innkeeper",
+      "text": "Winds are fierce tonight. Need a rest?",
+      "choices": [
+        {"label": "Rest (90 G)", "next": "rest"},
+        {"label": "No thanks", "next": "end_text"}
+      ]
+    },
+    {
+      "id": "rest",
+      "speaker": "Windreach Innkeeper",
+      "text": "Your party is fully restored.",
+      "actions": [
+        {"type": "rest_party"}
+      ],
+      "choices": [
+        {"label": "Thanks", "next": "end_text"}
+      ]
+    },
+    {
+      "id": "end_text",
+      "text": "Safe passage up the spire."
+    }
+  ]
+}

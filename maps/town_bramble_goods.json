@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "id": "town_bramble_goods",
+  "name": "Bramble Provisions",
+  "world": "gaia",
+  "width": 16,
+  "height": 10,
+  "tiles": [
+    "################",
+    "#..............#",
+    "#..............#",
+    "#==============#",
+    "#..............#",
+    "#..............#",
+    "#..............#",
+    "#..............#",
+    "#..............#",
+    "########.#######"
+  ],
+  "legend": {
+    "#": {"tile": "wall", "passable": false, "palette": "bright_black"},
+    ".": {"tile": "floor", "passable": true, "palette": "bright_yellow"},
+    "=": {"tile": "counter", "passable": false, "palette": "bright_black"},
+    "s": {"tile": "shelf", "passable": false, "palette": "bright_black"}
+  },
+  "encounters": [],
+  "encounter_rate": 0.0,
+  "events": [],
+  "npcs": [
+    {"id": "bramble_goodskeeper", "pos": [8, 2]}
+  ],
+  "allow_save": true,
+  "save_points": [],
+  "transitions": [
+    {
+      "id": "to_town",
+      "pos": [8, 9],
+      "target_map": "town_bramble",
+      "target_pos": [6, 15],
+      "return_to_last": false,
+      "glyph": "<",
+      "palette": "bright_cyan"
+    }
+  ]
+}

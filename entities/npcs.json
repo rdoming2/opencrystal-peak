@@ -139,6 +139,95 @@
       "palette": "bright_cyan",
       "dialog": "farm_dog",
       "behavior": {"type": "roam", "radius": 2, "idle_chance": 0.35, "persist": true}
+    },
+    {
+      "id": "bramble_innkeeper",
+      "name": "Bramble Innkeeper",
+      "sprite": "innkeeper",
+      "palette": "bright_yellow",
+      "dialog": "bramble_innkeeper",
+      "behavior": {"type": "static"},
+      "interaction_range": 2
+    },
+    {
+      "id": "bramble_armorer",
+      "name": "Bramble Armorer",
+      "sprite": "merchant",
+      "palette": "bright_yellow",
+      "dialog": "bramble_armorer",
+      "behavior": {"type": "static"},
+      "interaction_range": 2
+    },
+    {
+      "id": "bramble_goodskeeper",
+      "name": "Bramble Provisioner",
+      "sprite": "merchant",
+      "palette": "bright_yellow",
+      "dialog": "bramble_goodskeeper",
+      "behavior": {"type": "static"},
+      "interaction_range": 2
+    },
+    {
+      "id": "windreach_innkeeper",
+      "name": "Windreach Innkeeper",
+      "sprite": "innkeeper",
+      "palette": "bright_yellow",
+      "dialog": "windreach_innkeeper",
+      "behavior": {"type": "static"},
+      "interaction_range": 2
+    },
+    {
+      "id": "windreach_armorer",
+      "name": "Windreach Armorer",
+      "sprite": "merchant",
+      "palette": "bright_yellow",
+      "dialog": "windreach_armorer",
+      "behavior": {"type": "static"},
+      "interaction_range": 2
+    },
+    {
+      "id": "windreach_goodskeeper",
+      "name": "Windreach Supplier",
+      "sprite": "merchant",
+      "palette": "bright_yellow",
+      "dialog": "windreach_goodskeeper",
+      "behavior": {"type": "static"},
+      "interaction_range": 2
+    },
+    {
+      "id": "windreach_warden",
+      "name": "Spire Warden",
+      "sprite": "guardian",
+      "palette": "bright_cyan",
+      "dialog": "windreach_warden",
+      "behavior": {"type": "static"}
+    },
+    {
+      "id": "fae_innkeeper",
+      "name": "Fae Innkeeper",
+      "sprite": "innkeeper",
+      "palette": "bright_magenta",
+      "dialog": "fae_innkeeper",
+      "behavior": {"type": "static"},
+      "interaction_range": 2
+    },
+    {
+      "id": "fae_armorer",
+      "name": "Fae Armorer",
+      "sprite": "merchant",
+      "palette": "bright_magenta",
+      "dialog": "fae_armorer",
+      "behavior": {"type": "static"},
+      "interaction_range": 2
+    },
+    {
+      "id": "fae_goodskeeper",
+      "name": "Fae Provisioner",
+      "sprite": "merchant",
+      "palette": "bright_magenta",
+      "dialog": "fae_goodskeeper",
+      "behavior": {"type": "static"},
+      "interaction_range": 2
     }
   ]
 }

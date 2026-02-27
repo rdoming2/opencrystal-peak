@@ -101,6 +101,33 @@
       "effect": {"type": "heal_hp", "power": 140}
     },
     {
+      "id": "hi_potion",
+      "name": "Hi-Potion",
+      "type": "consumable",
+      "description": "Restores a moderate amount of HP.",
+      "price": {"gold": 150},
+      "usage": {"context": "both", "target": "ally"},
+      "effect": {"type": "heal_hp", "power": 150}
+    },
+    {
+      "id": "hi_ether",
+      "name": "Hi-Ether",
+      "type": "consumable",
+      "description": "Restores a moderate amount of MP.",
+      "price": {"gold": 180},
+      "usage": {"context": "both", "target": "ally"},
+      "effect": {"type": "heal_mp", "power": 25}
+    },
+    {
+      "id": "windward_seal",
+      "name": "Windward Seal",
+      "type": "key_item",
+      "description": "A stamped token required to ride the spire lift.",
+      "sellable": false,
+      "usage": {"context": "field", "target": "self"},
+      "effect": {"type": "none"}
+    },
+    {
       "id": "throwing_knife",
       "name": "Throwing Knife",
       "type": "consumable",

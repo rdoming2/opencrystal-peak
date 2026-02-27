@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "id": "windreach_armorer",
+  "nodes": [
+    {
+      "id": "start",
+      "speaker": "Windreach Armorer",
+      "text": "Spire steel holds against gale and grit.",
+      "actions": [
+        {"type": "open_shop", "shop": "windreach_armory"}
+      ],
+      "choices": [
+        {"label": "Thanks", "next": "end_text"}
+      ]
+    },
+    {"id": "end_text", "text": "May your guard stay high."}
+  ]
+}

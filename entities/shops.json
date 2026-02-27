@@ -23,6 +23,75 @@
       ]
     },
     {
+      "id": "bramble_armory",
+      "name": "Bramble Armory",
+      "currency": "gold",
+      "inventory": [
+        {"item": "iron_sword", "price": 360},
+        {"item": "ash_staff", "price": 320},
+        {"item": "iron_armor", "price": 380},
+        {"item": "wool_robe", "price": 300}
+      ]
+    },
+    {
+      "id": "bramble_provisions",
+      "name": "Bramble Provisions",
+      "currency": "gold",
+      "inventory": [
+        {"item": "potion", "price": 50},
+        {"item": "ether", "price": 80},
+        {"item": "antidote", "price": 30},
+        {"item": "fish_skewer", "price": 60}
+      ]
+    },
+    {
+      "id": "windreach_armory",
+      "name": "Windreach Armory",
+      "currency": "gold",
+      "inventory": [
+        {"item": "steel_sword", "price": 620},
+        {"item": "cedar_staff", "price": 560},
+        {"item": "steel_armor", "price": 660},
+        {"item": "sage_robe", "price": 520},
+        {"item": "flame_mail", "price": 420}
+      ]
+    },
+    {
+      "id": "windreach_goods",
+      "name": "Windreach Supplies",
+      "currency": "gold",
+      "inventory": [
+        {"item": "potion", "price": 50},
+        {"item": "ether", "price": 80},
+        {"item": "antidote", "price": 30},
+        {"item": "hi_potion", "price": 150},
+        {"item": "hi_ether", "price": 180},
+        {"item": "revival_ring", "price": 200}
+      ]
+    },
+    {
+      "id": "fae_armory",
+      "name": "Fae Atelier",
+      "currency": "gold",
+      "inventory": [
+        {"item": "mythril_sword", "price": 980},
+        {"item": "crystal_staff", "price": 920},
+        {"item": "mythril_armor", "price": 1040},
+        {"item": "fae_robe", "price": 880}
+      ]
+    },
+    {
+      "id": "fae_goods",
+      "name": "Fae Pantry",
+      "currency": "gold",
+      "inventory": [
+        {"item": "hi_potion", "price": 150},
+        {"item": "hi_ether", "price": 180},
+        {"item": "revival_ring", "price": 200},
+        {"item": "hearty_stew", "price": 120}
+      ]
+    },
+    {
       "id": "farm_produce",
       "name": "Farm Produce",
       "currency": "gold",

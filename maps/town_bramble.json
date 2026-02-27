@@ -1,0 +1,174 @@
+{
+  "version": 1,
+  "id": "town_bramble",
+  "name": "Bramble Ford",
+  "hide_name": false,
+  "world": "gaia",
+  "width": 32,
+  "height": 20,
+  "loop": {
+    "x": false,
+    "y": false
+  },
+  "tiles": [
+    "################################",
+    "#..............................#",
+    "#..............................#",
+    "#..^^^^^^^^..^^^^^^^^..^^^^^^..#",
+    "#..^^^^^^^^..^^^^^^^^..^^^^^^..#",
+    "#..########..########..######..#",
+    "#..########..########..######..#",
+    "#..............................#",
+    "#..............................#",
+    "#..............................#",
+    "#..............................#",
+    "#..^^^^^^..^^^^^^^^..^^^^^^^^..#",
+    "#..^^^^^^..^^^^^^^^..^^^^^^^^..#",
+    "#..######..########..########..#",
+    "#..######..########..########..#",
+    "#..............................#",
+    "#..............................#",
+    "#..............................#",
+    "#..............................#",
+    "###############.################"
+  ],
+  "legend": {
+    "^": {"tile": "roof", "passable": false, "palette": "bright_red"},
+    ".": {"tile": "floor", "passable": true, "palette": "bright_green"},
+    "#": {"tile": "wall", "passable": false, "palette": "bright_black"}
+  },
+  "encounters": [],
+  "encounter_rate": 0.0,
+  "events": [],
+  "npcs": [],
+  "signs": [
+    {
+      "id": "sign_inn",
+      "pos": [
+        23,
+        8
+      ],
+      "glyph": "⚑",
+      "palette": "bright_yellow",
+      "text": "Bramble Inn"
+    },
+    {
+      "id": "sign_armory",
+      "pos": [
+        7,
+        8
+      ],
+      "glyph": "⚑",
+      "palette": "bright_yellow",
+      "text": "Bramble Armory"
+    },
+    {
+      "id": "sign_goods",
+      "pos": [
+        7,
+        16
+      ],
+      "glyph": "⚑",
+      "palette": "bright_yellow",
+      "text": "Bramble Provisions"
+    }
+  ],
+  "chests": [
+    {
+      "id": "windward_seal",
+      "pos": [
+        26,
+        15
+      ],
+      "glyph_closed": "▣",
+      "glyph_open": "▢",
+      "palette": "bright_yellow",
+      "opened_flag": "quest.gale_pass.seal_claimed",
+      "loot": {
+        "items": [{"id": "windward_seal", "qty": 1}],
+        "equipment": [],
+        "currency": []
+      }
+    }
+  ],
+  "allow_save": true,
+  "save_points": [],
+  "transitions": [
+    {
+      "id": "to_overworld",
+      "pos": [
+        15,
+        19
+      ],
+      "target_map": "overworld_gaia",
+      "target_pos": [
+        155,
+        55
+      ],
+      "label": null,
+      "requires_flag": null,
+      "cost": null,
+      "return_to_last": false,
+      "glyph": "<",
+      "palette": "bright_cyan"
+    },
+    {
+      "id": "to_inn",
+      "pos": [
+        22,
+        7
+      ],
+      "target_map": "town_bramble_inn",
+      "target_pos": [
+        8,
+        8
+      ],
+      "label": null,
+      "requires_flag": null,
+      "cost": null,
+      "return_to_last": false,
+      "glyph": ">",
+      "palette": "bright_cyan"
+    },
+    {
+      "id": "to_armory",
+      "pos": [
+        6,
+        7
+      ],
+      "target_map": "town_bramble_armory",
+      "target_pos": [
+        8,
+        8
+      ],
+      "label": null,
+      "requires_flag": null,
+      "cost": null,
+      "return_to_last": false,
+      "glyph": ">",
+      "palette": "bright_cyan"
+    },
+    {
+      "id": "to_goods",
+      "pos": [
+        6,
+        15
+      ],
+      "target_map": "town_bramble_goods",
+      "target_pos": [
+        8,
+        8
+      ],
+      "label": null,
+      "requires_flag": null,
+      "cost": null,
+      "return_to_last": false,
+      "glyph": ">",
+      "palette": "bright_cyan"
+    }
+  ],
+  "vehicles": [],
+  "doors": [],
+  "puzzles": [],
+  "campfires": []
+}

@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "id": "fae_goodskeeper",
+  "nodes": [
+    {
+      "id": "start",
+      "speaker": "Fae Provisioner",
+      "text": "Elixirs and comforts for long journeys.",
+      "actions": [
+        {"type": "open_shop", "shop": "fae_goods"}
+      ],
+      "choices": [
+        {"label": "Thanks", "next": "end_text"}
+      ]
+    },
+    {"id": "end_text", "text": "Glow softly, traveler."}
+  ]
+}

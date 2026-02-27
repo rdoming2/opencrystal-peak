@@ -51,6 +51,7 @@
       "pos": [20, 8],
       "target_map": "dungeon_gale_spire",
       "target_pos": [2, 2],
+      "requires_flag": "quest.gale_pass.complete",
       "return_to_last": false,
       "glyph": ">",
       "palette": "bright_cyan"

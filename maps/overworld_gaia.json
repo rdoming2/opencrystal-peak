@@ -340,6 +340,60 @@
       "palette": "bright_cyan"
     },
     {
+      "id": "to_bramble",
+      "pos": [
+        155,
+        55
+      ],
+      "target_map": "town_bramble",
+      "target_pos": [
+        15,
+        18
+      ],
+      "label": null,
+      "requires_flag": null,
+      "cost": null,
+      "return_to_last": false,
+      "glyph": "T",
+      "palette": "bright_cyan"
+    },
+    {
+      "id": "to_windreach",
+      "pos": [
+        180,
+        26
+      ],
+      "target_map": "town_windreach",
+      "target_pos": [
+        15,
+        18
+      ],
+      "label": null,
+      "requires_flag": null,
+      "cost": null,
+      "return_to_last": false,
+      "glyph": "T",
+      "palette": "bright_cyan"
+    },
+    {
+      "id": "to_faerie",
+      "pos": [
+        222,
+        95
+      ],
+      "target_map": "town_faerie",
+      "target_pos": [
+        15,
+        18
+      ],
+      "label": null,
+      "requires_flag": null,
+      "cost": null,
+      "return_to_last": false,
+      "glyph": "T",
+      "palette": "bright_cyan"
+    },
+    {
       "id": "to_farmstead",
       "pos": [
         48,

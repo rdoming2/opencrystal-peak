@@ -39,6 +39,114 @@
       "spells": ["protect", "shell"]
     },
     {
+      "id": "iron_sword",
+      "name": "Iron Sword",
+      "category": "sword",
+      "slot": "weapon",
+      "allowed_jobs": null,
+      "price": {"gold": 360},
+      "stats": {"str": 4}
+    },
+    {
+      "id": "ash_staff",
+      "name": "Ash Staff",
+      "category": "staff",
+      "slot": "weapon",
+      "allowed_jobs": null,
+      "price": {"gold": 320},
+      "stats": {"int": 3}
+    },
+    {
+      "id": "iron_armor",
+      "name": "Iron Armor",
+      "category": "plate",
+      "slot": "armor",
+      "allowed_jobs": null,
+      "price": {"gold": 380},
+      "stats": {"def": 4}
+    },
+    {
+      "id": "wool_robe",
+      "name": "Wool Robe",
+      "category": "robe",
+      "slot": "armor",
+      "allowed_jobs": null,
+      "price": {"gold": 300},
+      "stats": {"mdef": 2}
+    },
+    {
+      "id": "steel_sword",
+      "name": "Steel Sword",
+      "category": "sword",
+      "slot": "weapon",
+      "allowed_jobs": null,
+      "price": {"gold": 620},
+      "stats": {"str": 6}
+    },
+    {
+      "id": "cedar_staff",
+      "name": "Cedar Staff",
+      "category": "staff",
+      "slot": "weapon",
+      "allowed_jobs": null,
+      "price": {"gold": 560},
+      "stats": {"int": 5}
+    },
+    {
+      "id": "steel_armor",
+      "name": "Steel Armor",
+      "category": "plate",
+      "slot": "armor",
+      "allowed_jobs": null,
+      "price": {"gold": 660},
+      "stats": {"def": 6}
+    },
+    {
+      "id": "sage_robe",
+      "name": "Sage Robe",
+      "category": "robe",
+      "slot": "armor",
+      "allowed_jobs": null,
+      "price": {"gold": 520},
+      "stats": {"mdef": 3}
+    },
+    {
+      "id": "mythril_sword",
+      "name": "Mythril Sword",
+      "category": "sword",
+      "slot": "weapon",
+      "allowed_jobs": null,
+      "price": {"gold": 980},
+      "stats": {"str": 8}
+    },
+    {
+      "id": "crystal_staff",
+      "name": "Crystal Staff",
+      "category": "staff",
+      "slot": "weapon",
+      "allowed_jobs": null,
+      "price": {"gold": 920},
+      "stats": {"int": 7}
+    },
+    {
+      "id": "mythril_armor",
+      "name": "Mythril Armor",
+      "category": "plate",
+      "slot": "armor",
+      "allowed_jobs": null,
+      "price": {"gold": 1040},
+      "stats": {"def": 8, "mdef": 2}
+    },
+    {
+      "id": "fae_robe",
+      "name": "Fae Robe",
+      "category": "robe",
+      "slot": "armor",
+      "allowed_jobs": null,
+      "price": {"gold": 880},
+      "stats": {"mdef": 5}
+    },
+    {
       "id": "flame_mail",
       "name": "Flame Mail",
       "category": "plate",

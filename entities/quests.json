@@ -157,6 +157,24 @@
           "show_flag": "quest.bridge_repair.gather_rivets"
         }
       ]
+    },
+    {
+      "id": "gale_pass",
+      "title": "Seal of the Spire",
+      "category_id": "side",
+      "steps": [
+        {
+          "id": "started",
+          "text": "Meet the Spire Warden in Windreach and learn the passage rites.",
+          "flag": "quest.gale_pass.started"
+        },
+        {
+          "id": "complete",
+          "text": "Present the Windward Seal to the Spire Warden to open the lift.",
+          "flag": "quest.gale_pass.complete",
+          "show_flag": "quest.gale_pass.started"
+        }
+      ]
     }
   ]
 }

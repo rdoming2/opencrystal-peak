@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "id": "fae_innkeeper",
+  "nodes": [
+    {
+      "id": "start",
+      "speaker": "Fae Innkeeper",
+      "text": "Rest beneath the glow, wanderer. Stay awhile?",
+      "choices": [
+        {"label": "Rest (120 G)", "next": "rest"},
+        {"label": "No thanks", "next": "end_text"}
+      ]
+    },
+    {
+      "id": "rest",
+      "speaker": "Fae Innkeeper",
+      "text": "Your party is fully restored.",
+      "actions": [
+        {"type": "rest_party"}
+      ],
+      "choices": [
+        {"label": "Thanks", "next": "end_text"}
+      ]
+    },
+    {
+      "id": "end_text",
+      "text": "May your dreams be bright."
+    }
+  ]
+}

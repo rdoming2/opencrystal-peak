@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "id": "bramble_innkeeper",
+  "nodes": [
+    {
+      "id": "start",
+      "speaker": "Bramble Innkeeper",
+      "text": "Welcome to the Bramble Inn. Would you like to rest?",
+      "choices": [
+        {"label": "Rest (60 G)", "next": "rest"},
+        {"label": "No thanks", "next": "end_text"}
+      ]
+    },
+    {
+      "id": "rest",
+      "speaker": "Bramble Innkeeper",
+      "text": "Your party is fully restored.",
+      "actions": [
+        {"type": "rest_party"}
+      ],
+      "choices": [
+        {"label": "Thanks", "next": "end_text"}
+      ]
+    },
+    {
+      "id": "end_text",
+      "text": "Safe travels."
+    }
+  ]
+}
