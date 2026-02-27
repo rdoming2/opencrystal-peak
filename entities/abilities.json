@@ -76,6 +76,34 @@
       "default_target": "ally",
       "allowed_targets": ["ally"],
       "effect": {"type": "cover", "power": 0}
+    },
+    {
+      "id": "sky_lance",
+      "name": "Sky Lance",
+      "description": "Leap out of reach, then dive onto a foe on the next turn.",
+      "command_group": "charge",
+      "default_target": "enemy",
+      "allowed_targets": ["enemy"],
+      "effect": {
+        "type": "charge",
+        "power": 12,
+        "windup_turns": 1,
+        "vanish_during_windup": true
+      }
+    },
+    {
+      "id": "focused_strike",
+      "name": "Focused Strike",
+      "description": "Hold your stance, then unleash a crushing blow next turn.",
+      "command_group": "charge",
+      "default_target": "enemy",
+      "allowed_targets": ["enemy"],
+      "effect": {
+        "type": "charge",
+        "power": 14,
+        "windup_turns": 1,
+        "vanish_during_windup": false
+      }
     }
   ]
 }

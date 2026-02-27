@@ -78,7 +78,9 @@
       "abilities": [
         {"id": "power_strike", "level": 2, "unlock_level": 2},
         {"id": "coin_toss", "level": 3, "unlock_level": 3, "jp_cost": 8},
-        {"id": "cover", "level": 1, "unlock_level": 4, "jp_cost": 10}
+        {"id": "cover", "level": 1, "unlock_level": 4, "jp_cost": 10},
+        {"id": "sky_lance", "level": 5, "unlock_level": 5, "jp_cost": 14},
+        {"id": "focused_strike", "level": 6, "unlock_level": 6, "jp_cost": 16}
       ],
       "commands": ["abilities"]
     },

@@ -21,7 +21,7 @@
     "currencies": [{"id": "gold", "name": "Gold", "symbol": "G"}]
   },
   "battle": {
-    "global_commands": ["attack", "defend", "row", "items", "run", "cover", "counter"],
+    "global_commands": ["attack", "defend", "row", "items", "run", "charge", "cover", "counter"],
     "commands": [
       {"id": "attack", "label": "Attack", "kind": "attack", "sort_order": 10},
       {"id": "magic", "label": "Magic", "kind": "magic", "sort_order": 30},
@@ -30,8 +30,9 @@
       {"id": "throw", "label": "Throw", "kind": "abilities", "sort_order": 42, "ability_id": "throw_knife"},
       {"id": "pray", "label": "Pray", "kind": "abilities", "sort_order": 43, "ability_id": "pray"},
       {"id": "parry", "label": "Parry", "kind": "abilities", "sort_order": 44, "ability_id": "parry"},
-      {"id": "cover", "label": "Cover", "kind": "abilities", "sort_order": 45, "ability_id": "cover"},
-      {"id": "counter", "label": "Counter", "kind": "abilities", "sort_order": 46, "ability_id": "counter"},
+      {"id": "charge", "label": "Charge", "kind": "abilities_group", "sort_order": 45, "ability_group": "charge"},
+      {"id": "cover", "label": "Cover", "kind": "abilities", "sort_order": 46, "ability_id": "cover"},
+      {"id": "counter", "label": "Counter", "kind": "abilities", "sort_order": 47, "ability_id": "counter"},
       {"id": "items", "label": "Items", "kind": "items", "sort_order": 50},
       {"id": "defend", "label": "Defend", "kind": "defend", "sort_order": 60},
       {"id": "row", "label": "Row", "kind": "row", "sort_order": 65},
