@@ -181,7 +181,9 @@
         "mode": "basic",
         "weights": {"attack": 12, "spells": 3, "abilities": 3},
         "heal_below_hp": 0.4,
-        "prefer_revive": true
+        "prefer_revive": true,
+        "palliative_reroll_chance": 0.5,
+        "palliative_cooldown_turns": 1
       },
       "sprite": {"glyph": "E", "palette": "enemy"},
       "art": {"lines": [" /\\ ", "<==>", "/__\\"], "palette": "enemy"},
@@ -202,7 +204,9 @@
         "mode": "basic",
         "weights": {"attack": 12, "spells": 3, "abilities": 3},
         "heal_below_hp": 0.25,
-        "prefer_revive": true
+        "prefer_revive": true,
+        "palliative_reroll_chance": 0.5,
+        "palliative_cooldown_turns": 1
       },
       "sprite": {"glyph": "T", "palette": "enemy_magic"},
       "art": {"lines": [" ~~~ ", "(o_o)", " /_\\"], "palette": "enemy_magic"},
@@ -223,7 +227,9 @@
         "mode": "basic",
         "weights": {"attack": 12, "spells": 5, "abilities": 5},
         "heal_below_hp": 0.4,
-        "prefer_revive": true
+        "prefer_revive": true,
+        "palliative_reroll_chance": 0.5,
+        "palliative_cooldown_turns": 1
       },
       "sprite": {"glyph": "G", "palette": "enemy_magic"},
       "art": {"lines": [" /*\\ ", "<o>", "/___\\"], "palette": "enemy_magic"},
@@ -244,7 +250,9 @@
         "mode": "basic",
         "weights": {"attack": 10, "spells": 8, "abilities": 6},
         "heal_below_hp": 0.35,
-        "prefer_revive": true
+        "prefer_revive": true,
+        "palliative_reroll_chance": 0.5,
+        "palliative_cooldown_turns": 1
       },
       "sprite": {"glyph": "S", "palette": "enemy"},
       "art": {"lines": ["[##]", "(  )", "/__\\"], "palette": "enemy"},
@@ -265,7 +273,9 @@
         "mode": "basic",
         "weights": {"attack": 8, "spells": 12, "abilities": 6},
         "heal_below_hp": 0.4,
-        "prefer_revive": true
+        "prefer_revive": true,
+        "palliative_reroll_chance": 0.5,
+        "palliative_cooldown_turns": 1
       },
       "sprite": {"glyph": "D", "palette": "enemy"},
       "art": {"lines": ["/^^\\", "(==)", "\\__/"], "palette": "enemy"},

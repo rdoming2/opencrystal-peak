@@ -57,6 +57,10 @@
       "back_row_defense_multiplier": 0.5,
       "ranged_weapon_categories": ["bow", "crossbow", "gun"],
       "battle_shift": 2
+    },
+    "enemy_ai_defaults": {
+      "palliative_reroll_chance": 0.5,
+      "palliative_cooldown_turns": 1
     }
   },
   "party_mode": "preset_rename",
