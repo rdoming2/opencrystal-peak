@@ -17,6 +17,17 @@
       "effect": {"type": "heal", "power": 20}
     },
     {
+      "id": "enemy_cure",
+      "name": "Cure",
+      "school": "white",
+      "tier": 1,
+      "cost": {"type": "mp", "value": 3},
+      "default_target": "ally",
+      "allowed_targets": ["ally", "party"],
+      "target_mode": "single",
+      "effect": {"type": "heal", "power": 20}
+    },
+    {
       "id": "fire",
       "name": "Fire",
       "school": "black",
