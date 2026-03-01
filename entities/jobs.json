@@ -76,11 +76,11 @@
       "sort_order": 10,
       "spells": [],
       "abilities": [
-        {"id": "power_strike", "level": 2, "unlock_level": 2},
-        {"id": "coin_toss", "level": 3, "unlock_level": 3, "jp_cost": 8},
-        {"id": "cover", "level": 1, "unlock_level": 4, "jp_cost": 10},
-        {"id": "sky_lance", "level": 5, "unlock_level": 5, "jp_cost": 14},
-        {"id": "focused_strike", "level": 6, "unlock_level": 6, "jp_cost": 16}
+        {"id": "power_strike", "unlock_level": 2},
+        {"id": "coin_toss", "unlock_level": 3, "jp_cost": 8},
+        {"id": "cover", "unlock_level": 4, "jp_cost": 10},
+        {"id": "sky_lance", "unlock_level": 5, "jp_cost": 14},
+        {"id": "focused_strike", "unlock_level": 6, "jp_cost": 16}
       ],
       "commands": ["abilities"]
     },
@@ -125,10 +125,10 @@
         "3": [0, 0, 0, 1, 1]
       },
       "spells": [
-        {"id": "cure", "level": 1, "unlock_level": 1},
-        {"id": "scan", "level": 1, "unlock_level": 2},
-        {"id": "protect", "level": 1, "unlock_level": 4},
-        {"id": "shell", "level": 1, "unlock_level": 6}
+        {"id": "cure", "unlock_level": 1, "tier": 1},
+        {"id": "scan", "unlock_level": 2, "tier": 1},
+        {"id": "protect", "unlock_level": 4, "tier": 1},
+        {"id": "shell", "unlock_level": 6, "tier": 1}
       ],
       "commands": ["magic"]
     },
@@ -173,13 +173,13 @@
         "3": [0, 0, 0, 1, 1]
       },
       "spells": [
-        {"id": "fire", "level": 1, "unlock_level": 1},
-        {"id": "blizzard", "level": 1, "unlock_level": 2},
-        {"id": "thunder", "level": 1, "unlock_level": 3},
-        {"id": "poison", "level": 1, "unlock_level": 4},
-        {"id": "sleep", "level": 1, "unlock_level": 6},
-        {"id": "paralyze", "level": 1, "unlock_level": 7},
-        {"id": "stone", "level": 1, "unlock_level": 8}
+        {"id": "fire", "unlock_level": 1, "tier": 1},
+        {"id": "blizzard", "unlock_level": 2, "tier": 1},
+        {"id": "thunder", "unlock_level": 3, "tier": 1},
+        {"id": "poison", "unlock_level": 4, "tier": 1},
+        {"id": "sleep", "unlock_level": 6, "tier": 1},
+        {"id": "paralyze", "unlock_level": 7, "tier": 1},
+        {"id": "stone", "unlock_level": 8, "tier": 1}
       ],
       "commands": ["magic"]
     },
@@ -217,8 +217,8 @@
       "sort_order": 40,
       "spells": [],
       "abilities": [
-        {"id": "pummel", "level": 1, "unlock_level": 1},
-        {"id": "counter", "level": 1, "unlock_level": 4, "jp_cost": 10}
+        {"id": "pummel", "unlock_level": 1},
+        {"id": "counter", "unlock_level": 4, "jp_cost": 10}
       ],
       "commands": ["abilities"]
     }
