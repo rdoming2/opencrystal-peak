@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "id": "sailboat_reward",
+  "steps": [
+    {"type": "set_flag", "flag": "quest.sailboat.started"},
+    {
+      "type": "require_items",
+      "item": "ember_tar",
+      "qty": 1,
+      "speaker": "Sky Tinker",
+      "text": "I still need a cask of Ember Tar. There should be some in the Ember Cache Depths treasure box."
+    },
+    {
+      "type": "dialog",
+      "speaker": "Sky Tinker",
+      "text": "Perfect! This Ember Tar will hold her seams tight. Give me a moment."
+    },
+    {"type": "remove_item", "item": "ember_tar", "qty": 1},
+    {"type": "set_flag", "flag": "vehicle.sailboat_unlocked"},
+    {"type": "set_flag", "flag": "quest.sailboat.complete"},
+    {
+      "type": "dialog",
+      "speaker": "Sky Tinker",
+      "text": "All done. Hope you are enjoying her."
+    }
+  ]
+}

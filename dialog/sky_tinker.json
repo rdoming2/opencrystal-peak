@@ -5,10 +5,10 @@
     {
       "id": "start",
       "speaker": "Sky Tinker",
-      "text": "Looking for the engineer behind the airship?",
+      "text": "I build all kinds of ships. It's practically a mania!",
       "choices": [
         {"label": "See wares", "next": "wares"},
-        {"label": "Ask about lore", "next": "airship"},
+        {"label": "Ask about ships", "next": "ship_mania"},
         {"label": "Nevermind", "next": "end_text"}
       ]
     },
@@ -21,9 +21,37 @@
       ]
     },
     {
+      "id": "ship_mania",
+      "speaker": "Sky Tinker",
+      "text": "The passion is there but the materials are lacking. Bring me the right items and I can get some of these old projects up and running.",
+      "choices": [
+        {
+          "label": "Ask about the sailboat",
+          "next": "sailboat_complete",
+          "requires_flags": ["quest.sailboat.complete"]
+        },
+        {"label": "Ask about sailboat repairs", "next": "sailboat", "requires_flags": ["!quest.sailboat.complete"]},
+        {"label": "Ask about the airship", "next": "airship"},
+        {"label": "Nevermind", "next": "end_text"}
+      ]
+    },
+    {
+      "id": "sailboat",
+      "speaker": "Sky Tinker",
+      "text": "She's made of sturdy wood and made to sail the seas.",
+      "actions": [
+        {"type": "start_event", "event": "sailboat_reward"}
+      ]
+    },
+    {
+      "id": "sailboat_complete",
+      "speaker": "Sky Tinker",
+      "text": "Hope you are enjoying her."
+    },
+    {
       "id": "airship",
       "speaker": "Sky Tinker",
-      "text": "I built the airship, but it only runs on the power of all four rune stones.",
+      "text": "I built the airship, but it only runs on the power of all four rune stones. If someone ever got all four resonating again, I am sure she would fly!",
       "actions": [
         {"type": "start_event", "event": "airship_reward"}
       ]

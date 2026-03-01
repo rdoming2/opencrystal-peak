@@ -8,12 +8,12 @@
         {"enemy": "stone_colossus", "pos": [4, 2]}
       ]
     },
-    {"type": "npc_hide", "npc": "boss_stone"},
-    {"type": "wait", "ms": 120},
-    {"type": "npc_show", "npc": "boss_stone"},
-    {"type": "wait", "ms": 120},
-    {"type": "npc_hide", "npc": "boss_stone"},
     {"type": "narration", "text": "The Stone rune stone pulses with renewed strength."},
+    {"type": "npc_hide", "npc": "boss_stone"},
+    {"type": "wait", "ms": 500},
+    {"type": "npc_show", "npc": "boss_stone"},
+    {"type": "wait", "ms": 500},
+    {"type": "npc_hide", "npc": "boss_stone"},
     {"type": "set_flag", "flag": "dungeon.stone_cleared"},
     {"type": "stat_add", "stat": "dungeons_cleared", "value": 1},
     {"type": "set_flag", "flag": "quest.rune_stones.stone"},

@@ -169,10 +169,58 @@
           "flag": "quest.gale_pass.started"
         },
         {
+          "id": "fae_audience",
+          "text": "Seek an audience with Queen Riley in Faerie Glade regarding the Windward Seal.",
+          "flag": "quest.gale_pass.fae_audience",
+          "show_flag": "quest.gale_pass.started"
+        },
+        {
+          "id": "fount_briefing",
+          "text": "Speak with Lauren, the Chief Water Engineer, about the corruption at the Fount of All Water.",
+          "flag": "quest.gale_pass.fount_briefing",
+          "show_flag": "quest.gale_pass.fae_audience"
+        },
+        {
+          "id": "fount_cleansed",
+          "text": "Purge the pollution from the Fount of All Water nearby.",
+          "flag": "quest.gale_pass.fount_cleansed",
+          "show_flag": "quest.gale_pass.fount_briefing"
+        },
+        {
+          "id": "seal_claimed",
+          "text": "Return to Queen Riley to receive the Windward Seal as a reward for saving the Fount.",
+          "flag": "quest.gale_pass.seal_claimed",
+          "show_flag": "quest.gale_pass.fount_cleansed"
+        },
+        {
           "id": "complete",
           "text": "Present the Windward Seal to the Spire Warden to open the lift.",
           "flag": "quest.gale_pass.complete",
-          "show_flag": "quest.gale_pass.started"
+          "show_flag": "quest.gale_pass.seal_claimed"
+        }
+      ]
+    },
+    {
+      "id": "sailboat",
+      "title": "Tar for the Tinker",
+      "category_id": "side",
+      "steps": [
+        {
+          "id": "started",
+          "text": "Talk to the Sky Tinker about repairing the sailboat.",
+          "flag": "quest.sailboat.started"
+        },
+        {
+          "id": "find_tar",
+          "text": "Find Ember Tar in the Ember Cache Depths treasure box.",
+          "flag": "quest.sailboat.find_tar",
+          "show_flag": "quest.sailboat.started"
+        },
+        {
+          "id": "complete",
+          "text": "Bring the Ember Tar to the Sky Tinker to finish the sailboat repairs.",
+          "flag": "quest.sailboat.complete",
+          "show_flag": "quest.sailboat.started"
         }
       ]
     }

@@ -14,7 +14,7 @@
     {
       "type": "dialog",
       "speaker": "Sky Tinker",
-      "text": "Four runes, steady and bright. The airship is yours."
+      "text": "Four runes, steady and bright. Let's see if this thing can fly!"
     },
     {"type": "set_flag", "flag": "vehicle.airship_unlocked"},
     {"type": "set_flag", "flag": "quest.rune_stones.airship"},

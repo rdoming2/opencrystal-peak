@@ -201,11 +201,15 @@
       "glyph_closed": "▣",
       "glyph_open": "▢",
       "palette": "bright_yellow",
-      "opened_flag": "dungeon.ember_cache_depths_opened",
+      "opened_flag": "quest.sailboat.find_tar",
       "loot": {
         "items": [
           {
             "id": "ether",
+            "qty": 1
+          },
+          {
+            "id": "ember_tar",
             "qty": 1
           }
         ],

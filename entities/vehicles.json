@@ -2,11 +2,11 @@
   "version": 1,
   "vehicles": [
     {
-      "id": "ship",
-      "name": "Ship",
+      "id": "sailboat",
+      "name": "Sailboat",
       "speed": 2,
       "allowed_tiles": ["water"],
-      "unlock_flag": "vehicle.ship_unlocked",
+      "unlock_flag": "vehicle.sailboat_unlocked",
       "glyph": "S",
       "palette": "bright_cyan"
     },

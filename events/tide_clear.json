@@ -8,12 +8,12 @@
         {"enemy": "tide_guardian", "pos": [4, 2]}
       ]
     },
-    {"type": "npc_hide", "npc": "boss_tide"},
-    {"type": "wait", "ms": 120},
-    {"type": "npc_show", "npc": "boss_tide"},
-    {"type": "wait", "ms": 120},
-    {"type": "npc_hide", "npc": "boss_tide"},
     {"type": "narration", "text": "The Tide rune stone hums with steady light."},
+    {"type": "npc_hide", "npc": "boss_tide"},
+    {"type": "wait", "ms": 500},
+    {"type": "npc_show", "npc": "boss_tide"},
+    {"type": "wait", "ms": 500},
+    {"type": "npc_hide", "npc": "boss_tide"},
     {"type": "set_flag", "flag": "dungeon.tide_cleared"},
     {"type": "stat_add", "stat": "dungeons_cleared", "value": 1},
     {"type": "set_flag", "flag": "quest.rune_stones.tide"},

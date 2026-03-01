@@ -128,6 +128,15 @@
       "effect": {"type": "none"}
     },
     {
+      "id": "ember_tar",
+      "name": "Ember Tar",
+      "type": "key_item",
+      "description": "A dense, heat-tempered tar perfect for sealing a hull.",
+      "sellable": false,
+      "usage": {"context": "field", "target": "self"},
+      "effect": {"type": "none"}
+    },
+    {
       "id": "throwing_knife",
       "name": "Throwing Knife",
       "type": "consumable",
