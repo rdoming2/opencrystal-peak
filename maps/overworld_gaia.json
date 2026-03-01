@@ -194,16 +194,13 @@
     }
   },
   "encounters": [
-    {
-      "zone_id": "grasslands",
-      "rect": [
-        0,
-        0,
-        256,
-        144
-      ],
-      "table": "gaia_grasslands"
-    }
+  { "zone_id": "dragon_isle", "rect": [112, 62, 31, 24], "table": "gaia_dragon_isle" },
+  { "zone_id": "northwest_volcano", "rect": [12, 8, 98, 52], "table": "gaia_northwest_volcano" },
+  { "zone_id": "eastern_reaches", "rect": [170, 8, 74, 128], "table": "gaia_eastern_reaches" },
+  { "zone_id": "north_central", "rect": [110, 8, 60, 88], "table": "gaia_north_central" },
+  { "zone_id": "west_central", "rect": [12, 60, 98, 36], "table": "gaia_west_central" },
+  { "zone_id": "southern_basin", "rect": [12, 96, 188, 40], "table": "gaia_southern_basin" },
+  { "zone_id": "open_sea", "rect": [0, 0, 256, 144], "table": "gaia_open_sea" }
   ],
   "encounter_rate": 0.08,
   "events": [],
@@ -390,7 +387,7 @@
       "requires_flag": null,
       "cost": null,
       "return_to_last": false,
-      "glyph": "T",
+      "glyph": ":",
       "palette": "bright_cyan"
     },
     {

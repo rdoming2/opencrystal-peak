@@ -170,6 +170,288 @@
       "loot": [{"item": "ether", "chance": 0.15}]
     },
     {
+      "id": "thornhare",
+      "name": "Thornhare",
+      "stats": {"hp": 24, "mp": 0, "str": 5, "int": 1, "vit": 4, "agi": 8},
+      "traits": ["beast"],
+      "sprite": {"glyph": "h", "palette": "enemy"},
+      "art": {"lines": ["/\\/\\", "(..)" ,"/  \\"], "palette": "enemy"},
+      "exp": 8,
+      "currency": [{"id": "gold", "amount": 12}],
+      "jp": 3,
+      "loot": [{"item": "potion", "chance": 0.14}]
+    },
+    {
+      "id": "moss_sprite",
+      "name": "Moss Sprite",
+      "stats": {"hp": 22, "mp": 10, "str": 3, "int": 6, "vit": 3, "agi": 7},
+      "traits": ["elemental"],
+      "spells": ["sleep"],
+      "mp_pool": "limited",
+      "ai": {
+        "mode": "basic",
+        "weights": {"attack": 5, "spells": 10, "abilities": 0},
+        "heal_below_hp": 0.35,
+        "prefer_revive": false
+      },
+      "sprite": {"glyph": "m", "palette": "enemy_magic"},
+      "art": {"lines": [" . ", "<*>", " ' "], "palette": "enemy_magic"},
+      "exp": 9,
+      "currency": [{"id": "gold", "amount": 12}],
+      "jp": 3,
+      "loot": [{"item": "ether", "chance": 0.1}]
+    },
+    {
+      "id": "plains_stag",
+      "name": "Plains Stag",
+      "stats": {"hp": 30, "mp": 0, "str": 7, "int": 1, "vit": 5, "agi": 8},
+      "traits": ["beast"],
+      "sprite": {"glyph": "g", "palette": "enemy"},
+      "art": {"lines": ["\\/\\/", "(  )", " || "], "palette": "enemy"},
+      "exp": 12,
+      "currency": [{"id": "gold", "amount": 13}],
+      "jp": 4,
+      "loot": [{"item": "potion", "chance": 0.12}]
+    },
+    {
+      "id": "dust_coyote",
+      "name": "Dust Coyote",
+      "stats": {"hp": 28, "mp": 0, "str": 6, "int": 2, "vit": 4, "agi": 9},
+      "traits": ["beast"],
+      "sprite": {"glyph": "y", "palette": "enemy"},
+      "art": {"lines": ["/\\/\\", "(oo)", " \\/ "], "palette": "enemy"},
+      "exp": 12,
+      "currency": [{"id": "gold", "amount": 13}],
+      "jp": 4,
+      "loot": [{"item": "potion", "chance": 0.1}]
+    },
+    {
+      "id": "frost_owl",
+      "name": "Frost Owl",
+      "stats": {"hp": 34, "mp": 10, "str": 5, "int": 7, "vit": 4, "agi": 10},
+      "traits": ["beast", "weak_fire"],
+      "spells": ["blizzard"],
+      "mp_pool": "limited",
+      "ai": {
+        "mode": "basic",
+        "weights": {"attack": 5, "spells": 10, "abilities": 0},
+        "heal_below_hp": 0.35,
+        "prefer_revive": false
+      },
+      "sprite": {"glyph": "f", "palette": "enemy_magic"},
+      "art": {"lines": ["/\\_/\\", "( o o )", "(  =  )"], "palette": "enemy_magic"},
+      "exp": 14,
+      "currency": [{"id": "gold", "amount": 14}],
+      "jp": 5,
+      "loot": [{"item": "ether", "chance": 0.12}]
+    },
+    {
+      "id": "tundra_beast",
+      "name": "Tundra Beast",
+      "stats": {"hp": 40, "mp": 0, "str": 8, "int": 1, "vit": 6, "agi": 7},
+      "traits": ["beast", "weak_fire"],
+      "sprite": {"glyph": "u", "palette": "enemy"},
+      "art": {"lines": ["/^^\\", "(  )", " \\/ "], "palette": "enemy"},
+      "exp": 15,
+      "currency": [{"id": "gold", "amount": 14}],
+      "jp": 5,
+      "loot": [{"item": "potion", "chance": 0.12}]
+    },
+    {
+      "id": "magma_newt",
+      "name": "Magma Newt",
+      "stats": {"hp": 42, "mp": 10, "str": 8, "int": 6, "vit": 6, "agi": 6},
+      "traits": ["beast", "resist_fire", "weak_ice"],
+      "spells": ["fire"],
+      "mp_pool": "limited",
+      "ai": {
+        "mode": "basic",
+        "weights": {"attack": 7, "spells": 7, "abilities": 0},
+        "heal_below_hp": 0.35,
+        "prefer_revive": false
+      },
+      "sprite": {"glyph": "n", "palette": "enemy"},
+      "art": {"lines": ["/\\ ", "(==)", " \\/ "], "palette": "enemy"},
+      "exp": 16,
+      "currency": [{"id": "gold", "amount": 15}],
+      "jp": 5,
+      "loot": [{"item": "potion", "chance": 0.11}]
+    },
+    {
+      "id": "obsidian_scorpion",
+      "name": "Obsidian Scorpion",
+      "stats": {"hp": 46, "mp": 0, "str": 9, "int": 2, "vit": 7, "agi": 7},
+      "traits": ["beast", "resist_fire", "weak_ice"],
+      "abilities": ["pummel"],
+      "mp_pool": "limited",
+      "ai": {
+        "mode": "basic",
+        "weights": {"attack": 8, "spells": 0, "abilities": 6},
+        "heal_below_hp": 0.35,
+        "prefer_revive": false
+      },
+      "sprite": {"glyph": "q", "palette": "enemy"},
+      "art": {"lines": [" Q  ", " \\m|c", "  m|c"], "palette": "enemy"},
+      "exp": 17,
+      "currency": [{"id": "gold", "amount": 15}],
+      "jp": 6,
+      "loot": [{"item": "potion", "chance": 0.11}]
+    },
+    {
+      "id": "ancient_sentinel",
+      "name": "Ancient Sentinel",
+      "stats": {"hp": 50, "mp": 12, "str": 9, "int": 6, "vit": 8, "agi": 6},
+      "traits": ["elemental"],
+      "spells": ["protect", "stone"],
+      "mp_pool": "limited",
+      "ai": {
+        "mode": "basic",
+        "weights": {"attack": 8, "spells": 8, "abilities": 0},
+        "heal_below_hp": 0.4,
+        "prefer_revive": false
+      },
+      "sprite": {"glyph": "a", "palette": "enemy"},
+      "art": {"lines": ["[::]", "|  |", "/__\\"], "palette": "enemy"},
+      "exp": 18,
+      "currency": [{"id": "gold", "amount": 16}],
+      "jp": 6,
+      "loot": [{"item": "stonebind_rivet", "chance": 0.06}]
+    },
+    {
+      "id": "rune_wraith",
+      "name": "Rune Wraith",
+      "stats": {"hp": 44, "mp": 16, "str": 5, "int": 9, "vit": 5, "agi": 8},
+      "traits": ["undead", "weak_fire"],
+      "spells": ["poison", "sleep"],
+      "mp_pool": "limited",
+      "ai": {
+        "mode": "basic",
+        "weights": {"attack": 4, "spells": 10, "abilities": 0},
+        "heal_below_hp": 0.35,
+        "prefer_revive": false
+      },
+      "sprite": {"glyph": "r", "palette": "enemy_magic"},
+      "art": {"lines": [" .*. ", "(:::)", " ' ' "], "palette": "enemy_magic"},
+      "exp": 18,
+      "currency": [{"id": "gold", "amount": 16}],
+      "jp": 6,
+      "loot": [{"item": "ether", "chance": 0.12}]
+    },
+    {
+      "id": "ember_salamander",
+      "name": "Ember Salamander",
+      "stats": {"hp": 52, "mp": 12, "str": 10, "int": 6, "vit": 8, "agi": 8},
+      "traits": ["dragon", "resist_fire", "weak_ice"],
+      "spells": ["fire"],
+      "abilities": ["pummel"],
+      "mp_pool": "limited",
+      "ai": {
+        "mode": "basic",
+        "weights": {"attack": 8, "spells": 5, "abilities": 5},
+        "heal_below_hp": 0.35,
+        "prefer_revive": false
+      },
+      "sprite": {"glyph": "l", "palette": "enemy"},
+      "art": {"lines": ["/\\ ", "(==)", "\\_/"], "palette": "enemy"},
+      "exp": 19,
+      "currency": [{"id": "gold", "amount": 16}],
+      "jp": 6,
+      "loot": [{"item": "ether", "chance": 0.12}]
+    },
+    {
+      "id": "storm_wyrm",
+      "name": "Storm Wyrm",
+      "stats": {"hp": 56, "mp": 14, "str": 10, "int": 8, "vit": 8, "agi": 9},
+      "traits": ["dragon"],
+      "spells": ["thunder"],
+      "mp_pool": "limited",
+      "ai": {
+        "mode": "basic",
+        "weights": {"attack": 7, "spells": 8, "abilities": 0},
+        "heal_below_hp": 0.35,
+        "prefer_revive": false
+      },
+      "sprite": {"glyph": "w", "palette": "enemy_magic"},
+      "art": {"lines": ["/\\_", "(~~)", " \\/ "], "palette": "enemy_magic"},
+      "exp": 20,
+      "currency": [{"id": "gold", "amount": 17}],
+      "jp": 7,
+      "loot": [{"item": "ether", "chance": 0.13}]
+    },
+    {
+      "id": "elder_drake",
+      "name": "Elder Drake",
+      "stats": {"hp": 60, "mp": 16, "str": 11, "int": 8, "vit": 9, "agi": 7},
+      "traits": ["dragon"],
+      "spells": ["fire", "poison"],
+      "abilities": ["power_strike"],
+      "mp_pool": "limited",
+      "ai": {
+        "mode": "basic",
+        "weights": {"attack": 8, "spells": 6, "abilities": 4},
+        "heal_below_hp": 0.35,
+        "prefer_revive": false
+      },
+      "sprite": {"glyph": "e", "palette": "enemy"},
+      "art": {"lines": ["/\\ ", "(##)", "\\__/"], "palette": "enemy"},
+      "exp": 21,
+      "currency": [{"id": "gold", "amount": 17}],
+      "jp": 7,
+      "loot": [{"item": "ether", "chance": 0.13}]
+    },
+    {
+      "id": "sea_serpent",
+      "name": "Sea Serpent",
+      "stats": {"hp": 48, "mp": 8, "str": 9, "int": 5, "vit": 7, "agi": 8},
+      "traits": ["beast", "weak_lightning"],
+      "sprite": {"glyph": "s", "palette": "enemy"},
+      "art": {"lines": ["~\\ ", "==( )", " ~/ "], "palette": "enemy"},
+      "exp": 17,
+      "currency": [{"id": "gold", "amount": 15}],
+      "jp": 6,
+      "loot": [{"item": "potion", "chance": 0.12}]
+    },
+    {
+      "id": "abyss_jelly",
+      "name": "Abyss Jelly",
+      "stats": {"hp": 40, "mp": 16, "str": 5, "int": 8, "vit": 6, "agi": 6},
+      "traits": ["elemental", "weak_lightning"],
+      "spells": ["poison"],
+      "mp_pool": "limited",
+      "ai": {
+        "mode": "basic",
+        "weights": {"attack": 5, "spells": 9, "abilities": 0},
+        "heal_below_hp": 0.35,
+        "prefer_revive": false
+      },
+      "sprite": {"glyph": "j", "palette": "enemy_magic"},
+      "art": {"lines": [" . ", "(o)", "~~~"], "palette": "enemy_magic"},
+      "exp": 16,
+      "currency": [{"id": "gold", "amount": 15}],
+      "jp": 6,
+      "loot": [{"item": "ether", "chance": 0.12}]
+    },
+    {
+      "id": "coral_guardian",
+      "name": "Coral Guardian",
+      "stats": {"hp": 54, "mp": 8, "str": 10, "int": 4, "vit": 9, "agi": 6},
+      "traits": ["beast", "weak_lightning"],
+      "abilities": ["pummel"],
+      "mp_pool": "limited",
+      "ai": {
+        "mode": "basic",
+        "weights": {"attack": 8, "spells": 0, "abilities": 6},
+        "heal_below_hp": 0.35,
+        "prefer_revive": false
+      },
+      "sprite": {"glyph": "c", "palette": "enemy"},
+      "art": {"lines": ["<##>", "(  )", " \\/ "], "palette": "enemy"},
+      "exp": 18,
+      "currency": [{"id": "gold", "amount": 15}],
+      "jp": 6,
+      "loot": [{"item": "potion", "chance": 0.12}]
+    },
+    {
       "id": "ember_sentinel",
       "name": "Ember Sentinel",
       "stats": {"hp": 175, "mp": 20, "str": 13, "int": 7, "vit": 11, "agi": 7},

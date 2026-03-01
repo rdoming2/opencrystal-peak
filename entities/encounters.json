@@ -35,6 +35,234 @@
       ]
     },
     {
+      "id": "gaia_southern_basin",
+      "entries": [
+        {
+          "weight": 45,
+          "tile": "grass",
+          "formation": [
+            {"enemy": "thornhare", "pos": [0, 1]},
+            {"enemy": "thornhare", "pos": [1, 2]}
+          ]
+        },
+        {
+          "weight": 35,
+          "tile": "forest",
+          "formation": [
+            {"enemy": "thornhare", "pos": [0, 1]},
+            {"enemy": "moss_sprite", "pos": [2, 1]}
+          ]
+        },
+        {
+          "weight": 20,
+          "tile": "grass",
+          "formation": [
+            {"enemy": "moss_sprite", "pos": [1, 2]}
+          ]
+        },
+        {
+          "weight": 100,
+          "tile": "water",
+          "formation": [
+            {"enemy": "sea_serpent", "pos": [1, 2]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gaia_west_central",
+      "entries": [
+        {
+          "weight": 45,
+          "formation": [
+            {"enemy": "dust_coyote", "pos": [0, 1]},
+            {"enemy": "dust_coyote", "pos": [2, 2]}
+          ]
+        },
+        {
+          "weight": 35,
+          "formation": [
+            {"enemy": "plains_stag", "pos": [1, 2]}
+          ]
+        },
+        {
+          "weight": 20,
+          "formation": [
+            {"enemy": "plains_stag", "pos": [1, 2]},
+            {"enemy": "dust_coyote", "pos": [3, 1]}
+          ]
+        },
+        {
+          "weight": 100,
+          "tile": "water",
+          "formation": [
+            {"enemy": "sea_serpent", "pos": [0, 1]},
+            {"enemy": "abyss_jelly", "pos": [2, 1]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gaia_north_central",
+      "entries": [
+        {
+          "weight": 40,
+          "formation": [
+            {"enemy": "frost_owl", "pos": [0, 1]},
+            {"enemy": "frost_owl", "pos": [2, 2]}
+          ]
+        },
+        {
+          "weight": 35,
+          "formation": [
+            {"enemy": "tundra_beast", "pos": [1, 2]}
+          ]
+        },
+        {
+          "weight": 25,
+          "formation": [
+            {"enemy": "frost_owl", "pos": [0, 1]},
+            {"enemy": "tundra_beast", "pos": [2, 2]}
+          ]
+        },
+        {
+          "weight": 100,
+          "tile": "water",
+          "formation": [
+            {"enemy": "abyss_jelly", "pos": [0, 1]},
+            {"enemy": "sea_serpent", "pos": [2, 2]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gaia_northwest_volcano",
+      "entries": [
+        {
+          "weight": 45,
+          "tile": "desert",
+          "formation": [
+            {"enemy": "magma_newt", "pos": [0, 1]},
+            {"enemy": "magma_newt", "pos": [2, 2]}
+          ]
+        },
+        {
+          "weight": 30,
+          "formation": [
+            {"enemy": "obsidian_scorpion", "pos": [1, 2]}
+          ]
+        },
+        {
+          "weight": 25,
+          "formation": [
+            {"enemy": "magma_newt", "pos": [0, 1]},
+            {"enemy": "obsidian_scorpion", "pos": [2, 2]}
+          ]
+        },
+        {
+          "weight": 100,
+          "tile": "water",
+          "formation": [
+            {"enemy": "coral_guardian", "pos": [1, 2]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gaia_eastern_reaches",
+      "entries": [
+        {
+          "weight": 40,
+          "formation": [
+            {"enemy": "rune_wraith", "pos": [0, 1]},
+            {"enemy": "rune_wraith", "pos": [2, 2]}
+          ]
+        },
+        {
+          "weight": 35,
+          "formation": [
+            {"enemy": "ancient_sentinel", "pos": [1, 2]}
+          ]
+        },
+        {
+          "weight": 25,
+          "formation": [
+            {"enemy": "rune_wraith", "pos": [0, 1]},
+            {"enemy": "ancient_sentinel", "pos": [2, 2]}
+          ]
+        },
+        {
+          "weight": 100,
+          "tile": "water",
+          "formation": [
+            {"enemy": "sea_serpent", "pos": [0, 1]},
+            {"enemy": "coral_guardian", "pos": [2, 2]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gaia_dragon_isle",
+      "entries": [
+        {
+          "weight": 40,
+          "formation": [
+            {"enemy": "ember_salamander", "pos": [0, 1]},
+            {"enemy": "ember_salamander", "pos": [2, 2]}
+          ]
+        },
+        {
+          "weight": 35,
+          "formation": [
+            {"enemy": "storm_wyrm", "pos": [1, 2]}
+          ]
+        },
+        {
+          "weight": 25,
+          "formation": [
+            {"enemy": "elder_drake", "pos": [1, 2]},
+            {"enemy": "ember_salamander", "pos": [3, 1]}
+          ]
+        },
+        {
+          "weight": 100,
+          "tile": "water",
+          "formation": [
+            {"enemy": "storm_wyrm", "pos": [0, 1]},
+            {"enemy": "sea_serpent", "pos": [2, 2]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gaia_open_sea",
+      "entries": [
+        {
+          "weight": 45,
+          "tile": "water",
+          "formation": [
+            {"enemy": "sea_serpent", "pos": [0, 1]},
+            {"enemy": "abyss_jelly", "pos": [2, 1]}
+          ]
+        },
+        {
+          "weight": 35,
+          "tile": "water",
+          "formation": [
+            {"enemy": "coral_guardian", "pos": [1, 2]}
+          ]
+        },
+        {
+          "weight": 20,
+          "tile": "water",
+          "formation": [
+            {"enemy": "coral_guardian", "pos": [0, 1]},
+            {"enemy": "sea_serpent", "pos": [2, 2]}
+          ]
+        }
+      ]
+    },
+    {
       "id": "ember_shallows",
       "entries": [
         {
