@@ -239,7 +239,7 @@
         "prefer_revive": false
       },
       "sprite": {"glyph": "f", "palette": "enemy_magic"},
-      "art": {"lines": ["/\\_/\\", "( o o )", "(  =  )"], "palette": "enemy_magic"},
+      "art": {"lines": ["/\\_/\\", "( o o )", "(  v  )"], "palette": "enemy_magic"},
       "exp": 14,
       "currency": [{"id": "gold", "amount": 14}],
       "jp": 5,
