@@ -17,7 +17,7 @@
     "#..^^^^^^^^..^^^^^^^^..^^^^^^..#",
     "#..^^^^^^^^..^^^^^^^^..^^^^^^..#",
     "#..########..########..######..#",
-    "#..########..########..######..#",
+    "#..###.####..########..###.##..#",
     "#..............................#",
     "#..............................#",
     "#..............................#",
@@ -25,7 +25,7 @@
     "#..^^^^^^..^^^^^^^^..^^^^^^^^..#",
     "#..^^^^^^..^^^^^^^^..^^^^^^^^..#",
     "#..######..########..########..#",
-    "#..######..########..########..#",
+    "#..###.##..########..########..#",
     "#..............................#",
     "#..............................#",
     "#..............................#",
@@ -33,9 +33,21 @@
     "###############.################"
   ],
   "legend": {
-    "^": {"tile": "roof", "passable": false, "palette": "bright_red"},
-    ".": {"tile": "floor", "passable": true, "palette": "bright_green"},
-    "#": {"tile": "wall", "passable": false, "palette": "bright_black"}
+    "#": {
+      "tile": "wall",
+      "passable": false,
+      "palette": "bright_black"
+    },
+    "^": {
+      "tile": "roof",
+      "passable": false,
+      "palette": "bright_red"
+    },
+    ".": {
+      "tile": "floor",
+      "passable": true,
+      "palette": "bright_green"
+    }
   },
   "encounters": [],
   "encounter_rate": 0.0,
@@ -46,7 +58,7 @@
       "id": "sign_inn",
       "pos": [
         23,
-        8
+        7
       ],
       "glyph": "⚑",
       "palette": "bright_yellow",
@@ -55,8 +67,8 @@
     {
       "id": "sign_armory",
       "pos": [
-        7,
-        8
+        9,
+        7
       ],
       "glyph": "⚑",
       "palette": "bright_yellow",
@@ -65,8 +77,8 @@
     {
       "id": "sign_goods",
       "pos": [
-        7,
-        16
+        8,
+        15
       ],
       "glyph": "⚑",
       "palette": "bright_yellow",
@@ -85,7 +97,12 @@
       "palette": "bright_yellow",
       "opened_flag": "quest.gale_pass.seal_claimed",
       "loot": {
-        "items": [{"id": "windward_seal", "qty": 1}],
+        "items": [
+          {
+            "id": "windward_seal",
+            "qty": 1
+          }
+        ],
         "equipment": [],
         "currency": []
       }
@@ -115,8 +132,8 @@
     {
       "id": "to_inn",
       "pos": [
-        22,
-        7
+        26,
+        6
       ],
       "target_map": "town_bramble_inn",
       "target_pos": [
@@ -134,7 +151,7 @@
       "id": "to_armory",
       "pos": [
         6,
-        7
+        6
       ],
       "target_map": "town_bramble_armory",
       "target_pos": [
@@ -152,7 +169,7 @@
       "id": "to_goods",
       "pos": [
         6,
-        15
+        14
       ],
       "target_map": "town_bramble_goods",
       "target_pos": [

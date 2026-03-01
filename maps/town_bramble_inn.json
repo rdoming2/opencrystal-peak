@@ -46,7 +46,7 @@
       "id": "to_town",
       "pos": [8, 9],
       "target_map": "town_bramble",
-      "target_pos": [22, 7],
+      "target_pos": [26, 6],
       "return_to_last": false,
       "glyph": "<",
       "palette": "bright_cyan"
