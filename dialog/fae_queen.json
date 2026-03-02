@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "id": "fae_queen",
+  "nodes": [
+    {
+      "id": "start",
+      "speaker": "Queen Riley",
+      "text": "Welcome to the Faerie Glade. The winds whisper of your arrival.",
+      "choices": [
+        {
+          "label": "We seek the Windward Seal.",
+          "next": "seal_request",
+          "requires_flags": ["quest.gale_pass.started"]
+        },
+        {
+          "label": "The Fount is saved.",
+          "next": "fount_saved",
+          "requires_flags": ["quest.gale_pass.fount_cleansed"]
+        },
+        {
+          "label": "Farewell",
+          "next": "end"
+        }
+      ]
+    },
+    {
+      "id": "seal_request",
+      "speaker": "Queen Riley",
+      "text": "The Windward Seal is a sacred token. I cannot grant it while our Fount of All Water is choked by corruption.",
+      "actions": [
+        {"type": "set_flag", "flag": "quest.gale_pass.fae_audience"}
+      ],
+      "choices": [
+        {
+          "label": "How can we help?",
+          "next": "fount_help"
+        }
+      ]
+    },
+    {
+      "id": "fount_help",
+      "speaker": "Queen Riley",
+      "text": "Speak with Lauren, our Chief Water Engineer. She will guide you to the Fount. Cleanse it, and the seal shall be yours.",
+      "choices": [
+        {
+          "label": "We will do it.",
+          "next": "end"
+        }
+      ]
+    },
+    {
+      "id": "fount_saved",
+      "speaker": "Queen Riley",
+      "text": "The waters run clear once more! You have our eternal gratitude. As promised, here is the Windward Seal.",
+      "actions": [
+        {"type": "start_event", "event": "fount_seal_reward"}
+      ],
+      "choices": [
+        {
+          "label": "Thank you, Queen Riley.",
+          "next": "end"
+        }
+      ]
+    },
+    {
+      "id": "end",
+      "text": "May the winds guide you."
+    }
+  ]
+}

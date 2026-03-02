@@ -7,7 +7,7 @@
       "item": "windward_seal",
       "qty": 1,
       "speaker": "Spire Warden",
-      "text": "You still need the Windward Seal. Seek it in Bramble Ford."
+      "text": "You still need the Windward Seal. Seek an audience with the Queen of the Fae in Faerie Glade."
     },
     {"type": "remove_item", "item": "windward_seal", "qty": 1},
     {"type": "set_flag", "flag": "quest.gale_pass.complete"},

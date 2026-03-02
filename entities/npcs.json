@@ -228,6 +228,30 @@
       "dialog": "fae_goodskeeper",
       "behavior": {"type": "static"},
       "interaction_range": 2
+    },
+    {
+      "id": "fae_queen",
+      "name": "Queen Riley",
+      "sprite": "mayor",
+      "palette": "bright_magenta",
+      "dialog": "fae_queen",
+      "behavior": {"type": "static"}
+    },
+    {
+      "id": "fae_engineer",
+      "name": "Fae Engineer",
+      "sprite": "sage",
+      "palette": "bright_cyan",
+      "dialog": "fae_engineer",
+      "behavior": {"type": "static"}
+    },
+    {
+      "id": "boss_fount_corruptor",
+      "name": "Fount Corruptor",
+      "sprite": "guardian",
+      "palette": "bright_green",
+      "dialog": "boss_fount_corruptor",
+      "behavior": {"type": "static"}
     }
   ]
 }

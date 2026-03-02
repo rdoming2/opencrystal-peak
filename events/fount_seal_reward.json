@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "id": "fount_seal_reward",
+  "steps": [
+    {"type": "give_item", "item": "windward_seal", "qty": 1},
+    {"type": "set_flag", "flag": "quest.gale_pass.seal_claimed"},
+    {"type": "narration", "text": "You received the Windward Seal from Queen Riley."}
+  ]
+}

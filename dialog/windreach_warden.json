@@ -5,7 +5,7 @@
     {
       "id": "start",
       "speaker": "Spire Warden",
-      "text": "Only those bearing the Windward Seal may ride the lift. Seek one in Bramble Ford.",
+      "text": "Only those bearing the Windward Seal may ride the lift. Seek an audience with the Queen of the Fae in Faerie Glade.",
       "choices": [
         {"label": "We'll find the seal.", "next": "accept"},
         {"label": "Present the seal.", "next": "turn_in", "requires_flags": ["quest.gale_pass.started"]},

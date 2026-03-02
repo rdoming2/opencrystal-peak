@@ -85,29 +85,7 @@
       "text": "Bramble Provisions"
     }
   ],
-  "chests": [
-    {
-      "id": "windward_seal",
-      "pos": [
-        26,
-        15
-      ],
-      "glyph_closed": "▣",
-      "glyph_open": "▢",
-      "palette": "bright_yellow",
-      "opened_flag": "quest.gale_pass.seal_claimed",
-      "loot": {
-        "items": [
-          {
-            "id": "windward_seal",
-            "qty": 1
-          }
-        ],
-        "equipment": [],
-        "currency": []
-      }
-    }
-  ],
+  "chests": [],
   "allow_save": true,
   "save_points": [],
   "transitions": [

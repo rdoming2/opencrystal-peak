@@ -533,6 +533,35 @@
           ]
         }
       ]
+    },
+    {
+      "id": "fount_dungeon",
+      "entries": [
+        {
+          "weight": 60,
+          "formation": [
+            {"enemy": "sludge_ooze", "pos": [0, 1]},
+            {"enemy": "sludge_ooze", "pos": [1, 2]}
+          ]
+        },
+        {
+          "weight": 40,
+          "formation": [
+            {"enemy": "sludge_ooze", "pos": [2, 2]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fount_boss",
+      "entries": [
+        {
+          "weight": 100,
+          "formation": [
+            {"enemy": "fount_corruptor", "pos": [4, 2]}
+          ]
+        }
+      ]
     }
   ]
 }

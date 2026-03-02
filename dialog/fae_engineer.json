@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "id": "fae_engineer",
+  "nodes": [
+    {
+      "id": "start",
+      "speaker": "Lauren",
+      "text": "The Fount... it's choking. The water that feeds the world is turning to sludge.",
+      "choices": [
+        {
+          "label": "Queen Riley sent us.",
+          "next": "fount_briefing",
+          "requires_flags": ["quest.gale_pass.fae_audience"]
+        },
+        {
+          "label": "The Fount is clear.",
+          "next": "fount_cleared",
+          "requires_flags": ["quest.gale_pass.fount_cleansed"]
+        },
+        {
+          "label": "Farewell",
+          "next": "end"
+        }
+      ]
+    },
+    {
+      "id": "fount_briefing",
+      "speaker": "Lauren",
+      "text": "The Fount of All Water is just to the west. A foul corruption has taken root there. Please, you must purge it!",
+      "actions": [
+        {"type": "set_flag", "flag": "quest.gale_pass.fount_briefing"}
+      ],
+      "choices": [
+        {
+          "label": "We'll head there now.",
+          "next": "end"
+        }
+      ]
+    },
+    {
+      "id": "fount_cleared",
+      "speaker": "Lauren",
+      "text": "The flow is restored! The world's water is safe. Thank you, travelers. The queen will want to see you.",
+      "choices": [
+        {
+          "label": "We'll return to her.",
+          "next": "end"
+        }
+      ]
+    },
+    {
+      "id": "end",
+      "text": "May the waters run clear."
+    }
+  ]
+}

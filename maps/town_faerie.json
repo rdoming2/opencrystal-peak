@@ -40,7 +40,10 @@
   "encounters": [],
   "encounter_rate": 0.0,
   "events": [],
-  "npcs": [],
+  "npcs": [
+    {"id": "fae_queen", "pos": [15, 10]},
+    {"id": "fae_engineer", "pos": [17, 10]}
+  ],
   "signs": [
     {
       "id": "sign_inn",

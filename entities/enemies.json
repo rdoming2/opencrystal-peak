@@ -565,6 +565,48 @@
       "currency": [{"id": "gold", "amount": 160}],
       "jp": 20,
       "loot": []
+    },
+    {
+      "id": "sludge_ooze",
+      "name": "Sludge Ooze",
+      "stats": {"hp": 45, "mp": 10, "str": 8, "int": 4, "vit": 6, "agi": 4},
+      "traits": ["beast"],
+      "spells": ["poison"],
+      "abilities": ["pummel"],
+      "mp_pool": "limited",
+      "ai": {
+        "mode": "basic",
+        "weights": {"attack": 10, "spells": 5, "abilities": 5}
+      },
+      "sprite": {"glyph": "o", "palette": "bright_green"},
+      "art": {"lines": [" (  )", "(    )", " (__) "], "palette": "bright_green"},
+      "exp": 15,
+      "currency": [{"id": "gold", "amount": 12}],
+      "jp": 2,
+      "loot": [{"item": "antidote", "chance": 0.2}]
+    },
+    {
+      "id": "fount_corruptor",
+      "name": "Fount Corruptor",
+      "stats": {"hp": 250, "mp": 30, "str": 15, "int": 10, "vit": 12, "agi": 7},
+      "traits": ["boss"],
+      "spells": ["poison", "thunder", "sleep"],
+      "abilities": ["power_strike"],
+      "mp_pool": "unlimited",
+      "ai": {
+        "mode": "basic",
+        "weights": {"attack": 10, "spells": 10, "abilities": 5},
+        "heal_below_hp": 0.4,
+        "prefer_revive": true,
+        "palliative_reroll_chance": 0.5,
+        "palliative_cooldown_turns": 1
+      },
+      "sprite": {"glyph": "C", "palette": "bright_green"},
+      "art": {"lines": [" /XX\\ ", "( oo )", " \\__/ "], "palette": "bright_green"},
+      "exp": 120,
+      "currency": [{"id": "gold", "amount": 150}],
+      "jp": 15,
+      "loot": []
     }
   ]
 }

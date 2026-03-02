@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "id": "fount_boss_clear",
+  "steps": [
+    {
+      "type": "start_battle",
+      "encounter": "fount_boss",
+      "formation": [
+        {"enemy": "fount_corruptor", "pos": [4, 2]}
+      ]
+    },
+    {"type": "narration", "text": "The Fount Corruptor dissolves into a puddle of clear water."},
+    {"type": "npc_hide", "npc": "boss_fount_corruptor"},
+    {"type": "set_flag", "flag": "quest.gale_pass.fount_cleansed"},
+    {"type": "narration", "text": "The Fount of All Water runs clear once more."}
+  ]
+}
