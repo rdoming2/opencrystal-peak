@@ -250,7 +250,7 @@
       "label": null,
       "requires_flag": null,
       "cost": null,
-      "return_to_last": true,
+      "return_to_last": false,
       "glyph": ">",
       "palette": "bright_cyan"
     },

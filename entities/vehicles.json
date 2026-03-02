@@ -7,7 +7,7 @@
       "speed": 2,
       "allowed_tiles": ["water"],
       "unlock_flag": "vehicle.sailboat_unlocked",
-      "glyph": "S",
+      "glyph": "\u23C5",
       "palette": "bright_cyan"
     },
     {

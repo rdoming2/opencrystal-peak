@@ -212,7 +212,7 @@
         },
         {
           "id": "find_tar",
-          "text": "Find Ember Tar in the Ember Cache Depths treasure box.",
+          "text": "Find Ember Tar in the Ember Depths.",
           "flag": "quest.sailboat.find_tar",
           "show_flag": "quest.sailboat.started"
         },
