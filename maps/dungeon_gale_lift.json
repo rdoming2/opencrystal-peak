@@ -45,16 +45,25 @@
       "return_to_last": true,
       "glyph": "<",
       "palette": "bright_cyan"
-    },
+    }
+  ],
+  "doors": [
     {
       "id": "gale_lift_upwards",
-      "pos": [20, 8],
-      "target_map": "dungeon_gale_spire",
-      "target_pos": [2, 2],
+      "pos": [
+        20,
+        8
+      ],
       "requires_flag": "quest.gale_pass.complete",
+      "locked_text": "There is an empty space. Look for the Windward Seal to pass.",
+      "target_map": "dungeon_gale_spire",
+      "target_pos": [
+        2,
+        2
+      ],
       "return_to_last": false,
       "glyph": ">",
-      "palette": "bright_cyan"
+      "palette": "bright_yellow"
     }
   ]
 }

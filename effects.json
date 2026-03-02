@@ -161,6 +161,7 @@
       "default_duration": 3,
       "reapply": "refresh",
       "tick": "turn_start",
+      "clear_on_battle_end": true,
       "effects": ["sleep_skip"]
     },
     {
