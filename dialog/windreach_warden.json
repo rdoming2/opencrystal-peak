@@ -5,9 +5,9 @@
     {
       "id": "start",
       "speaker": "Spire Warden",
-      "text": "Only those bearing the Windward Seal may ride the lift. Seek an audience with the Queen of the Fae in Faerie Glade.",
+      "text": "Legends say only those bearing the Windward Seal may ride the lift up to the highest floors of the spire. Seek an audience with the Queen of the Fae in Faerie Glade, millenia ago the Fae were charged with protecting the seal.",
       "choices": [
-        {"label": "We'll find the seal.", "next": "accept"},
+        {"label": "We'll search.", "next": "accept"},
         {"label": "Present the seal.", "next": "turn_in", "requires_flags": ["quest.gale_pass.started"]},
         {"label": "The lift is open.", "next": "complete", "requires_flags": ["quest.gale_pass.complete"]},
         {"label": "Not now.", "next": "end"}
@@ -16,7 +16,7 @@
     {
       "id": "accept",
       "speaker": "Spire Warden",
-      "text": "Return with the seal and I will grant passage.",
+      "text": "The seal is an ancient key. The Fae know of such things.",
       "actions": [
         {"type": "set_flag", "flag": "quest.gale_pass.started"}
       ],

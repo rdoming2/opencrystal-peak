@@ -2,44 +2,103 @@
   "version": 1,
   "id": "town_faerie_armory",
   "name": "Fae Atelier",
+  "hide_name": false,
   "world": "gaia",
   "width": 16,
   "height": 10,
+  "loop": {
+    "x": false,
+    "y": false
+  },
   "tiles": [
     "################",
+    "#^^..s....s..^^#",
+    "#^^..s....s..^^#",
+    "#....s====s....#",
     "#..............#",
     "#..............#",
-    "#==============#",
     "#..............#",
     "#..............#",
-    "#..............#",
-    "#..............#",
-    "#..............#",
+    "#..^^........^^#",
     "########.#######"
   ],
   "legend": {
-    "#": {"tile": "wall", "passable": false, "palette": "bright_black"},
-    ".": {"tile": "floor", "passable": true, "palette": "bright_yellow"},
-    "=": {"tile": "counter", "passable": false, "palette": "bright_black"},
-    "s": {"tile": "shelf", "passable": false, "palette": "bright_black"}
+    ".": {
+      "tile": "grass",
+      "passable": true,
+      "palette": "bright_green"
+    },
+    "~": {
+      "tile": "water",
+      "passable": false,
+      "palette": "blue"
+    },
+    "*": {
+      "tile": "flowers",
+      "passable": true,
+      "palette": "bright_yellow"
+    },
+    "^": {
+      "tile": "forest",
+      "passable": false,
+      "palette": "green"
+    },
+    "=": {
+      "tile": "counter",
+      "passable": false,
+      "palette": "bright_black"
+    },
+    "s": {
+      "tile": "shelf",
+      "passable": false,
+      "palette": "bright_black"
+    },
+    "#": {
+      "tile": "wall",
+      "passable": false,
+      "palette": "bright_black"
+    }
   },
   "encounters": [],
   "encounter_rate": 0.0,
   "events": [],
   "npcs": [
-    {"id": "fae_armorer", "pos": [8, 2]}
+    {
+      "id": "fae_armorer",
+      "pos": [
+        8,
+        2
+      ],
+      "script": null,
+      "requires_flags": null
+    }
   ],
+  "signs": [],
+  "chests": [],
   "allow_save": true,
   "save_points": [],
   "transitions": [
     {
       "id": "to_town",
-      "pos": [8, 9],
+      "pos": [
+        8,
+        9
+      ],
       "target_map": "town_faerie",
-      "target_pos": [6, 7],
+      "target_pos": [
+        5,
+        4
+      ],
+      "label": null,
+      "requires_flag": null,
+      "cost": null,
       "return_to_last": false,
       "glyph": "<",
       "palette": "bright_cyan"
     }
-  ]
+  ],
+  "vehicles": [],
+  "doors": [],
+  "puzzles": [],
+  "campfires": []
 }

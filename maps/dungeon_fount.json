@@ -63,7 +63,13 @@
   ],
   "encounter_rate": 0.08,
   "events": [],
-  "npcs": [],
+  "npcs": [
+    {
+      "id": "fae_engineer",
+      "pos": [29, 26],
+      "requires_flags": null
+    }
+  ],
   "chests": [
     {
       "id": "fount_entrance_chest",
@@ -90,15 +96,22 @@
       "return_to_last": true,
       "glyph": "<",
       "palette": "bright_cyan"
-    },
+    }
+  ],
+  "doors": [
     {
-      "id": "to_depths",
+      "id": "to_depths_gate",
       "pos": [29, 2],
+      "requires_flag": "quest.gale_pass.fount_briefing",
+      "locked_text": "A fae ward seals the depths.",
+      "locked_event": null,
       "target_map": "dungeon_fount_depths",
       "target_pos": [29, 28],
       "return_to_last": false,
       "glyph": ">",
       "palette": "bright_cyan"
     }
-  ]
+  ],
+  "puzzles": [],
+  "campfires": []
 }

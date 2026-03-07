@@ -11,69 +11,103 @@
     "y": false
   },
   "tiles": [
-    "################################",
+    "#############~~~~~##############",
+    "#^^^^^^^^^^^^^~~..^^^^^^^^^^^^^#",
+    "#^^^ooo^^^....~~...^^^###^^^...#",
+    "#^^^ooo^^^....=....^^#####^^...#",
+    "#^^^#.#^^^....~....^###.###^...#",
+    "#.............~~...............#",
+    "#.............~~...........^...#",
+    "#.............~~~..............#",
+    "#...^^.......~~~~~.......^^....#",
+    "#..^^^^.......===.......^^^^...#",
+    "#.............~~~..............#",
+    "#...ooo...^^...~~..^^...ooo....#",
+    "#...#.#...^^...=...^^...#.#....#",
+    "#.............~~~..............#",
+    "#..^^^.......~~~~~.............#",
+    "#..^^........~~~~~.........^^..#",
+    "#..^^^........~~~.........^^^..#",
     "#..............................#",
-    "#..............................#",
-    "#..^^^^^^^^..^^^^^^^^..^^^^^^..#",
-    "#..^^^^^^^^..^^^^^^^^..^^^^^^..#",
-    "#..########..########..######..#",
-    "#..########..########..######..#",
-    "#..............................#",
-    "#..............................#",
-    "#..............................#",
-    "#..............................#",
-    "#..^^^^^^..^^^^^^^^..^^^^^^^^..#",
-    "#..^^^^^^..^^^^^^^^..^^^^^^^^..#",
-    "#..######..########..########..#",
-    "#..######..########..########..#",
-    "#..............................#",
-    "#..............................#",
-    "#..............................#",
-    "#..............................#",
+    "#.....^^^^^^........^^^^^^.....#",
     "###############.################"
   ],
   "legend": {
-    "^": {"tile": "roof", "passable": false, "palette": "bright_red"},
-    ".": {"tile": "floor", "passable": true, "palette": "bright_green"},
-    "#": {"tile": "wall", "passable": false, "palette": "bright_black"}
+    "#": {
+      "tile": "wall",
+      "passable": false,
+      "palette": "bright_black"
+    },
+    "^": {
+      "tile": "forest",
+      "passable": false,
+      "palette": "green"
+    },
+    "o": {
+      "tile": "roof",
+      "passable": false,
+      "palette": "bright_magenta"
+    },
+    "~": {
+      "tile": "water",
+      "passable": false,
+      "palette": "blue"
+    },
+    "=": {
+      "tile": "bridge",
+      "passable": true,
+      "palette": "bright_yellow"
+    },
+    ".": {
+      "tile": "grass",
+      "passable": true,
+      "palette": "bright_green"
+    }
   },
   "encounters": [],
   "encounter_rate": 0.0,
   "events": [],
-  "npcs": [
-    {"id": "fae_queen", "pos": [15, 10]},
-    {"id": "fae_engineer", "pos": [17, 10]}
-  ],
+  "npcs": [],
   "signs": [
     {
       "id": "sign_inn",
       "pos": [
-        23,
-        8
+        26,
+        13
       ],
       "glyph": "⚑",
       "palette": "bright_yellow",
-      "text": "Fae Hearth"
+      "text": "Canopy Hearth"
     },
     {
       "id": "sign_armory",
       "pos": [
-        7,
-        8
+        4,
+        5
       ],
       "glyph": "⚑",
       "palette": "bright_yellow",
-      "text": "Fae Atelier"
+      "text": "Bough Atelier"
     },
     {
       "id": "sign_goods",
       "pos": [
-        7,
-        16
+        4,
+        13
       ],
       "glyph": "⚑",
       "palette": "bright_yellow",
-      "text": "Fae Pantry"
+      "text": "Root Pantry"
+    },
+    {
+      "id": "sign_queen",
+      "pos": [
+        24,
+        5
+      ],
+      "glyph": "⚑",
+      "palette": "bright_yellow",
+      "text": "Moonroot Grotto"
     }
   ],
   "chests": [],
@@ -101,13 +135,13 @@
     {
       "id": "to_inn",
       "pos": [
-        22,
-        7
+        25,
+        12
       ],
       "target_map": "town_faerie_inn",
       "target_pos": [
         8,
-        8
+        9
       ],
       "label": null,
       "requires_flag": null,
@@ -119,13 +153,13 @@
     {
       "id": "to_armory",
       "pos": [
-        6,
-        7
+        5,
+        4
       ],
       "target_map": "town_faerie_armory",
       "target_pos": [
         8,
-        8
+        9
       ],
       "label": null,
       "requires_flag": null,
@@ -137,13 +171,31 @@
     {
       "id": "to_goods",
       "pos": [
-        6,
-        15
+        5,
+        12
       ],
       "target_map": "town_faerie_goods",
       "target_pos": [
         8,
-        8
+        9
+      ],
+      "label": null,
+      "requires_flag": null,
+      "cost": null,
+      "return_to_last": false,
+      "glyph": ">",
+      "palette": "bright_cyan"
+    },
+    {
+      "id": "to_queen_cave",
+      "pos": [
+        23,
+        4
+      ],
+      "target_map": "town_faerie_queen_cave",
+      "target_pos": [
+        10,
+        10
       ],
       "label": null,
       "requires_flag": null,

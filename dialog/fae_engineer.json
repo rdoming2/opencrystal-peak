@@ -5,7 +5,7 @@
     {
       "id": "start",
       "speaker": "Lauren",
-      "text": "The Fount... it's choking. The water that feeds the world is turning to sludge.",
+      "text": "I am the chief water quality engineer of the Fae. The Fount is choking. The water that feeds the world is turning to sludge...",
       "choices": [
         {
           "label": "Queen Riley sent us.",
@@ -26,7 +26,7 @@
     {
       "id": "fount_briefing",
       "speaker": "Lauren",
-      "text": "The Fount of All Water is just to the west. A foul corruption has taken root there. Please, you must purge it!",
+      "text": "Good. I'll unseal the depths now. Follow the upper channel and find the source of the corruption.",
       "actions": [
         {"type": "set_flag", "flag": "quest.gale_pass.fount_briefing"}
       ],
@@ -40,7 +40,7 @@
     {
       "id": "fount_cleared",
       "speaker": "Lauren",
-      "text": "The flow is restored! The world's water is safe. Thank you, travelers. The queen will want to see you.",
+      "text": "The flow is restored for now. Thank you, travelers. Tell the queen the Fount is clear, but I fear the corruption will return until the source of the evil is slain.",
       "choices": [
         {
           "label": "We'll return to her.",

@@ -5,7 +5,7 @@
     {
       "id": "start",
       "speaker": "Queen Riley",
-      "text": "Welcome to the Faerie Glade. The winds whisper of your arrival.",
+      "text": "Welcome to Faerie Glade, heart of our hidden grove. Even the stream has carried word of your arrival.",
       "choices": [
         {
           "label": "We seek the Windward Seal.",
@@ -26,7 +26,7 @@
     {
       "id": "seal_request",
       "speaker": "Queen Riley",
-      "text": "The Windward Seal is a sacred token. I cannot grant it while our Fount of All Water is choked by corruption.",
+      "text": "The Windward Seal is a sacred token. I cannot grant it while the Fount of All Water runs choked beneath our roots.",
       "actions": [
         {"type": "set_flag", "flag": "quest.gale_pass.fae_audience"}
       ],
@@ -40,7 +40,7 @@
     {
       "id": "fount_help",
       "speaker": "Queen Riley",
-      "text": "Speak with Lauren, our Chief Water Engineer. She will guide you to the Fount. Cleanse it, and the seal shall be yours.",
+      "text": "Speak with our Chief Water Engineer near the entrance of the the Fount. She can unseal the depths to the west. I fear the blight is stirred by the dragon at the world's center.",
       "choices": [
         {
           "label": "We will do it.",
@@ -57,14 +57,14 @@
       ],
       "choices": [
         {
-          "label": "Thank you, Queen Riley.",
+          "label": "Thank you, Your Majesty.",
           "next": "end"
         }
       ]
     },
     {
       "id": "end",
-      "text": "May the winds guide you."
+      "text": "May root, wind, and water guide you."
     }
   ]
 }

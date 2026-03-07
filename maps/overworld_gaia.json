@@ -483,7 +483,7 @@
         28
       ],
       "label": "Fount of All Water",
-      "requires_flag": "quest.gale_pass.fount_briefing",
+      "requires_flag": "quest.gale_pass.fae_audience",
       "cost": null,
       "return_to_last": false,
       "glyph": "☗",

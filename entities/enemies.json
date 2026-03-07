@@ -579,7 +579,7 @@
         "weights": {"attack": 10, "spells": 5, "abilities": 5}
       },
       "sprite": {"glyph": "o", "palette": "bright_green"},
-      "art": {"lines": [" (  )", "(    )", " (__) "], "palette": "bright_green"},
+      "art": {"lines": [" ~^~", "( >_<)", "----"], "palette": "bright_green"},
       "exp": 15,
       "currency": [{"id": "gold", "amount": 12}],
       "jp": 2,

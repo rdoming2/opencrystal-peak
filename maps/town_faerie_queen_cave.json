@@ -1,60 +1,52 @@
 {
   "version": 1,
-  "id": "town_faerie_goods",
-  "name": "Fae Pantry",
+  "id": "town_faerie_queen_cave",
+  "name": "Moonroot Grotto",
   "hide_name": false,
   "world": "gaia",
-  "width": 16,
-  "height": 10,
+  "width": 20,
+  "height": 12,
   "loop": {
     "x": false,
     "y": false
   },
   "tiles": [
-    "################",
-    "#^^..s....s..^^#",
-    "#^^..s....s..^^#",
-    "#....s====s....#",
-    "#..............#",
-    "#..****..****..#",
-    "#...**....**...#",
-    "#..............#",
-    "#..^^........^^#",
-    "########.#######"
+    "####################",
+    "######........######",
+    "#####..~~~~~~..#####",
+    "####..~~....~~..####",
+    "###..~~......~~..###",
+    "###..~..****..~..###",
+    "###..==.****.==..###",
+    "###..~~.****.~~..###",
+    "####..~~....~~..####",
+    "#####..~~~~~~..#####",
+    "######........######",
+    "##########.#########"
   ],
   "legend": {
-    "^": {
-      "tile": "forest",
-      "passable": false,
-      "palette": "green"
-    },
-    "=": {
-      "tile": "counter",
-      "passable": false,
-      "palette": "bright_black"
-    },
-    "*": {
-      "tile": "flowers",
+    ".": {
+      "tile": "floor",
       "passable": true,
-      "palette": "bright_yellow"
-    },
-    "#": {
-      "tile": "wall",
-      "passable": false,
-      "palette": "bright_black"
+      "palette": "bright_green"
     },
     "~": {
       "tile": "water",
       "passable": false,
       "palette": "blue"
     },
-    ".": {
-      "tile": "grass",
+    "=": {
+      "tile": "bridge",
       "passable": true,
-      "palette": "bright_green"
+      "palette": "bright_yellow"
     },
-    "s": {
-      "tile": "shelf",
+    "*": {
+      "tile": "flowers",
+      "passable": true,
+      "palette": "bright_magenta"
+    },
+    "#": {
+      "tile": "wall",
       "passable": false,
       "palette": "bright_black"
     }
@@ -64,10 +56,10 @@
   "events": [],
   "npcs": [
     {
-      "id": "fae_goodskeeper",
+      "id": "fae_queen",
       "pos": [
-        8,
-        2
+        10,
+        6
       ],
       "script": null,
       "requires_flags": null
@@ -81,13 +73,13 @@
     {
       "id": "to_town",
       "pos": [
-        8,
-        9
+        10,
+        11
       ],
       "target_map": "town_faerie",
       "target_pos": [
-        5,
-        12
+        23,
+        4
       ],
       "label": null,
       "requires_flag": null,

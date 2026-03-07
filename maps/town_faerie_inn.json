@@ -2,54 +2,115 @@
   "version": 1,
   "id": "town_faerie_inn",
   "name": "Fae Hearth",
+  "hide_name": false,
   "world": "gaia",
   "width": 16,
   "height": 10,
+  "loop": {
+    "x": false,
+    "y": false
+  },
   "tiles": [
     "################",
-    "#..bbbb..bbbb..#",
-    "#..bbbb..bbbb..#",
-    "#..............#",
-    "#...t......====#",
-    "#..........=...#",
-    "#...t......=...#",
-    "#..........====#",
-    "#..............#",
+    "#^^....~~....^^#",
+    "#^^.bb.~~.bb.^^#",
+    "#....*.~~.*....#",
+    "#....*....*====#",
+    "#....*....*=...#",
+    "#....*....*=...#",
+    "#....*....*====#",
+    "#..bb......bb..#",
     "########.#######"
   ],
   "legend": {
-    "#": {"tile": "wall", "passable": false, "palette": "bright_black"},
-    ".": {"tile": "floor", "passable": true, "palette": "bright_yellow"},
-    "=": {"tile": "counter", "passable": false, "palette": "bright_black"},
-    "b": {"tile": "bed", "passable": false, "palette": "bright_magenta"},
-    "t": {"tile": "table", "passable": false, "palette": "bright_black"}
+    ".": {
+      "tile": "grass",
+      "passable": true,
+      "palette": "bright_green"
+    },
+    "*": {
+      "tile": "flowers",
+      "passable": true,
+      "palette": "bright_yellow"
+    },
+    "#": {
+      "tile": "wall",
+      "passable": false,
+      "palette": "bright_black"
+    },
+    "=": {
+      "tile": "counter",
+      "passable": false,
+      "palette": "bright_black"
+    },
+    "~": {
+      "tile": "water",
+      "passable": false,
+      "palette": "blue"
+    },
+    "^": {
+      "tile": "forest",
+      "passable": false,
+      "palette": "green"
+    },
+    "b": {
+      "tile": "bed",
+      "passable": false,
+      "palette": "bright_magenta"
+    }
   },
   "encounters": [],
   "encounter_rate": 0.0,
   "events": [],
   "npcs": [
-    {"id": "fae_innkeeper", "pos": [12, 5]}
-  ],
-  "campfires": [
     {
-      "id": "inn_campfire",
-      "pos": [4, 5],
-      "campfire_id": "inn_kitchen",
-      "glyph": "C",
-      "palette": "bright_red"
+      "id": "fae_innkeeper",
+      "pos": [
+        12,
+        5
+      ],
+      "script": null,
+      "requires_flags": null
     }
   ],
+  "signs": [],
+  "chests": [],
   "allow_save": true,
   "save_points": [],
   "transitions": [
     {
       "id": "to_town",
-      "pos": [8, 9],
+      "pos": [
+        8,
+        9
+      ],
       "target_map": "town_faerie",
-      "target_pos": [22, 7],
+      "target_pos": [
+        25,
+        12
+      ],
+      "label": null,
+      "requires_flag": null,
+      "cost": null,
       "return_to_last": false,
       "glyph": "<",
       "palette": "bright_cyan"
+    }
+  ],
+  "vehicles": [],
+  "doors": [],
+  "puzzles": [],
+  "campfires": [
+    {
+      "id": "inn_campfire",
+      "pos": [
+        4,
+        5
+      ],
+      "campfire_id": "inn_kitchen",
+      "requires_flags": null,
+      "glyph": "C",
+      "palette": "bright_red"
     }
   ]
 }

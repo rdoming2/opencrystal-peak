@@ -176,7 +176,7 @@
         },
         {
           "id": "fount_briefing",
-          "text": "Speak with Lauren, the Chief Water Engineer, about the corruption at the Fount of All Water.",
+          "text": "Meet the Chief Water Engineer at the Fount entrance and have her unseal the depths.",
           "flag": "quest.gale_pass.fount_briefing",
           "show_flag": "quest.gale_pass.fae_audience"
         },
