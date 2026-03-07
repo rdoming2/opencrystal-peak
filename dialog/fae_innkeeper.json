@@ -16,7 +16,7 @@
       "speaker": "Fae Innkeeper",
       "text": "Your party is fully restored.",
       "actions": [
-        {"type": "rest_party"}
+        {"type": "rest_party", "cost": {"id": "gold", "amount": 120}}
       ],
       "choices": [
         {"label": "Thanks", "next": "end_text"}

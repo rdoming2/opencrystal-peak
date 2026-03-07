@@ -16,7 +16,7 @@
       "speaker": "Windreach Innkeeper",
       "text": "Your party is fully restored.",
       "actions": [
-        {"type": "rest_party"}
+        {"type": "rest_party", "cost": {"id": "gold", "amount": 90}}
       ],
       "choices": [
         {"label": "Thanks", "next": "end_text"}

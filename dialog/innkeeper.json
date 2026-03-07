@@ -16,7 +16,7 @@
       "speaker": "Coral Innkeeper",
       "text": "Your party is fully restored.",
       "actions": [
-        {"type": "rest_party"},
+        {"type": "rest_party", "cost": {"id": "gold", "amount": 50}},
         {"type": "learn_recipe", "recipe": "hearty_stew"}
       ],
       "choices": [
