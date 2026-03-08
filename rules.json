@@ -108,7 +108,14 @@
     "summons": false
   },
   "save": {
-    "slots_max": 10
+    "slots_max": 10,
+    "new_game_plus": {
+      "carryover": {
+        "items": true,
+        "equipment": true,
+        "currency": true
+      }
+    }
   },
   "settings": {
     "autosave_enabled": {
