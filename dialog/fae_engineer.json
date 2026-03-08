@@ -10,7 +10,7 @@
         {
           "label": "Queen Riley sent us.",
           "next": "fount_briefing",
-          "requires_flags": ["quest.gale_pass.fae_audience"]
+          "requires_flags": ["quest.gale_pass.fae_audience", "!quest.gale_pass.fount_cleansed"]
         },
         {
           "label": "The Fount is clear.",
@@ -40,7 +40,7 @@
     {
       "id": "fount_cleared",
       "speaker": "Lauren",
-      "text": "The flow is restored for now. Thank you, travelers. Tell the queen the Fount is clear, but I fear the corruption will return until the source of the evil is slain.",
+      "text": "The flow is restored and the corruption is gone. Thank you, travelers. Tell the queen the Fount is clear and the source has been purged.",
       "choices": [
         {
           "label": "We'll return to her.",

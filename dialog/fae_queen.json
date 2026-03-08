@@ -10,12 +10,17 @@
         {
           "label": "We seek the Windward Seal.",
           "next": "seal_request",
-          "requires_flags": ["quest.gale_pass.started"]
+          "requires_flags": ["quest.gale_pass.started", "!quest.gale_pass.fount_cleansed"]
         },
         {
           "label": "The Fount is saved.",
           "next": "fount_saved",
-          "requires_flags": ["quest.gale_pass.fount_cleansed"]
+          "requires_flags": ["quest.gale_pass.fount_cleansed", "!quest.gale_pass.seal_claimed"]
+        },
+        {
+          "label": "Thank you for the Windward Seal.",
+          "next": "seal_already_claimed",
+          "requires_flags": ["quest.gale_pass.seal_claimed"]
         },
         {
           "label": "Farewell",
@@ -55,6 +60,17 @@
       "actions": [
         {"type": "start_event", "event": "fount_seal_reward"}
       ],
+      "choices": [
+        {
+          "label": "Thank you, Your Majesty.",
+          "next": "end"
+        }
+      ]
+    },
+    {
+      "id": "seal_already_claimed",
+      "speaker": "Queen Riley",
+      "text": "You have done the Fae a great kindness. Carry the Windward Seal with honor, and may clear waters guide your path.",
       "choices": [
         {
           "label": "Thank you, Your Majesty.",

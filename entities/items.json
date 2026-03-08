@@ -61,7 +61,7 @@
       "type": "key_item",
       "description": "A rare rivet harvested from Stone Vault creatures.",
       "sellable": false,
-      "usage": {"context": "field", "target": "self"},
+      "usage": {"context": "none", "target": "self"},
       "effect": {"type": "none"}
     },
     {
@@ -124,7 +124,8 @@
       "type": "key_item",
       "description": "A stamped token required to ride the spire lift.",
       "sellable": false,
-      "usage": {"context": "field", "target": "self"},
+      "unique": true,
+      "usage": {"context": "none", "target": "self"},
       "effect": {"type": "none"}
     },
     {
@@ -133,7 +134,8 @@
       "type": "key_item",
       "description": "A dense, heat-tempered tar perfect for sealing a hull.",
       "sellable": false,
-      "usage": {"context": "field", "target": "self"},
+      "unique": true,
+      "usage": {"context": "none", "target": "self"},
       "effect": {"type": "none"}
     },
     {

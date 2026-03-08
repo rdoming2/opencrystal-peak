@@ -14,7 +14,7 @@
       "id": "airship",
       "name": "Airship",
       "speed": 4,
-      "allowed_tiles": ["grass", "mountain", "water"],
+      "allowed_tiles": ["grass", "mountain", "water", "forest", "lava", "desert", "bridge"],
       "unlock_flag": "vehicle.airship_unlocked",
       "glyph": "A",
       "palette": "bright_cyan"

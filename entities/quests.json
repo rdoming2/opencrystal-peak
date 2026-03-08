@@ -194,7 +194,7 @@
         },
         {
           "id": "complete",
-          "text": "Present the Windward Seal to the Spire Warden to open the lift.",
+          "text": "With the Windward Seal in hand, the Gale lift is now unlocked.",
           "flag": "quest.gale_pass.complete",
           "show_flag": "quest.gale_pass.seal_claimed"
         }

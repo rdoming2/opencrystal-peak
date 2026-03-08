@@ -251,7 +251,8 @@
       "sprite": "guardian",
       "palette": "bright_green",
       "dialog": "boss_fount_corruptor",
-      "behavior": {"type": "static"}
+      "behavior": {"type": "static"},
+      "interaction_range": 3
     }
   ]
 }

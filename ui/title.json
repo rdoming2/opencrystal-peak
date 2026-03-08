@@ -27,6 +27,7 @@
   },
   "menu": [
     {"id": "new_game", "label": "New Game"},
+    {"id": "new_game_plus", "label": "New Game+"},
     {"id": "load_game", "label": "Load"},
     {"id": "settings", "label": "Settings"},
     {"id": "exit", "label": "Exit"}
@@ -40,6 +41,18 @@
       {"id": "load_autosave", "label": "Load Autosave"},
       {"id": "return_title", "label": "Return to Title"},
       {"id": "exit", "label": "Exit"}
+    ]
+  },
+  "endgame": {
+    "title": "The End",
+    "subtitle": "The peak has been conquered.",
+    "credits": [
+      "OpenCrystal - Peak",
+      "Thanks for playing."
+    ],
+    "menu": [
+      {"id": "continue", "label": "Continue"},
+      {"id": "return_title", "label": "Return to Title"}
     ]
   },
   "footer": {

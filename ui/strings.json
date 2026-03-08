@@ -78,6 +78,10 @@
     "gameover.load_latest": "Load Latest Save",
     "gameover.load_autosave": "Load Autosave",
     "gameover.return_title": "Return to Title",
-    "gameover.exit": "Exit"
+    "gameover.exit": "Exit",
+    "endgame.title": "The End",
+    "endgame.subtitle": "The peak has been conquered.",
+    "endgame.continue": "Continue",
+    "endgame.return_title": "Return to Title"
   }
 }

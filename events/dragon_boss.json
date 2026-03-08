@@ -15,6 +15,7 @@
     {"type": "stat_add", "stat": "dungeons_cleared", "value": 1},
     {"type": "set_flag", "flag": "quest.rune_stones.dragon"},
     {"type": "npc_hide", "npc": "boss_dragon"},
-    {"type": "npc_show", "npc": "boss_dragon_after"}
+    {"type": "npc_show", "npc": "boss_dragon_after"},
+    {"type": "end_game", "mode": "allow_continue"}
   ]
 }
