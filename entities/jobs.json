@@ -44,14 +44,14 @@
       "name": "Fighter",
       "description": "A brute force combatant who focuses on heavy blows.",
       "magic_schools": [],
-      "stats": {"hp": 30, "mp": 0, "str": 8, "int": 2, "vit": 6, "agi": 3, "lck": 3},
+      "stats": {"hp": 28, "mp": 0, "str": 7, "int": 2, "vit": 5, "agi": 3, "lck": 3},
       "growth": {
         "mode": "formula",
         "per_level": {
-          "hp": "6 + vit",
+          "hp": "5 + vit",
           "mp": "0",
-          "str": "2",
-          "vit": "2",
+          "str": "1",
+          "vit": "1",
           "agi": "1",
           "int": "0",
           "lck": "1"
@@ -62,7 +62,7 @@
       "accessory_slots": 1,
       "can_dual_wield": false,
       "stat_modifiers": {
-        "str": {"add": 2, "mult": 1.05},
+        "str": {"add": 1, "mult": 1.0},
         "int": {"add": -1, "mult": 0.95}
       },
       "starting_equipment": {
@@ -93,12 +93,12 @@
       "growth": {
         "mode": "formula",
         "per_level": {
-          "hp": "3 + ROUND(RAND(-1,1))",
-          "mp": "2 + ROUND(RAND(0,1) * 3)",
+          "hp": "4 + ROUND(RAND(-1,1))",
+          "mp": "3 + ROUND(RAND(0,1) * 3)",
           "str": "0",
           "vit": "1",
           "agi": "1",
-          "int": "2",
+          "int": "3",
           "lck": "1"
         }
       },
@@ -107,7 +107,7 @@
       "accessory_slots": 1,
       "can_dual_wield": false,
       "stat_modifiers": {
-        "int": {"add": 2, "mult": 1.05},
+        "int": {"add": 3, "mult": 1.1},
         "str": {"add": -1, "mult": 0.9}
       },
       "starting_equipment": {
@@ -141,12 +141,12 @@
       "growth": {
         "mode": "formula",
         "per_level": {
-          "hp": "2 + ROUND(RAND(-1,1))",
-          "mp": "3 + ROUND(RAND(0,1) * 3)",
+          "hp": "3 + ROUND(RAND(-1,1))",
+          "mp": "4 + ROUND(RAND(0,1) * 3)",
           "str": "0",
           "vit": "0",
           "agi": "1",
-          "int": "2",
+          "int": "3",
           "lck": "1"
         }
       },
@@ -155,7 +155,7 @@
       "accessory_slots": 1,
       "can_dual_wield": false,
       "stat_modifiers": {
-        "int": {"add": 2, "mult": 1.05},
+        "int": {"add": 3, "mult": 1.1},
         "str": {"add": -1, "mult": 0.9}
       },
       "starting_equipment": {

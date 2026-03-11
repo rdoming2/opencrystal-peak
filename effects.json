@@ -196,7 +196,7 @@
   ],
   "traits": [
     {"id": "beast", "label": "Beast", "effects": []},
-    {"id": "dragon", "label": "Dragon", "effects": []},
+    {"id": "dragon", "label": "Dragon", "effects": ["weak_ice", "resist_fire"]},
     {"id": "boss", "label": "Boss", "effects": []},
     {"id": "elemental", "label": "Elemental", "effects": []},
     {"id": "undead", "label": "Undead", "effects": ["undead_healing_inversion"]},

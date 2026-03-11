@@ -14,7 +14,7 @@
       "default_target": "ally",
       "allowed_targets": ["ally", "enemy"],
       "target_mode": "single",
-      "effect": {"type": "heal", "power": 20}
+      "effect": {"type": "heal", "power": 26}
     },
     {
       "id": "enemy_cure",
@@ -28,6 +28,17 @@
       "effect": {"type": "heal", "power": 20}
     },
     {
+      "id": "enemy_revive",
+      "name": "Revive",
+      "school": "white",
+      "tier": 1,
+      "cost": {"type": "mp", "value": 8},
+      "default_target": "ally",
+      "allowed_targets": ["ally", "party"],
+      "target_mode": "single",
+      "effect": {"type": "revive", "power": 80}
+    },
+    {
       "id": "fire",
       "name": "Fire",
       "school": "black",
@@ -37,7 +48,7 @@
       "allowed_targets": ["enemy"],
       "target_mode": "both",
       "multi_attenuation": 0.6,
-      "effect": {"type": "damage", "power": 22, "element": "fire"}
+      "effect": {"type": "damage", "power": 28, "element": "fire"}
     },
     {
       "id": "scan",
@@ -60,7 +71,7 @@
       "allowed_targets": ["enemy"],
       "target_mode": "both",
       "multi_attenuation": 0.6,
-      "effect": {"type": "damage", "power": 22, "element": "ice"}
+      "effect": {"type": "damage", "power": 28, "element": "ice"}
     },
     {
       "id": "thunder",
@@ -72,7 +83,7 @@
       "allowed_targets": ["enemy"],
       "target_mode": "both",
       "multi_attenuation": 0.6,
-      "effect": {"type": "damage", "power": 22, "element": "lightning"}
+      "effect": {"type": "damage", "power": 28, "element": "lightning"}
     },
     {
       "id": "poison",

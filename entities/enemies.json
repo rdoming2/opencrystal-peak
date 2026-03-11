@@ -300,7 +300,7 @@
     {
       "id": "ancient_sentinel",
       "name": "Ancient Sentinel",
-      "stats": {"hp": 50, "mp": 12, "str": 9, "int": 6, "vit": 8, "agi": 6},
+      "stats": {"hp": 62, "mp": 12, "str": 9, "int": 6, "vit": 9, "agi": 6},
       "traits": ["elemental"],
       "spells": ["protect", "stone"],
       "mp_pool": "limited",
@@ -320,7 +320,7 @@
     {
       "id": "rune_wraith",
       "name": "Rune Wraith",
-      "stats": {"hp": 44, "mp": 16, "str": 5, "int": 9, "vit": 5, "agi": 8},
+      "stats": {"hp": 56, "mp": 16, "str": 5, "int": 9, "vit": 6, "agi": 8},
       "traits": ["undead", "weak_fire"],
       "spells": ["poison", "sleep"],
       "mp_pool": "limited",
@@ -340,7 +340,7 @@
     {
       "id": "ember_salamander",
       "name": "Ember Salamander",
-      "stats": {"hp": 52, "mp": 12, "str": 10, "int": 6, "vit": 8, "agi": 8},
+      "stats": {"hp": 66, "mp": 12, "str": 10, "int": 6, "vit": 9, "agi": 8},
       "traits": ["dragon", "resist_fire", "weak_ice"],
       "spells": ["fire"],
       "abilities": ["pummel"],
@@ -361,7 +361,7 @@
     {
       "id": "storm_wyrm",
       "name": "Storm Wyrm",
-      "stats": {"hp": 56, "mp": 14, "str": 10, "int": 8, "vit": 8, "agi": 9},
+      "stats": {"hp": 70, "mp": 14, "str": 10, "int": 8, "vit": 9, "agi": 9},
       "traits": ["dragon"],
       "spells": ["thunder"],
       "mp_pool": "limited",
@@ -381,7 +381,7 @@
     {
       "id": "elder_drake",
       "name": "Elder Drake",
-      "stats": {"hp": 60, "mp": 16, "str": 11, "int": 8, "vit": 9, "agi": 7},
+      "stats": {"hp": 78, "mp": 16, "str": 12, "int": 8, "vit": 11, "agi": 7},
       "traits": ["dragon"],
       "spells": ["fire", "poison"],
       "abilities": ["power_strike"],
@@ -402,7 +402,7 @@
     {
       "id": "sea_serpent",
       "name": "Sea Serpent",
-      "stats": {"hp": 48, "mp": 8, "str": 9, "int": 5, "vit": 7, "agi": 8},
+      "stats": {"hp": 56, "mp": 8, "str": 9, "int": 5, "vit": 8, "agi": 8},
       "traits": ["beast", "weak_lightning"],
       "sprite": {"glyph": "s", "palette": "enemy"},
       "art": {"lines": ["~\\ ", "==( )", " ~/ "], "palette": "enemy"},
@@ -414,7 +414,7 @@
     {
       "id": "abyss_jelly",
       "name": "Abyss Jelly",
-      "stats": {"hp": 40, "mp": 16, "str": 5, "int": 8, "vit": 6, "agi": 6},
+      "stats": {"hp": 50, "mp": 16, "str": 5, "int": 8, "vit": 7, "agi": 6},
       "traits": ["elemental", "weak_lightning"],
       "spells": ["poison"],
       "mp_pool": "limited",
@@ -434,7 +434,7 @@
     {
       "id": "coral_guardian",
       "name": "Coral Guardian",
-      "stats": {"hp": 54, "mp": 8, "str": 10, "int": 4, "vit": 9, "agi": 6},
+      "stats": {"hp": 68, "mp": 8, "str": 10, "int": 4, "vit": 10, "agi": 6},
       "traits": ["beast", "weak_lightning"],
       "abilities": ["pummel"],
       "mp_pool": "limited",
@@ -454,7 +454,7 @@
     {
       "id": "ember_sentinel",
       "name": "Ember Sentinel",
-      "stats": {"hp": 250, "mp": 30, "str": 18, "int": 10, "vit": 15, "agi": 10},
+      "stats": {"hp": 280, "mp": 30, "str": 19, "int": 10, "vit": 16, "agi": 10},
       "traits": ["boss"],
       "spells": ["fire", "protect", "poison"],
       "abilities": ["power_strike"],
@@ -477,7 +477,7 @@
     {
       "id": "tide_guardian",
       "name": "Tide Guardian",
-      "stats": {"hp": 185, "mp": 24, "str": 12, "int": 8, "vit": 11, "agi": 7},
+      "stats": {"hp": 220, "mp": 24, "str": 13, "int": 9, "vit": 12, "agi": 7},
       "traits": ["boss"],
       "spells": ["blizzard", "shell", "enemy_cure"],
       "abilities": ["pummel"],
@@ -500,7 +500,7 @@
     {
       "id": "gale_warden",
       "name": "Gale Warden",
-      "stats": {"hp": 280, "mp": 34, "str": 19, "int": 13, "vit": 14, "agi": 13},
+      "stats": {"hp": 330, "mp": 34, "str": 20, "int": 14, "vit": 15, "agi": 13},
       "traits": ["boss"],
       "spells": ["thunder", "sleep"],
       "abilities": ["power_strike"],
@@ -523,7 +523,7 @@
     {
       "id": "stone_colossus",
       "name": "Stone Colossus",
-      "stats": {"hp": 210, "mp": 16, "str": 14, "int": 5, "vit": 13, "agi": 5},
+      "stats": {"hp": 250, "mp": 16, "str": 15, "int": 5, "vit": 14, "agi": 5},
       "traits": ["boss"],
       "spells": ["stone", "protect"],
       "abilities": ["power_strike"],
@@ -546,18 +546,18 @@
     {
       "id": "ancient_dragon",
       "name": "Ancient Dragon",
-      "stats": {"hp": 310, "mp": 40, "str": 17, "int": 11, "vit": 15, "agi": 8},
+      "stats": {"hp": 380, "mp": 40, "str": 19, "int": 13, "vit": 17, "agi": 9},
       "traits": ["boss", "dragon"],
-      "spells": ["fire", "thunder", "poison"],
+      "spells": ["fire", "thunder", "poison", "enemy_revive"],
       "abilities": ["power_strike"],
       "mp_pool": "unlimited",
       "ai": {
         "mode": "basic",
-        "weights": {"attack": 8, "spells": 12, "abilities": 6},
+        "weights": {"attack": 7, "spells": 14, "abilities": 6},
         "heal_below_hp": 0.4,
         "prefer_revive": true,
         "palliative_reroll_chance": 0.5,
-        "palliative_cooldown_turns": 1
+        "palliative_cooldown_turns": 3
       },
       "sprite": {"glyph": "D", "palette": "enemy"},
       "art": {"lines": ["/^^\\", "(==)", "\\__/"], "palette": "enemy"},
