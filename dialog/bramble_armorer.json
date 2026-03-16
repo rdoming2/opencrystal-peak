@@ -5,7 +5,7 @@
     {
       "id": "start",
       "speaker": "Bramble Armorer",
-      "text": "Sturdy steel for hardy travelers.",
+      "text": "Sand-scoured steel, thick leather, and solid rivets. This weather breaks weak gear.",
       "actions": [
         {"type": "open_shop", "shop": "bramble_armory"}
       ],
@@ -13,6 +13,6 @@
         {"label": "Thanks", "next": "end_text"}
       ]
     },
-    {"id": "end_text", "text": "Come back if you need refits."}
+    {"id": "end_text", "text": "Come back for refits before the next frostwind."}
   ]
 }

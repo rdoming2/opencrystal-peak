@@ -30,15 +30,7 @@
   "npcs": [
     {"id": "bramble_innkeeper", "pos": [12, 5]}
   ],
-  "campfires": [
-    {
-      "id": "inn_campfire",
-      "pos": [4, 5],
-      "campfire_id": "inn_kitchen",
-      "glyph": "C",
-      "palette": "bright_red"
-    }
-  ],
+  "campfires": [],
   "allow_save": true,
   "save_points": [],
   "transitions": [
@@ -46,7 +38,7 @@
       "id": "to_town",
       "pos": [8, 9],
       "target_map": "town_bramble",
-      "target_pos": [26, 6],
+      "target_pos": [23, 6],
       "return_to_last": false,
       "glyph": "<",
       "palette": "bright_cyan"

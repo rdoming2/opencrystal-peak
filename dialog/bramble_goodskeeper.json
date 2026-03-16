@@ -5,7 +5,7 @@
     {
       "id": "start",
       "speaker": "Bramble Provisioner",
-      "text": "Supplies for the road and the wood.",
+      "text": "Dried rations, bitter tea, and trail bundles. You will need all three out here.",
       "actions": [
         {"type": "open_shop", "shop": "bramble_provisions"}
       ],
@@ -13,6 +13,6 @@
         {"label": "Thanks", "next": "end_text"}
       ]
     },
-    {"id": "end_text", "text": "Stay stocked out there."}
+    {"id": "end_text", "text": "Travel light, but never travel thirsty."}
   ]
 }

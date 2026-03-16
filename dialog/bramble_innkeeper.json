@@ -5,7 +5,7 @@
     {
       "id": "start",
       "speaker": "Bramble Innkeeper",
-      "text": "Welcome to the Bramble Inn. Would you like to rest?",
+      "text": "Welcome in from the dry wind. Need a warm bed before you head back out?",
       "choices": [
         {"label": "Rest (60 G)", "next": "rest"},
         {"label": "No thanks", "next": "end_text"}
@@ -24,7 +24,7 @@
     },
     {
       "id": "end_text",
-      "text": "Safe travels."
+      "text": "Keep your canteen full and your scarf tight."
     }
   ]
 }

@@ -168,6 +168,22 @@
       "interaction_range": 2
     },
     {
+      "id": "bramble_scout",
+      "name": "Dustline Scout",
+      "sprite": "wanderer",
+      "palette": "bright_cyan",
+      "dialog": "bramble_scout",
+      "behavior": {"type": "roam", "radius": 3, "idle_chance": 0.35, "persist": true}
+    },
+    {
+      "id": "bramble_forager",
+      "name": "Tundra Forager",
+      "sprite": "farmer",
+      "palette": "bright_yellow",
+      "dialog": "bramble_forager",
+      "behavior": {"type": "roam", "radius": 2, "idle_chance": 0.35, "persist": true}
+    },
+    {
       "id": "windreach_innkeeper",
       "name": "Windreach Innkeeper",
       "sprite": "innkeeper",

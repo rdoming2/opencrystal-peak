@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "id": "bramble_scout",
+  "nodes": [
+    {
+      "id": "start",
+      "speaker": "Dustline Scout",
+      "text": "The ground looks calm until the wind lifts it. Keep cloth over your mouth on the south road.",
+      "choices": [
+        {"label": "Thanks", "next": "end_text"}
+      ]
+    },
+    {
+      "id": "end_text",
+      "text": "Storms here bite before they roar."
+    }
+  ]
+}
