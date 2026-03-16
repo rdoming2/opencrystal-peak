@@ -5,7 +5,7 @@
     {
       "id": "start",
       "speaker": "Mayor Trill",
-      "text": "Coral Town is safe for now, but the rune stones are failing beyond our walls.",
+      "text": "You came down from the uplands when we rang the sea bell. Coral Harbor still stands, but the rune stones are failing beyond our walls.",
       "choices": [
         {"label": "How can we help?", "next": "quest"},
         {"label": "Not yet", "next": "end_text"}
@@ -14,7 +14,7 @@
     {
       "id": "quest",
       "speaker": "Mayor Trill",
-      "text": "Check the four elemental rune stones: Ember, Tide, Gale, and Stone. Restore them before Gaia goes dark.",
+      "text": "I gathered you here because you're our best chance. Find Ember, Tide, Gale, and Stone, and restore them before Gaia goes dark.",
       "actions": [
         {"type": "set_flag", "flag": "quest.rune_stones.started"},
         {"type": "start_event", "event": "rune_stones_briefing"}
@@ -25,7 +25,7 @@
     },
     {
       "id": "end_text",
-      "text": "May the tides and winds favor you."
+      "text": "Then breathe the harbor air while you can. The world will ask more of you soon."
     }
   ]
 }

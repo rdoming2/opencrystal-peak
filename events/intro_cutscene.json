@@ -2,19 +2,31 @@
   "version": 1,
   "id": "intro_cutscene",
   "steps": [
-    {"type": "narration", "text": "Before the runestones dimmed, the seas were calm."},
-    {"type": "narration", "text": "Now the tides churn, and the sky hums with unrest."},
+    {
+      "type": "narration",
+      "text": "The Shallot Knights rode in from the upland farm roads, answering a dawn summons from Coral Harbor."
+    },
+    {
+      "type": "narration",
+      "text": "Fisherfolk, traders, and wardens crowded the docks as storm swells struck the seawall."
+    },
+    {
+      "type": "narration",
+      "text": "With Ember, Tide, Gale, and Stone faltering, Mayor Trill called every proven blade to the harbor town."
+    },
+    {"type": "wait", "ms": 450},
     {"type": "npc_show", "npc": "town_runner", "pos": [2, 12]},
     {"type": "npc_move", "npc": "town_runner", "pos": [11, 12]},
+    {"type": "wait", "ms": 250},
     {
       "type": "dialog",
       "speaker": "Harbor Runner",
-      "text": "Storm squalls keep slamming the docks. The mayor asked me to find you."
+      "text": "You made it from the high roads just in time. The harbor's in chaos, and the mayor has been searching for your squad."
     },
     {
       "type": "dialog",
       "speaker": "Harbor Runner",
-      "text": "Meet him at his house right away. The rune stones cannot wait."
+      "text": "He's waiting at his house now. If the rune stones fail, Coral Harbor is only the beginning."
     },
     {"type": "set_flag", "flag": "quest.rune_stones.summons"},
     {"type": "npc_move", "npc": "town_runner", "pos": [2, 12]},
