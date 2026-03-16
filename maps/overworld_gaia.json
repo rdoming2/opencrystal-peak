@@ -157,40 +157,40 @@
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
   ],
   "legend": {
-    "#": {
-      "tile": "lava",
-      "passable": false,
-      "palette": "bright_red"
-    },
-    "^": {
-      "tile": "mountain",
-      "passable": false,
-      "palette": "bright_black"
-    },
-    "=": {
-      "tile": "bridge",
+    ".": {
+      "tile": "grass",
       "passable": true,
-      "palette": "bright_yellow"
-    },
-    ",": {
-      "tile": "desert",
-      "passable": true,
-      "palette": "yellow"
+      "palette": "green"
     },
     "~": {
       "tile": "water",
       "passable": false,
       "palette": "blue"
     },
+    ",": {
+      "tile": "desert",
+      "passable": true,
+      "palette": "yellow"
+    },
     ":": {
       "tile": "forest",
       "passable": true,
       "palette": "green"
     },
-    ".": {
-      "tile": "grass",
+    "#": {
+      "tile": "lava",
+      "passable": false,
+      "palette": "bright_red"
+    },
+    "=": {
+      "tile": "bridge",
       "passable": true,
-      "palette": "green"
+      "palette": "bright_yellow"
+    },
+    "^": {
+      "tile": "mountain",
+      "passable": false,
+      "palette": "bright_black"
     }
   },
   "encounters": [
@@ -384,8 +384,8 @@
     {
       "id": "to_town",
       "pos": [
-        120,
-        120
+        116,
+        126
       ],
       "target_map": "town_coral",
       "target_pos": [

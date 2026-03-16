@@ -140,7 +140,7 @@
         },
         {
           "id": "meet_shipbuilder",
-          "text": "Find a shipbuilder in Coral Harbor who can help.",
+          "text": "Find a carpenter in Coral Harbor who can help.",
           "flag": "quest.bridge_repair.meet_shipbuilder",
           "show_flag": "quest.bridge_repair.started"
         },
@@ -152,7 +152,7 @@
         },
         {
           "id": "repair_bridge",
-          "text": "Return to the shipbuilder to repair the bridge.",
+          "text": "Return to the carpenter to repair the bridge.",
           "flag": "quest.bridge_repair.repair_bridge",
           "show_flag": "quest.bridge_repair.gather_rivets"
         }

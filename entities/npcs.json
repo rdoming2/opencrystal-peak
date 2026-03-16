@@ -61,7 +61,7 @@
     },
     {
       "id": "shipbuilder",
-      "name": "Shipbuilder Neri",
+      "name": "Carpenter Neri",
       "sprite": "merchant",
       "palette": "bright_yellow",
       "dialog": "shipbuilder",

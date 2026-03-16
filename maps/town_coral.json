@@ -120,9 +120,7 @@
         27
       ],
       "script": null,
-      "requires_flags": [
-        "quest.bridge_repair.started"
-      ]
+      "requires_flags": null
     }
   ],
   "signs": [
@@ -169,8 +167,8 @@
       ],
       "target_map": "overworld_gaia",
       "target_pos": [
-        120,
-        120
+        116,
+        127
       ],
       "label": null,
       "requires_flag": null,

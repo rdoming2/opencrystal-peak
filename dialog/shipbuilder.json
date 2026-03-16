@@ -4,23 +4,49 @@
   "nodes": [
     {
       "id": "start",
-      "speaker": "Shipbuilder Neri",
-      "text": "What's that, the bridge up north? Sorry shape that one's in. I can mend it, but I need five Stonebind Rivets from down in the Stone Vault.",
-      "actions": [
-        {"type": "set_flag", "flag": "quest.bridge_repair.meet_shipbuilder"}
-      ],
+      "speaker": "Carpenter Neri",
+      "text": "Need a hand? I keep Coral Harbor's beams, piers, and hull braces from falling apart.",
       "choices": [
-        {"label": "I'll find them.", "next": "end_text"},
+        {
+          "label": "Any work around town?",
+          "next": "before_bridge",
+          "requires_flags": ["!quest.bridge_repair.started"]
+        },
+        {
+          "label": "About the damaged bridge...",
+          "next": "bridge_repair",
+          "requires_flags": ["quest.bridge_repair.started"]
+        },
         {
           "label": "I have the rivets.",
           "next": "turn_in",
           "requires_flags": ["quest.bridge_repair.meet_shipbuilder"]
-        }
+        },
+        {"label": "Farewell.", "next": "end_text"}
+      ]
+    },
+    {
+      "id": "before_bridge",
+      "speaker": "Carpenter Neri",
+      "text": "Nothing dramatic today. Just patching boardwalk planks and reinforcing storm shutters before the next tide.",
+      "choices": [
+        {"label": "Good luck with the work.", "next": "end_text"}
+      ]
+    },
+    {
+      "id": "bridge_repair",
+      "speaker": "Carpenter Neri",
+      "text": "The bridge up north is in rough shape, but I can mend it. Bring me five Stonebind Rivets from the Stone Vault and I'll get started.",
+      "actions": [
+        {"type": "set_flag", "flag": "quest.bridge_repair.meet_shipbuilder"}
+      ],
+      "choices": [
+        {"label": "I'll find them.", "next": "end_text"}
       ]
     },
     {
       "id": "turn_in",
-      "speaker": "Shipbuilder Neri",
+      "speaker": "Carpenter Neri",
       "text": "Let me see what you've brought.",
       "actions": [
         {"type": "start_event", "event": "bridge_repair_turnin"}
@@ -28,7 +54,7 @@
     },
     {
       "id": "end_text",
-      "speaker": "Shipbuilder Neri",
+      "speaker": "Carpenter Neri",
       "text": "I'll keep watch for the tide."
     }
   ]
