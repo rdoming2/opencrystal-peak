@@ -371,8 +371,8 @@
       ],
       "target_map": "dungeon_dragon",
       "target_pos": [
-        2,
-        8
+        72,
+        6
       ],
       "label": null,
       "requires_flag": null,
