@@ -502,34 +502,102 @@
       "id": "dragon_path",
       "entries": [
         {
-          "weight": 60,
+          "weight": 45,
           "formation": [
             {"enemy": "wyrmkin", "pos": [0, 1]},
             {"enemy": "wyrmkin", "pos": [1, 2]}
           ]
         },
         {
-          "weight": 40,
+          "weight": 35,
           "formation": [
+            {"enemy": "ember_drake", "pos": [2, 2]}
+          ]
+        },
+        {
+          "weight": 20,
+          "formation": [
+            {"enemy": "wyrmkin", "pos": [0, 1]},
             {"enemy": "ember_drake", "pos": [2, 2]}
           ]
         }
       ]
     },
     {
-      "id": "dragon_lair",
+      "id": "dragon_depths",
       "entries": [
         {
-          "weight": 70,
+          "weight": 40,
           "formation": [
-            {"enemy": "ember_drake", "pos": [1, 2]}
+            {"enemy": "storm_wyrm", "pos": [1, 2]},
+            {"enemy": "ember_salamander", "pos": [3, 1]}
+          ]
+        },
+        {
+          "weight": 35,
+          "formation": [
+            {"enemy": "elder_drake", "pos": [1, 2]}
+          ]
+        },
+        {
+          "weight": 25,
+          "formation": [
+            {"enemy": "storm_wyrm", "pos": [0, 1]},
+            {"enemy": "elder_drake", "pos": [2, 2]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dragon_sanctum",
+      "entries": [
+        {
+          "weight": 40,
+          "formation": [
+            {"enemy": "elder_drake", "pos": [1, 2]},
+            {"enemy": "ember_salamander", "pos": [3, 1]}
+          ]
+        },
+        {
+          "weight": 35,
+          "formation": [
+            {"enemy": "storm_wyrm", "pos": [0, 1]},
+            {"enemy": "storm_wyrm", "pos": [2, 2]}
+          ]
+        },
+        {
+          "weight": 25,
+          "formation": [
+            {"enemy": "elder_drake", "pos": [1, 2]},
+            {"enemy": "storm_wyrm", "pos": [0, 1]},
+            {"enemy": "ember_salamander", "pos": [3, 2]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dragon_heart",
+      "entries": [
+        {
+          "weight": 45,
+          "formation": [
+            {"enemy": "elder_drake", "pos": [1, 2]},
+            {"enemy": "storm_wyrm", "pos": [3, 1]}
           ]
         },
         {
           "weight": 30,
           "formation": [
-            {"enemy": "wyrmkin", "pos": [0, 1]},
-            {"enemy": "ember_drake", "pos": [2, 2]}
+            {"enemy": "elder_drake", "pos": [1, 2]},
+            {"enemy": "elder_drake", "pos": [3, 2]}
+          ]
+        },
+        {
+          "weight": 25,
+          "formation": [
+            {"enemy": "storm_wyrm", "pos": [0, 1]},
+            {"enemy": "elder_drake", "pos": [2, 2]},
+            {"enemy": "ember_salamander", "pos": [3, 1]}
           ]
         }
       ]
