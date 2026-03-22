@@ -2,9 +2,14 @@
   "version": 1,
   "id": "dungeon_fount",
   "name": "Fount of All Water - Entrance",
+  "hide_name": false,
   "world": "gaia",
   "width": 60,
   "height": 30,
+  "loop": {
+    "x": false,
+    "y": false
+  },
   "tiles": [
     "############################################################",
     "#############################..#############################",
@@ -18,8 +23,8 @@
     "##################...~~~~........~~~~...####################",
     "##################...~~~~........~~~~...####################",
     "##################...~~~~........~~~~...####################",
-    "##################...~~~~........~~~~...####################",
-    "##################...~~~~........~~~~...####################",
+    "##################...~~~~........~~~~...............########",
+    "##################...~~~~........~~~~...###########.########",
     "##################...~~~~........~~~~...##########..########",
     "##################...~~~~........~~~~...##########..########",
     "##################...~~~~........~~~~...##########..########",
@@ -38,26 +43,31 @@
     "############################################################"
   ],
   "legend": {
-    "#": {
-      "tile": "wall",
+    "~": {
+      "tile": "water",
       "passable": false,
-      "palette": "bright_black"
+      "palette": "bright_blue"
     },
     ".": {
       "tile": "floor",
       "passable": true,
       "palette": "bright_green"
     },
-    "~": {
-      "tile": "water",
+    "#": {
+      "tile": "wall",
       "passable": false,
-      "palette": "bright_blue"
+      "palette": "bright_black"
     }
   },
   "encounters": [
     {
       "zone_id": "fount_dungeon",
-      "rect": [0, 0, 60, 30],
+      "rect": [
+        0,
+        0,
+        60,
+        30
+      ],
       "table": "fount_dungeon"
     }
   ],
@@ -66,22 +76,40 @@
   "npcs": [
     {
       "id": "fae_engineer",
-      "pos": [29, 26],
+      "pos": [
+        29,
+        26
+      ],
+      "script": null,
       "requires_flags": null
     }
   ],
+  "signs": [],
   "chests": [
     {
       "id": "fount_entrance_chest",
-      "pos": [50, 15],
+      "pos": [
+        50,
+        15
+      ],
       "glyph_closed": "▣",
       "glyph_open": "▢",
       "palette": "bright_yellow",
       "opened_flag": "dungeon.fount_entrance_chest_opened",
       "loot": {
-        "items": [{"id": "potion", "qty": 2}],
+        "items": [
+          {
+            "id": "potion",
+            "qty": 2
+          }
+        ],
         "equipment": [],
-        "currency": [{"id": "gold", "amount": 50}]
+        "currency": [
+          {
+            "id": "gold",
+            "amount": 50
+          }
+        ]
       }
     }
   ],
@@ -90,23 +118,39 @@
   "transitions": [
     {
       "id": "fount_exit",
-      "pos": [29, 28],
+      "pos": [
+        29,
+        28
+      ],
       "target_map": "overworld_gaia",
-      "target_pos": [210, 95],
+      "target_pos": [
+        210,
+        95
+      ],
+      "label": null,
+      "requires_flag": null,
+      "cost": null,
       "return_to_last": true,
       "glyph": "<",
       "palette": "bright_cyan"
     }
   ],
+  "vehicles": [],
   "doors": [
     {
       "id": "to_depths_gate",
-      "pos": [29, 2],
+      "pos": [
+        29,
+        2
+      ],
       "requires_flag": "quest.gale_pass.fount_briefing",
       "locked_text": "A fae ward seals the depths.",
       "locked_event": null,
       "target_map": "dungeon_fount_depths",
-      "target_pos": [29, 28],
+      "target_pos": [
+        29,
+        28
+      ],
       "return_to_last": false,
       "glyph": ">",
       "palette": "bright_cyan"

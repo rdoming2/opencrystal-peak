@@ -2,9 +2,14 @@
   "version": 1,
   "id": "dungeon_fount_source",
   "name": "Fount of All Water - Source",
+  "hide_name": false,
   "world": "gaia",
   "width": 40,
   "height": 20,
+  "loop": {
+    "x": false,
+    "y": false
+  },
   "tiles": [
     "########################################",
     "########################################",
@@ -25,7 +30,7 @@
     "##....................................##",
     "##....................................##",
     "###################..###################",
-    "###################..###################"
+    "########################################"
   ],
   "legend": {
     "#": {
@@ -47,7 +52,12 @@
   "encounters": [
     {
       "zone_id": "fount_boss",
-      "rect": [0, 0, 40, 20],
+      "rect": [
+        0,
+        0,
+        40,
+        20
+      ],
       "table": "fount_boss"
     }
   ],
@@ -56,28 +66,51 @@
     {
       "id": "fount_boss_trigger",
       "trigger": "on_step",
-      "pos": [20, 10],
-      "script": "fount_boss_clear"
+      "script": "fount_boss_clear",
+      "zone": null,
+      "pos": [
+        20,
+        10
+      ]
     }
   ],
   "npcs": [
     {
       "id": "boss_fount_corruptor",
-      "pos": [20, 10],
+      "pos": [
+        20,
+        10
+      ],
+      "script": null,
       "requires_flags": null
     }
   ],
+  "signs": [],
+  "chests": [],
   "allow_save": false,
   "save_points": [],
   "transitions": [
     {
       "id": "to_depths",
-      "pos": [20, 18],
+      "pos": [
+        20,
+        18
+      ],
       "target_map": "dungeon_fount_depths",
-      "target_pos": [29, 2],
+      "target_pos": [
+        29,
+        2
+      ],
+      "label": null,
+      "requires_flag": null,
+      "cost": null,
       "return_to_last": true,
       "glyph": "<",
       "palette": "bright_cyan"
     }
-  ]
+  ],
+  "vehicles": [],
+  "doors": [],
+  "puzzles": [],
+  "campfires": []
 }
