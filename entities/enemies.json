@@ -352,7 +352,7 @@
         "prefer_revive": false
       },
       "sprite": {"glyph": "l", "palette": "enemy"},
-      "art": {"lines": ["/\\ ", "(==)", "\\_/"], "palette": "enemy"},
+      "art": {"lines": [" /\\ ", " (==)", "\\_/"], "palette": "enemy"},
       "exp": 19,
       "currency": [{"id": "gold", "amount": 16}],
       "jp": 6,

@@ -149,7 +149,18 @@
       "palette": "blue"
     }
   },
-  "encounters": [],
+  "encounters": [
+    {
+      "zone_id": "dragon_path",
+      "rect": [
+        0,
+        0,
+        80,
+        120
+      ],
+      "table": "dragon_path"
+    }
+  ],
   "encounter_rate": 0.07,
   "events": [],
   "npcs": [],
